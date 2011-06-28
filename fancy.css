@@ -1,0 +1,189 @@
+/*
+
+Fancy SA
+
+stylesheet by Anal Volcano
+thanks whoever designed the frontpage! i hope you're okay with me co-opting your work for the forums.
+
+*/
+
+body {
+	background-color: #262D35 !important;
+}
+
+#globalmenu {
+	width: 965px !important;
+	padding-left: 15px !important;
+	padding-left: 15px !important;
+	
+	text-align: left !important;
+	margin-left: auto;
+	margin-right: auto;
+	
+	border-left: 1px solid #000;
+	border-right: 1px solid #000;;
+}
+
+#container {
+	background: white;
+	
+	width: 950px;
+	
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 20px;
+	
+	padding-left: 15px !important;
+	padding-right: 15px !important;
+	padding-bottom: 15px !important;
+	
+	border: 1px solid #000;
+}
+
+
+
+#navigation {
+	font-size: 12px !important;
+
+	border-top: 0px;
+	height: 20px;
+}
+
+#nav_purchase {
+	display:none;
+}
+
+.oma_pal { /* top ad banner */
+	/*padding-bottom:1em !important;*/
+}
+
+/*
+
+Forums Index
+
+*/
+
+#index {
+	margin-top:1em;
+}
+
+table#info {
+	display:none;
+}
+
+#forums th, #index table#pm th {
+	padding-top:5px;
+	padding-bottom:5px;
+	padding-left:10px;
+	padding-right:10px;
+	
+	margin-top:100px !important;
+	font-size:12px !important;
+}
+
+#forums td, #index table#pm td {
+	padding-top:3px !important;
+	padding-bottom:3px !important;
+	padding-left:10px !important;
+	padding-right:10px !important;	
+}
+
+#forums .moderators {
+	display:none !important;
+}
+
+#forums .subforums {
+	font-size:11px !important;
+}
+
+#index table#pm td {
+	font-size:12px !important;
+}
+
+/*
+
+Thread List
+
+*/
+
+#forum td {
+	/*padding-top:5px !important;
+	padding-bottom:5px !important;*/
+	padding-left:10px !important;
+	padding-right:10px !important;
+	
+	vertical-align:middle;
+	height: 32px;
+}
+
+
+form#ac_timemachine {
+	position:absolute;
+/*	margin-top:-21px !important;*/
+	float:left;
+	border: 0 !important;
+	background: #069 url('http://i.somethingawful.com/core/icon/fsilk/clock.png') no-repeat !important;
+	background-position: 3px 2px !important;
+}
+
+.forumbar .postbuttons {
+	float:right !important;
+}
+
+form#ac_timemachine.active {
+	background: #8F0035 url('http://i.somethingawful.com/core/icon/fsilk/clock_red.png') no-repeat !important;
+}
+
+.forumbar {
+	height:21px !important;
+}
+
+#forum .replies, #forum .views, #forum .lastpost {
+	display:none;
+}
+
+div.pages {
+	font-size:12px !important;
+}
+
+.curpage {
+	padding-right: 2px !important;
+}
+
+/* Header */
+
+#header {
+	background-image: url('http://i.somethingawful.com/core/header-bg-bluenoise.png');
+	background-repeat: repeat;
+	height: 104px;
+	background-color: #142C46;
+	background-position: 0 14px;
+	margin-left: -15px !important;
+	margin-right: -15px !important;
+	margin-top: -5px !important;
+	margin-bottom: 5px !important;
+	
+	border-bottom: 2px solid #000;
+}
+
+/* stupid jumplist  */
+
+form[action="forumdisplay.php"] {
+	display:none;
+}
+
+/* two nav options dropped for 219.css's nav bar, which is kinda large */
+
+/* private messages unneeded - box on index.php takes care of that */
+#navigation li:nth-child(4) {
+	display:none;
+}
+
+/* posting gloryhole is pretty damn useless now */
+#navigation li:nth-child(7) {
+	display:none;
+}
+
+#rateform_js_attach img[src="http://fi.somethingawful.com/style/thread/rate/digg.gif"] {
+	display:none;
+}

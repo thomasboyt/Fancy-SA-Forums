@@ -1,0 +1,19 @@
+{
+	"name": "Fancy SA Forums",
+	"version": "1.0",
+	
+	"description": "Stylesheets, userscripts, and various improvements for the Something Awful Forums.",
+
+	"icons": {
+		"128": "Something_Awful_logo.png"
+	},
+
+	"content_scripts": [
+		{
+			"matches": ["http://forums.somethingawful.com/", "http://forums.somethingawful.com/*"],
+			"run_at": "document_end",
+			"css": ["fancy.css"],
+			"js": ["lib/jquery.js", "fancy.js"]
+		}
+	]
+}
