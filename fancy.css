@@ -53,10 +53,6 @@ body {
 	display:none;
 }
 
-.oma_pal { /* top ad banner */
-	/*padding-bottom:1em !important;*/
-}
-
 /*
 
 Forums Index
@@ -65,6 +61,11 @@ Forums Index
 
 #index {
 	margin-top:1em;
+}
+
+/* stupid extra logout link */
+#index .mainbodytextsmall {
+	display:none;
 }
 
 table#info {
@@ -107,8 +108,6 @@ Thread List
 */
 
 #forum td {
-	/*padding-top:5px !important;
-	padding-bottom:5px !important;*/
 	padding-left:10px !important;
 	padding-right:10px !important;
 	
@@ -119,7 +118,6 @@ Thread List
 
 form#ac_timemachine {
 	position:absolute;
-/*	margin-top:-21px !important;*/
 	float:left;
 	border: 0 !important;
 	background: #069 url('http://i.somethingawful.com/core/icon/fsilk/clock.png') no-repeat !important;
@@ -138,7 +136,7 @@ form#ac_timemachine.active {
 	height:21px !important;
 }
 
-#forum .replies, #forum .views, #forum .lastpost {
+#forum .views, #forum .lastpost {
 	display:none;
 }
 
