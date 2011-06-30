@@ -79,7 +79,7 @@ table#info {
 	padding-right:10px;
 	
 	margin-top:100px !important;
-	font-size:12px !important;
+	font-size:13px !important;
 }
 
 #forums td, #index table#pm td {
@@ -93,6 +93,9 @@ table#info {
 	display:none !important;
 }
 
+#forums .forum {
+	font-size:13px !important;
+}
 #forums .subforums {
 	font-size:11px !important;
 }
@@ -107,6 +110,20 @@ Thread List
 
 */
 
+#mp_bar #mods {
+	font-size:12px !important;
+}
+
+#mods {
+	float:none !important;
+	text-align:left !important;
+}
+
+#content > div.pages {
+	text-align: right !important;
+	display:block !important;
+}
+
 #forum td {
 	padding-left:10px !important;
 	padding-right:10px !important;
@@ -114,7 +131,6 @@ Thread List
 	vertical-align:middle;
 	height: 32px;
 }
-
 
 form#ac_timemachine {
 	position:absolute;
