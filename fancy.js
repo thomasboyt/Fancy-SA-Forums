@@ -16,15 +16,38 @@ if (window.location.href.indexOf("search") != -1) {
 	$("#copyright").after("</div>");
 }
 
-/* Experimental: new page nav positioning */
+$(".mainbodytextlarge:last, .online_users:last").wrapAll($("<div class ='breadcrumbs' />"));
 
-if (window.location.href.indexOf("forumdisplay") != -1)  {
-	//move top page nav down to above blue bar
-	$(".pages:first").insertBefore($("#forum"));
-	$(".pages:first").attr("class", "pages top");
-}
+/* 
 
-if (window.location.href.indexOf("showthread.php") != -1 ) {
-	//move bottom page nav up to under the post/reply buttons
-	$(".pages:last").insertAfter($(".threadbar.bottom"))
-}
+new page nav 
+
+*/
+
+// --- forumdisplay.php ---
+
+// top
+$("#forum").before("<div class = 'forumbar top' />");
+$(".forumbar.top").append("<div class = 'forumbar_pages' />");
+$(".forumbar_pages").append($("#mp_bar .pages"));
+
+// bottom
+$(".forumbar:last").append("<div class = 'forumbar_pages' />");
+$(".forumbar_pages:last").append($('.pages.bottom'));
+
+// post button
+$(".forumbar.top").append($(".postbuttons"))
+
+// --- showthread.php ---
+
+
+
+// top
+$(".threadbar.top").append("<div class = 'threadbar_pages' />");
+$(".threadbar_pages").append($(".pages.top"));
+
+// bottom
+$(".threadbar.bottom .clear").before("<div class = 'threadbar_pages' />");
+$(".threadbar_pages:last").append($(".pages.bottom"));
+
+$(".threadbar .threadrate").before($(".threadbar.bottom .postbuttons"))

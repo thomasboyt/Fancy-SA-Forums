@@ -110,18 +110,33 @@ Thread List
 
 */
 
-#mp_bar #mods {
+/*#mp_bar #mods {
 	font-size:12px !important;
-}
+}*/
 
 #mods {
 	float:none !important;
 	text-align:left !important;
+	display:none !important;
 }
 
-#content > div.pages {
-	text-align: right !important;
-	display:block !important;
+a[href="#top"] {
+	display:none !important;
+}
+
+#subforums {
+	margin-bottom:20px !important;
+}
+
+thead {
+	display:none;
+}
+
+#ad_banner_user {
+	margin-top:25px;
+}
+#ad_banner_user img {
+	border: 1px solid #000;
 }
 
 #forum td {
@@ -140,16 +155,21 @@ form#ac_timemachine {
 	background-position: 3px 2px !important;
 }
 
-.forumbar .postbuttons {
-	float:right !important;
-}
-
 form#ac_timemachine.active {
 	background: #8F0035 url('http://i.somethingawful.com/core/icon/fsilk/clock_red.png') no-repeat !important;
 }
 
-.forumbar {
-	height:21px !important;
+.forumbar, .threadbar {
+	height:20px !important;
+	padding: 3px !important;
+}
+
+.forumbar.top {
+	margin-bottom: 0 !important;
+}
+
+.pages.bottom {
+	margin: 0 !important;
 }
 
 #forum .views, #forum .lastpost {
@@ -198,6 +218,58 @@ form[action="forumdisplay.php"] {
 	display:none;
 }
 
+/* "bookmark this thread" link - now deprecated due to MARK icon */
+.subscribe {
+	display:none !important;
+}
+
+
 #rateform_js_attach img[src="http://fi.somethingawful.com/style/thread/rate/digg.gif"] {
 	display:none;
+}
+
+#filter {
+	display:none;
+}
+
+
+
+/* New page nav */
+
+.forumbar_pages, .threadbar_pages {
+	float:right !important;
+	color: #fff !important;
+	margin-top: 2px !important;
+}
+
+.pages {
+	color: #fff !important;
+}
+
+.pages a {
+	color: #fff !important;
+	border: none !important;
+	text-decoration:underline !important;
+}
+
+.pages a:hover {
+	color:#069 !important;
+	background-color:#fff !important;
+}
+
+.curpage {
+	color:#ccc !important;
+}
+
+.threadbar .postbuttons, .forumbar .postbuttons {
+	float:left !important;
+}
+.threadbar .postbuttons img, .forumbar .postbuttons img {
+	padding-top:0px !important;
+}
+
+.threadrate {
+	width: inherit !important;
+	margin-left: 40px !important;
+	font-size: 12px !important;
 }
