@@ -17,3 +17,4 @@ Fancy SA Forums is a Chrome extension that makes the Something Awful Forums look
 * Fix Chrome alignment issues
 * Include Chemo Clinic & Gentle Autist's TIMG fix
 * Nice gutter wrappers/menu from the frontpage
+* Make subforum list collapsible
