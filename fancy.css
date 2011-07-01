@@ -236,7 +236,7 @@ Header
 	border-bottom: 2px #142C46 solid;
 }
 
-#header #logo_img_bluegren {
+#header img {
 	position:absolute;
 	left:0;
 	top:3px !important;
