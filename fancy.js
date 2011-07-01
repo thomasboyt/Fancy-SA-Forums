@@ -3,12 +3,12 @@ $(".forumbar").append($("#ac_timemachine"));
 /* No banner in YOSPOS */
 try {
 	if ($(".breadcrumbs").html().indexOf("YOSPOS") == -1) {
-		$("#container").prepend("<div id='header'><img src='http://i.somethingawful.com/core/head-logo-bluegren.png' /></div>")
+		$("#container").prepend("<div id='header'><img id='logo_img_blugren' src='http://i.somethingawful.com/core/head-logo-bluegren.png' /></div>")
 	}
 }
 catch(e) {
 	//no breadcrumbs
-	$("#container").prepend("<div id='header'><img src='http://i.somethingawful.com/core/head-logo-bluegren.png' /></div>")
+	$("#container").prepend("<div id='header'><img id='logo_img_bluegren' src='http://i.somethingawful.com/core/head-logo-bluegren.png' /></div>")
 }
 
 if (window.location.href.indexOf("search") != -1) {
@@ -17,6 +17,8 @@ if (window.location.href.indexOf("search") != -1) {
 }
 
 $(".mainbodytextlarge:last, .online_users:last").wrapAll($("<div class ='breadcrumbs' />"));
+
+$("#globalmenu").insertBefore($("#header"));
 
 /* 
 
@@ -38,9 +40,8 @@ $(".forumbar_pages:last").append($('.pages.bottom'));
 // post button
 $(".forumbar.top").append($(".postbuttons"))
 
+
 // --- showthread.php ---
-
-
 
 // top
 $(".threadbar.top").append("<div class = 'threadbar_pages' />");
@@ -51,3 +52,5 @@ $(".threadbar.bottom .clear").before("<div class = 'threadbar_pages' />");
 $(".threadbar_pages:last").append($(".pages.bottom"));
 
 $(".threadbar .threadrate").before($(".threadbar.bottom .postbuttons"))
+
+$(".threadrate b").html("Rate: ");
