@@ -1,5 +1,11 @@
 $(".forumbar").append($("#ac_timemachine"));
 
+if (window.location.href.indexOf("search") != -1) {
+	$("#globalmenu, #nav_purchase, #navigation, .breadcrumbs, #content, #copyright").wrapAll("<div id='container'></div>");
+}
+
+$(".mainbodytextlarge:last, .online_users:last").wrapAll($("<div class ='breadcrumbs' />"));
+
 /* No banner in YOSPOS */
 try {
 	if ($(".breadcrumbs").html().indexOf("YOSPOS") == -1) {
@@ -11,14 +17,8 @@ catch(e) {
 	$("#container").prepend("<div id='header'><img id='logo_img_bluegren' src='http://i.somethingawful.com/core/head-logo-bluegren.png' /></div>")
 }
 
-if (window.location.href.indexOf("search") != -1) {
-	$("#globalmenu").after("<div id='container'>dd");
-	$("#copyright").after("</div>");
-}
+$("#globalmenu").insertBefore($("#container :first"));
 
-$(".mainbodytextlarge:last, .online_users:last").wrapAll($("<div class ='breadcrumbs' />"));
-
-$("#globalmenu").insertBefore($("#header"));
 
 /* 
 
