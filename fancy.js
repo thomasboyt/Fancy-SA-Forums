@@ -54,3 +54,5 @@ $(".threadbar_pages:last").append($(".pages.bottom"));
 $(".threadbar .threadrate").before($(".threadbar.bottom .postbuttons"))
 
 $(".threadrate b").html("Rate: ");
+
+
