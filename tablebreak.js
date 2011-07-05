@@ -1,7 +1,8 @@
 /* stop breaking the fucking tables yall */
 
-// thanks to Paolo Bergantino
+// thanks to Paolo Bergantino & Nick Craver
 // http://stackoverflow.com/questions/965816/what-jquery-selector-excludes-items-with-a-parent-that-matches-a-given-selector/965962#965962
+// http://stackoverflow.com/questions/3877027/jquery-callback-on-image-load-even-when-the-image-is-cached
 
 jQuery.expr[':'].parents = function(a,i,m){
     return jQuery(a).parents(m[3]).length < 1;

@@ -18,7 +18,7 @@
 		{
 			"matches": ["http://forums.somethingawful.com/showthread.php?*"],
 			"run_at": "document_end",
-			"js": ["lib/maxResize.js", "lib/imagesloaded.js", "tablebreak.js"]
+			"js": ["lib/maxResize.js", "tablebreak.js"]
 		}
 	]
 }
