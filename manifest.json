@@ -1,8 +1,8 @@
 {
 	"name": "Fancy SA Forums",
-	"version": "1.0",
+	"version": "0.01",
 	
-	"description": "Stylesheets, userscripts, and various improvements for the Something Awful Forums.",
+	"description": "An SA forums redesign.",
 
 	"icons": {
 		"128": "Something_Awful_logo.png"
