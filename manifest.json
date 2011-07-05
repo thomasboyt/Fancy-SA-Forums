@@ -1,6 +1,6 @@
 {
 	"name": "Fancy SA Forums",
-	"version": "0.01",
+	"version": "0.1",
 	
 	"description": "An SA forums redesign.",
 
@@ -16,7 +16,7 @@
 			"js": ["lib/jquery.js", "fancy.js"]
 		},
 		{
-			"matches": ["http://forums.somethingawful.com/showthread.php?*"],
+			"matches": ["http://forums.somethingawful.com/showthread.php?*", "http://forums.somethingawful.com/newreply.php?*"],
 			"run_at": "document_end",
 			"js": ["lib/maxResize.js", "tablebreak.js"]
 		}
