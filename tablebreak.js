@@ -25,7 +25,7 @@ $(".postbody img.img, .attachment img").one('load', function() {
 
 			$(img).filter(":parents(a)")
 				.after("<div style='font-size:10px; font-style:italic'>image automatically resized - click for big</div>")
-				.wrap("<a href='" + $(img).attr("src") + "' />")
+				.wrap("<a href='" + $(img).attr("src") + "' target='_blank' />")
 				.css("border", "3px yellow solid")
 				
 		}
