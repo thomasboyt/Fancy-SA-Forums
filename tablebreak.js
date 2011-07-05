@@ -9,14 +9,12 @@ jQuery.expr[':'].parents = function(a,i,m){
     return jQuery(a).parents(m[3]).length < 1;
 };
 
-$(".postbody img.img").one('load', function() {
+$(".postbody img.img, .attachment img").one('load', function() {
 	var img = this;
 	
 	//webkit cache'd image width hack
 	setTimeout(function() {
 		var src = $(this).attr('src');
-	
-		console.log("image: " + $(img).attr("src") + " has width " + $(img).width());
 
 		// todo: replace 700 pixels with the content div's width (so it is the max possible size)
 
@@ -25,9 +23,11 @@ $(".postbody img.img").one('load', function() {
 				width: 700
 			});
 
-			$(img).filter(":parents(a)").wrap("<a href='" + $(img).attr("src") + "' />");
-	
-			console.log("resized " + $(img).attr("src"));
+			$(img).filter(":parents(a)")
+				.after("<div style='font-size:10px; font-style:italic'>image automatically resized - click for big</div>")
+				.wrap("<a href='" + $(img).attr("src") + "' />")
+				.css("border", "3px yellow solid")
+				
 		}
 	}, 0);
 }).each(function() {
