@@ -16,9 +16,14 @@
 			"js": ["lib/jquery.js", "fancy.js"]
 		},
 		{
-			"matches": ["http://forums.somethingawful.com/showthread.php?*", "http://forums.somethingawful.com/newreply.php?*"],
+			"matches": ["http://forums.somethingawful.com/showthread.php?*", "http://forums.somethingawful.com/newreply.php?*", "http://forums.somethingawful.com/newreply.php"],
 			"run_at": "document_end",
 			"js": ["lib/maxResize.js", "tablebreak.js"]
+		},
+		{
+			"matches": ["http://forums.somethingawful.com/newreply.php?*", "http://forums.somethingawful.com/newreply.php", "http://forums.somethingawful.com/newthread.php?*", "http://forums.somethingawful.com/newthread.php"],
+			"run_at": "document_end",
+			"js": ["lib/insertAtCaret.js", "lib/jquery.field_selection.js", "post.js"]
 		}
 	]
 }
