@@ -16,7 +16,7 @@
 			"js": ["lib/jquery.js", "fancy.js"]
 		},
 		{
-			"matches": ["http://forums.somethingawful.com/showthread.php?*", "http://forums.somethingawful.com/newreply.php?*"],
+			"matches": ["http://forums.somethingawful.com/showthread.php?*", "http://forums.somethingawful.com/newreply.php?*", "http://forums.somethingawful.com/newreply.php"],
 			"run_at": "document_end",
 			"js": ["lib/maxResize.js", "tablebreak.js"]
 		}
