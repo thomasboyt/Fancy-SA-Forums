@@ -165,9 +165,11 @@ a[href="#top"] {
 #forum td {
 	padding-left:10px !important;
 	padding-right:10px !important;
+	padding-top: 5px !important;
+	padding-bottom: 5px !important;
 	
 	vertical-align:middle;
-	height: 32px;
+	/* height: 32px; */
 }
 
 form#ac_timemachine {
@@ -195,7 +197,7 @@ form#ac_timemachine.active {
 	margin: 0 !important;
 }
 
-#forum .views, #forum td.author, #forum th.author {
+#forum .views, td.author, th.author, td.replies, th.replies {
 	display:none;
 }
 
@@ -324,3 +326,19 @@ form[action="forumdisplay.php"] {
 textarea {
 	font: 13px Verdana, Arial, sans-serif !important;
 }
+
+/* experiments on threadlist - move when done */
+
+#forum td.title a.pagenumber, #forum td.title {
+	font-size: 11px !important;
+}
+
+#forum td.title a.thread_title, #forum td.title a.thread_title:visited {
+	color: #036 !important;
+	font-size:13px !important;
+}
+
+#forum td.title a.thread_title:hover {
+	color: #c60 !important;
+}
+
