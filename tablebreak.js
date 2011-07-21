@@ -13,14 +13,21 @@ $(".postbody img.img, .attachment img").one('load', function() {
 	var img = this;
 	
 	setTimeout(function() {
-		// todo: replace 700 pixels with the content div's width (so it is the max possible size)
-
 		width = $(img).width();
 		height = $(img).height();
 
 		if (width > 700) {
+			if ($(img).parents(".bbc-block")[0] != null) {
+				console.log('computing new desired width')
+				desiredWidth = $(img).parents(".bbc-block:first").width();
+				console.log("desiredWidth: " + desiredWidth)
+			}
+			else {
+				desiredWidth = $(img).parents(".postbody").width();
+			}
+			
 			$(img).maxSize({
-				width: 700
+				width: desiredWidth
 			});
 
 			$(img).filter(":parents(a)")
