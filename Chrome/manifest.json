@@ -1,0 +1,24 @@
+{
+	"name": "Fancy SA Forums",
+	"version": "0.11",
+	
+	"description": "An SA forums redesign.",
+
+	"icons": {
+		"128": "Something_Awful_logo.png"
+	},
+
+	"content_scripts": [
+		{
+			"matches": ["http://forums.somethingawful.com/", "http://forums.somethingawful.com/*"],
+			"run_at": "document_end",
+			"css": ["fancy.css"],
+			"js": ["lib/jquery.js", "fancy.js"]
+		},
+		{
+			"matches": ["http://forums.somethingawful.com/showthread.php?*", "http://forums.somethingawful.com/newreply.php?*", "http://forums.somethingawful.com/newreply.php"],
+			"run_at": "document_end",
+			"js": ["lib/maxResize.js", "tablebreak.js"]
+		}
+	]
+}

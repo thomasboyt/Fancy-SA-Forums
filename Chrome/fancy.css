@@ -1,0 +1,362 @@
+/*
+
+Fancy SA
+
+thanks whoever designed the frontpage! i hope you're okay with me co-opting your work for the forums - a volcano
+
+*/
+
+html {
+	height:100%;
+}
+
+body {
+	background-color: #262D35 !important;
+	height:100% !important;
+}
+
+#globalmenu {
+	/*position:absolute;*/
+	
+	width: 1000px !important;
+	height:24px !important;
+	
+	padding: 0 !important;
+	margin: 0 !important;
+	margin-left:-25px !important;
+	
+	background-color: #DDE1E4 !important;
+}
+
+#globalmenu ul {
+	font-size:10px !important;
+	text-align:left !important;
+	margin-left:10px !important;
+	padding-top:5px !important;
+}
+
+#globalmenu li {
+	padding: 0 4px 0 8px !important;
+	display: inline !important;
+	border-left: 1px #AAA solid !important;
+}
+#globalmenu li.first {
+	border: 0 !important;
+	padding-left: 0 !important;
+}
+
+#globalmenu a {
+	color: #ACAFB1 !important;
+}
+
+#globalmenu a:hover {
+	text-decoration:none !important;
+}
+
+#globalmenu .first a {
+	color: #069 !important;
+}
+
+#container {
+	background: white;
+	
+	width: 950px;
+	
+	margin: 0 auto !important;
+	
+	padding: 0 27px 15px 27px !important;
+	
+	border: 1px solid #000;
+	border-top: 0 !important;
+	
+	background: white url('http://i.somethingawful.com/core/redesign/gutter-bg.gif') repeat-y;
+	z-index: 10;
+	
+	min-height:100% !important;
+}
+
+
+
+#navigation {
+	font-size: 12px !important;
+
+	border-top: 0px;
+	height: 20px;
+}
+
+#navigation a, #navigation a:visited, #navigation a:hover {
+	color: #069;
+	text-decoration:underline;
+	font-weight:bold;
+}
+
+#nav_purchase {
+	display:none;
+}
+
+/*
+
+Forums Index
+
+*/
+
+#index {
+	margin-top:1em;
+}
+
+/* stupid extra logout link */
+#index .mainbodytextsmall {
+	display:none;
+}
+
+table#info {
+	display:none;
+}
+
+#forums th, #index table#pm th {
+	padding-top:5px;
+	padding-bottom:5px;
+	padding-left:10px;
+	padding-right:10px;
+	
+	margin-top:100px !important;
+	font-size:13px !important;
+}
+
+#forums td, #index table#pm td {
+	padding-top:3px !important;
+	padding-bottom:3px !important;
+	padding-left:10px !important;
+	padding-right:10px !important;	
+}
+
+#forums .moderators {
+	display:none !important;
+}
+
+#forums .forum {
+	font-size:13px !important;
+}
+#forums .subforums {
+	font-size:11px !important;
+}
+
+#index table#pm td {
+	font-size:12px !important;
+}
+
+/*
+
+Thread List
+
+*/
+
+#mods {
+	float:none !important;
+	text-align:left !important;
+}
+
+a[href="#top"] {
+	display:none !important;
+}
+
+#ad_banner_user {
+	margin-top:25px;
+}
+#ad_banner_user img {
+	border: 1px solid #000;
+}
+
+#forum td {
+	padding-left:10px !important;
+	padding-right:10px !important;
+	padding-top: 5px !important;
+	padding-bottom: 5px !important;
+	
+	vertical-align:middle;
+	/* height: 32px; */
+}
+
+form#ac_timemachine {
+	position:absolute;
+	float:left;
+	border: 0 !important;
+	background: #069 url('http://i.somethingawful.com/core/icon/fsilk/clock.png') no-repeat !important;
+	background-position: 3px 2px !important;
+}
+
+form#ac_timemachine.active {
+	background: #8F0035 url('http://i.somethingawful.com/core/icon/fsilk/clock_red.png') no-repeat !important;
+}
+
+.forumbar, .threadbar {
+	height:20px !important;
+	padding: 3px !important;
+}
+
+.forumbar.top {
+	margin-bottom: 0 !important;
+}
+
+.pages.bottom {
+	margin: 0 !important;
+}
+
+#forum .views, td.author, th.author, td.replies, th.replies {
+	display:none;
+}
+
+div.pages {
+	font-size:12px !important;
+}
+
+.curpage {
+	padding-right: 2px !important;
+}
+
+#content .subforum .title a, #content .subforum .title a:hover, #content .subforum .title a:visited {
+	color: #036 !important;
+	text-decoration:underline !important;
+}
+
+/* 
+
+Header 
+
+*/
+
+#header {
+	position:relative !important;
+	
+	background-image: url('http://i.somethingawful.com/core/header-bg-bluenoise.png');
+	background-repeat: repeat;
+	height: 107px;
+	background-color: #142C46;
+	background-position: 0 14px;
+	
+	left:-25px !important;
+	width: 1000px !important;
+	
+	padding: 0 !important;
+	
+	border-top: 2px #142C46 solid;
+	border-bottom: 2px #142C46 solid;
+}
+
+#header img {
+	position:absolute;
+	left:0;
+	top:3px !important;
+	
+	margin: 0;
+	border: 0;
+}
+
+/* stupid jumplist  */
+
+form[action="forumdisplay.php"] {
+	display:none;
+}
+
+/* two nav options dropped for 219.css's nav bar, which is kinda large */
+
+/* private messages unneeded - box on index.php takes care of that */
+#navigation li:nth-child(4) {
+	display:none;
+}
+
+/* posting gloryhole is pretty damn useless now */
+#navigation li:nth-child(7) {
+	display:none;
+}
+
+/* "bookmark this thread" link - now deprecated due to MARK icon */
+.subscribe {
+	display:none !important;
+}
+
+
+#rateform_js_attach img[src="http://fi.somethingawful.com/style/thread/rate/digg.gif"] {
+	display:none;
+}
+
+
+
+/* New page nav */
+
+.forumbar.top {
+	border-bottom: none !important;
+}
+
+.forumbar_pages, .threadbar_pages {
+	float:right !important;
+	color: #fff !important;
+	margin-top: 2px !important;
+}
+
+.pages {
+	color: #fff !important;
+}
+
+.pages a {
+	color: #fff !important;
+	border: none !important;
+	text-decoration:underline !important;
+}
+
+.pages a:hover {
+	color:#069 !important;
+	background-color:#fff !important;
+}
+
+.curpage {
+	color:#ccc !important;
+}
+
+.threadbar .postbuttons, .forumbar .postbuttons {
+	float:left !important;
+}
+.threadbar .postbuttons img, .forumbar .postbuttons img {
+	padding-top:0px !important;
+}
+
+.threadrate {
+	width: inherit !important;
+	font-size: 12px !important;
+	color: #000 !important;
+	position:relative !important;
+	top:30px !important;
+}
+.threadbar.bottom .postbuttons {
+	position:absolute !important;
+	text-align:left !important;
+}
+.threadbar.bottom {
+	margin-bottom: 35px !important;
+}
+
+/*#thread img {
+	max-width:100% !important;
+}*/
+
+/* Post/reply box */
+
+textarea {
+	font: 13px Verdana, Arial, sans-serif !important;
+}
+
+/* experiments on threadlist - move when done */
+
+#forum td.title a.pagenumber, #forum td.title {
+	font-size: 11px !important;
+}
+
+#forum td.title a.thread_title, #forum td.title a.thread_title:visited {
+	color: #036 !important;
+	font-size:13px !important;
+}
+
+#forum td.title a.thread_title:hover {
+	color: #c60 !important;
+}
+

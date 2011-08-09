@@ -1,0 +1,48 @@
+Tag behaviors:
+
+[url]
+	If no selection
+		Insert [url="address"]text[/url]
+		Select address
+	If selection
+		Insert [url="address"]selection.text[/url]
+		Select address
+		
+[img], [timg]
+	If no selection
+		Insert [img]image URL[/img]
+		Select image URL
+	If selection
+		Insert [img]selection.text[/img]
+		Caret at end of closing tag
+		
+[video]
+	If no selection
+		Insert [video]video URL here - YouTube, 
+		
+	
+[b], [i], [u], [super], [sub], [fixed], [spolier], [pre], [code], [php] (default case)
+	If no selection
+		Insert [tag][/tag]
+		Caret in between
+	If selection
+		Insert [tag]selection.text[/img]
+		Caret at end of closing tag
+
+[list=A], [list=1], [list]
+	If no selection
+		Insert [tag]\n[*][/tag]
+		Caret after [*]
+	If selection
+		Insert [tag]\n[*]selection.text\n[*][/tag]
+		Caret after second [*]
+		
+[*]
+	If no selection
+		Insert [*]
+		Caret after [*]
+	If selection
+		Insert [*]selection.text\n
+		Caret on newline
+
+[quote]
