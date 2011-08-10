@@ -43,6 +43,11 @@ $("table#forum.threadlist tbody tr").each(function(i, el) {
 	}
 	$(this).find(".title_pages").prepend("by" + author.html());
 	$(this).find(".pagenumber:first").after(" - " + replies.html() + "replies");
+
+    posticon = $(this).find("td.icon img");
+    posticon.after($(this).find("td.star img"));
+    posticon.after("<br />");
+    //$(this).find("td.star").css("display", "none");
 });
 
 
