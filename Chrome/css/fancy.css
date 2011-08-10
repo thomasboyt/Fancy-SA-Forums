@@ -347,3 +347,10 @@ textarea {
 	color: #c60 !important;
 }
 
+#thread dl.userinfo dt.author.role-mod {
+    background-image: url(data:image/gif;base64,R0lGODlhDQANAKUxACaMtSaNtyeOuCeQuieRvCiSvSiTvyiVwSqaxyqbyTKl0zSl0zWm1Den1Dmo1Dqo1T2q1j+q1kKs10St10at10eu2Emv2Euw2Eyw2VCy2VW02lq221u33F233Gi932q932y+32+/4HHA4HLB4XTC4XbC4XzF437G43/H5IHH5ITJ5YnL5ovM5pDO55LP55PP6JfR6P///////////////////////////////////////////////////////////yH5BAEKAD8ALAAAAAANAA0AAAZkwJ9wCDAMj0MD64A8AiwwDAApqApaLJdV8CM4LJTNSrXaTCyPgaCESqVMJ5MbVeISOKHRiEQahToEQwIgHh+GHiBcRxcdjY0YTRoZGZKUSAQPFQkCCBUPgUOYBgU/Bgafl6lCQQA7) !important;
+}
+
+#thread dl.userinfo dt.author.role-admin {
+    background-image: url(data:image/gif;base64,R0lGODlhDQANAKUgALQrK7UsLLcsLLksLLotLbwtLcQvL884OM86Os88PNA/P9FBQdFCQtJFRdJJSdNKStNMTNRRUdVUVNZXV9lmZtppadtsbNtubt1yct10dN53d996euB/f+CDg+GGhuKJif///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////yH5BAEKAAwALAAAAAANAA0AAAZdQIZwCCAMj0MCp4A8Ah4fCAAZqAY6HI81wBAoHo0JZ8OZNB6K6kXDxmQwbM2FK5hULHh8ZSIYBiiAgRRcRw8Th4cQTRIREYyOSF4OBgEGDgp9Q14EAwwEBJiRokJBADs=) !important;
+}
