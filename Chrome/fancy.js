@@ -1,5 +1,22 @@
-// Replace broken 219.css with updated version
-$("link[rel=stylesheet][href^='/css/219.css']").attr("href", chrome.extension.getURL("/")+"219.css");
+css = $("link[rel=stylesheet][href^='/css/219.css']");
+if (css.size() > 0) {
+    // Replace broken 219.css with updated version
+    $(css).attr("href", chrome.extension.getURL("/css/")+"219.css");
+}
+
+if (css.size() == 0) {
+css = $("link[rel=stylesheet][href^='/css/fyad.css']");
+if (css.size() > 0) {
+    //$(css).attr("href", chrome.extension.getURL("/css/")+"fyad.css");
+}
+}
+
+if (css.size() == 0) {
+css = $("link[rel=stylesheet][href^='/css/main.css']");
+if (css.size() > 0) {
+    $(css).append("<link rel='stylesheet' type='text/css' href='"+chrome.extension.getURL("/css/")+"default.css' />");
+}
+}
 
 // Wraps the search in a container for proper styling
 if (window.location.href.indexOf("search") != -1) {
