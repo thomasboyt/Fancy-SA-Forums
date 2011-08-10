@@ -37,6 +37,14 @@ $(".mainbodytextlarge:last, .online_users:last").wrapAll($("<div class ='breadcr
 // Add banner
 $("#globalmenu").insertBefore($("#container :first"));
 
+// Fix forum navbar
+$("ul#navigation").after("<div id='navbar_wrap'></div>");
+$("div#navbar_wrap").append($("ul#navigation"));
+$("ul#navigation li").each(function(i, el) {
+    link = $(this).find("a");
+    $(this).empty().append(link);
+});
+
 // Move the post author content
 $("table#forum.threadlist tbody tr").each(function(i, el) {
 	

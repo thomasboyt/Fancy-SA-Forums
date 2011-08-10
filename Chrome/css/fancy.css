@@ -77,21 +77,76 @@ body {
 
 
 
+/*
+
+Navigation Bar
+
+*/
+
 #navigation {
 	font-size: 12px !important;
 
 	border-top: 0px;
 	height: 20px;
+    margin: 0 0 1em 0 !important;
+    width: 100%;
+    border-bottom:1px #8eaac9 solid;
+    background:#e7eef5;
 }
 
-#navigation a, #navigation a:visited, #navigation a:hover {
-	color: #069;
-	text-decoration:underline;
+#navigation a, #navigation a:visited {
+    color: #465963;
+	text-decoration:none;
 	font-weight:bold;
+    font-family: Arial, Verdana, sans-serif;
+}
+
+#navigation a:hover {
+    background-color:#01385f;
+    color:#fff;
+    background-image:none;
+}
+
+#navbar_wrap {
+    display:block!important;
+    width:1000px;
+    height:31px;
+    position: relative;
+    left: -25px;
+    background-color:#fff;
+    background-image: url('http://i.somethingawful.com/core/navbar-gradient-bg.png');
+    background-repeat: repeat-x;
+    background-position: bottom;
+    border-top:1px #142c46 solid;
 }
 
 #nav_purchase {
 	display:none;
+}
+
+ul#navigation li {
+    background-color:#ebebeb;
+    font-weight:bold;
+    text-align:center;
+    height:20px;
+    min-width: 124px;
+    float:left;
+    border-left:1px #fff solid;
+    white-space:nowrap;
+}
+
+ul#navigation li.first {
+    border-left:0px;
+}
+
+ul#navigation li a {
+    display:block;
+    font-size: 12px;
+    height:17px;
+    padding-top:3px;
+    color:#465963;
+    text-decoration:none;
+    padding: 3px 5px 0px 5px;
 }
 
 /*
