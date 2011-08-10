@@ -334,7 +334,7 @@ textarea {
 
 /* experiments on threadlist - move when done */
 
-#forum td.title a.pagenumber, #forum td.title {
+#forum td.title a.pagenumber, a.author, a.replies, #forum td.title {
 	font-size: 11px !important;
 }
 

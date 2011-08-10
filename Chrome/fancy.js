@@ -39,10 +39,10 @@ $("#globalmenu").insertBefore($("#container :first"));
 $("table#forum.threadlist tbody tr").each(function(i, el) {
 	
 	author = $(this).find("td.author");
-	$(author).find("a").attr("class", "pagenumber");
+	$(author).find("a").attr("class", "author");
 	
 	replies = $(this).find("td.replies");
-	$(replies).find("a").attr("class", "pagenumber");
+	$(replies).find("a").attr("class", "replies");
 	
 	if ($(this).find(".title_pages")[0] == null) {
 		$(this).find("td.title").append("<div class='title_pages'>");
@@ -51,7 +51,7 @@ $("table#forum.threadlist tbody tr").each(function(i, el) {
 		$(this).find(".title_pages").prepend("<br />");
 	}
 	$(this).find(".title_pages").prepend("by " + author.html());
-	$(this).find(".pagenumber:first").after(" - " + replies.html() + " replies");
+	$(this).find(".author:first").after(" - " + replies.html() + " replies");
 
     // Merge columns into posticon field
     posticon = $(this).find("td.icon img");
