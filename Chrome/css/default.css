@@ -14,3 +14,7 @@ form#ac_timemachine.active {
 	background: #8F0035 url('http://i.somethingawful.com/core/icon/fsilk/clock_red.png') no-repeat !important;
 }
 
+div.pages {
+    background: #069 !important;
+    padding: 5px 0px 5px 0px;
+}
