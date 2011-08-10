@@ -68,18 +68,22 @@ $("table#forum.threadlist tbody tr").each(function(i, el) {
     if (icon2.size() > 0) {
         
         icon2_src = $(icon2).attr('src');
-        width="125px";
-        if (icon2_src == 'http://fi.somethingawful.com/ama.gif') {
+        if (icon2_src == 'http://fi.somethingawful.com/ama.gif')
             $(icon2).attr('src', chrome.extension.getURL("/images/asktell-ask.gif"));
-            width="100px";
-        } else if (icon2_src == 'http://fi.somethingawful.com/tma.gif') {
+        else if (icon2_src == 'http://fi.somethingawful.com/tma.gif')
             $(icon2).attr('src', chrome.extension.getURL("/images/asktell-tell.gif"));
-            width="100px";
-        }
+        else if (icon2_src == 'http://fi.somethingawful.com/forums/posticons/icon-37-selling.gif')
+            $(icon2).attr('src', chrome.extension.getURL("/images/samart-sell.gif"));
+        else if (icon2_src == 'http://fi.somethingawful.com/forums/posticons/icon-38-buying.gif')
+            $(icon2).attr('src', chrome.extension.getURL("/images/samart-buy.gif"));
+        else if (icon2_src == 'http://fi.somethingawful.com/forums/posticons/icon-46-trading.gif')
+            $(icon2).attr('src', chrome.extension.getURL("/images/samart-swap.gif"));
+        else if (icon2_src == 'http://fi.somethingawful.com/forums/posticons/icon-52-trading.gif')
+            $(icon2).attr('src', chrome.extension.getURL("/images/samart-bid.gif"));
 
         posticon.after(icon2);
         $(this).find("td.icon2").remove();
-        $(this).find("td.icon").css("width", width);
+        $(this).find("td.icon").css("width", "100px");
         $(icon2).css("margin-left", "1px");
     }
 });
@@ -87,7 +91,7 @@ $("table#forum.threadlist tbody tr").each(function(i, el) {
 // Remove headers from merged columns
 $("table#forum.threadlist thead tr th.star").remove();
 $("table#forum.threadlist thead tr th.icon2").remove();
-$("table#forum.threadlist thead tr th.icon").css("width", width);
+$("table#forum.threadlist thead tr th.icon").css("width", "100px");
 
 /* 
 
