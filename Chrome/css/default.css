@@ -14,8 +14,16 @@ form#ac_timemachine.active {
 	background: #8F0035 url('http://i.somethingawful.com/core/icon/fsilk/clock_red.png') no-repeat !important;
 }
 
-div.pages {
+/* Leper's colony page numbers */
+div.mqnav {
     background: #069 !important;
+    color: white !important;
+}
+
+/* Search results */
+div#mp_bar {
+    background: #069 !important;
+    color: white !important;
 }
 
 #forum td.title a.thread_title, #forum td.title a.thread_title:visited {
