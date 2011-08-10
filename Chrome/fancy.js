@@ -1,3 +1,6 @@
+// Replace broken 219.css with updated version
+$("link[rel=stylesheet][href^='/css/219.css']").attr("href", chrome.extension.getURL("/")+"219.css");
+
 // Wraps the search in a container for proper styling
 if (window.location.href.indexOf("search") != -1) {
 	$("#globalmenu, #nav_purchase, #navigation, .breadcrumbs, #content, #copyright").wrapAll("<div id='container'></div>");
