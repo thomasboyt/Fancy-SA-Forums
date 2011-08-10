@@ -121,7 +121,6 @@ ul#navigation li {
     font-weight:bold;
     text-align:center;
     height:20px;
-    min-width: 114px;
     float:left;
     white-space:nowrap;
 }
