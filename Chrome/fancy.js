@@ -46,7 +46,7 @@ $("table#forum.threadlist tbody tr").each(function(i, el) {
 
     posticon = $(this).find("td.icon img");
     star = $(this).find("td.star img");
-    star.css("margin-top", "3px");
+    star.css("margin-top", "5px");
     posticon.after(star);
     posticon.after("<br />");
 
