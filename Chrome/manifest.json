@@ -12,7 +12,7 @@
 		{
 			"matches": ["http://forums.somethingawful.com/", "http://forums.somethingawful.com/*"],
 			"run_at": "document_end",
-			"css": ["fancy.css"],
+			"css": ["css/fancy.css"],
 			"js": ["lib/jquery.js", "fancy.js"]
 		},
 		{

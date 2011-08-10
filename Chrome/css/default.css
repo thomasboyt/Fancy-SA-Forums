@@ -1,0 +1,23 @@
+.forumbar, .threadbar {
+	height:20px !important;
+}
+
+form#ac_timemachine {
+	position:absolute;
+	float:left;
+	border: 0 !important;
+	background: #069 url('http://i.somethingawful.com/core/icon/fsilk/clock.png') no-repeat !important;
+	background-position: 3px 2px !important;
+}
+
+form#ac_timemachine.active {
+	background: #8F0035 url('http://i.somethingawful.com/core/icon/fsilk/clock_red.png') no-repeat !important;
+}
+
+div.pages {
+    background: #069 !important;
+}
+
+#forum td.title a.thread_title, #forum td.title a.thread_title:visited {
+	color: #036 !important;
+}
