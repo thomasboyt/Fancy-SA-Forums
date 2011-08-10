@@ -59,6 +59,7 @@ $("table#forum.threadlist tbody tr").each(function(i, el) {
     // bookmark star
     star = $(this).find("td.star img");
     star.css("margin-top", "5px");
+    star.css("margin-left", "45px");
     posticon.after(star);
     posticon.after("<br />");
     $(this).find("td.star").remove();
