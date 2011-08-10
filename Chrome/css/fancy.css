@@ -357,3 +357,13 @@ textarea {
 #forum td.star, #forum td.icon2 {
     display: none;
 }
+
+/* Webkit Fixes */
+.postbody {
+    vertical-align: text-bottom !important;
+}
+
+#main_full tbody tr td.smalltext {
+    vertical-align: text-bottom !important;
+}
+
