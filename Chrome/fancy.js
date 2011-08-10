@@ -192,3 +192,6 @@ $("ul#usercpnav  li a[href$='action=editprofile']").empty().html("Profile");
 $("ul#usercpnav  li a[href$='action=editoptions']").empty().html("Options");
 $("ul#usercpnav  li a[href$='userlist=buddy']").empty().html("Buddy List");
 $("ul#usercpnav  li a[href$='userlist=ignore']").empty().html("Ignore List");
+
+// hide the bookmark explanation text
+$("form[name=bookmarks] div:first").css("display", "none");
