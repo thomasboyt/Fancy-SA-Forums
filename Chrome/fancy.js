@@ -186,3 +186,9 @@ $("div.forumbar.top div.forumbar_pages").before($("span#bookmark_edit_attach"));
 $("div.pages:first").appendTo($("div.forumbar.top div.forumbar_pages"));
 if ($("div.pages").size() > 1)
     $("div.pages:last").appendTo($("div.forumbar div.forumbar_pages div.pages.bottom"));
+
+$("ul#usercpnav  li a[href$='bookmarkthreads.php']").empty().html("Bookmarks");
+$("ul#usercpnav  li a[href$='action=editprofile']").empty().html("Profile");
+$("ul#usercpnav  li a[href$='action=editoptions']").empty().html("Options");
+$("ul#usercpnav  li a[href$='userlist=buddy']").empty().html("Buddy List");
+$("ul#usercpnav  li a[href$='userlist=ignore']").empty().html("Ignore List");

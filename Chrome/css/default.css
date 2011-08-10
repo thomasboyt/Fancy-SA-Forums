@@ -59,3 +59,6 @@ ul#navigation li {
     min-width: 119px;
 }
 
+#usercpnav li {
+    padding: 4px 1em 4px 1em !important;
+}
