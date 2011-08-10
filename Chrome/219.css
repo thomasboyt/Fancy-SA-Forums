@@ -1,3 +1,7 @@
+#header {
+    display: none;
+}
+
 body {
 	color:#57FF57 !important;
 	font: 11px 'Inconsolata', 'Monaco', 'Menlo', monospace !important;

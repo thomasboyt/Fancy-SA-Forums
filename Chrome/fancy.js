@@ -6,16 +6,8 @@ if (window.location.href.indexOf("search") != -1) {
 	$("#globalmenu, #nav_purchase, #navigation, .breadcrumbs, #content, #copyright").wrapAll("<div id='container'></div>");
 }
 
-// No banner in YOSPOS
-try {
-	if ($(".breadcrumbs").html().indexOf("YOSPOS") == -1) {
-		$("#container").prepend("<div id='header'><img id='logo_img_blugren' src='http://i.somethingawful.com/core/head-logo-bluegren.png' /></div>")
-	}
-}
-catch(e) {
-	//no breadcrumbs
-	$("#container").prepend("<div id='header'><img id='logo_img_bluegren' src='http://i.somethingawful.com/core/head-logo-bluegren.png' /></div>")
-}
+// Add frontpage style banner
+$("#container").prepend("<div id='header'><img id='logo_img_bluegren' src='http://i.somethingawful.com/core/head-logo-bluegren.png' /></div>")
 
 // Moves the archives box
 $(".forumbar").append($("#ac_timemachine"));
