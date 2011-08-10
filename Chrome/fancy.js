@@ -169,3 +169,8 @@ $(".timg").each(function(i) {
     }
 
 });
+
+// --- bookmarkthreads.php and usercp.php ---
+
+$("div.forumbar.top div.forumbar_pages").before($("span#bookmark_edit_attach"));
+$("div.pages:first").appendTo($("div.forumbar.top div.forumbar_pages"));

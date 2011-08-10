@@ -195,6 +195,7 @@ a[href="#top"] {
 
 div.pages {
 	font-size:12px !important;
+    margin: 0px 0px 0px 0px !important;
 }
 
 .curpage {
@@ -356,6 +357,12 @@ textarea {
 
 #forum td.star, #forum td.icon2 {
     display: none;
+}
+
+span#bookmark_edit_attach {
+    float: left !important;
+    margin: 0px 0px 0px 0px !important;
+    display: inline !important;
 }
 
 /* Webkit Fixes */
