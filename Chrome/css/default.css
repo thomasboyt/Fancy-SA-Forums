@@ -29,3 +29,21 @@ div#mp_bar {
 #forum td.title a.thread_title, #forum td.title a.thread_title:visited {
 	color: #036 !important;
 }
+
+#navbar_wrap {
+    background-color:#fff;
+    background-image: url('http://i.somethingawful.com/core/navbar-gradient-bg.png');
+    background-repeat: repeat-x;
+    background-position: bottom;
+}
+
+#navigation {
+    border-bottom:1px #8eaac9 solid;
+    background:#e7eef5;
+}
+ul#navigation li {
+    background-color:#ebebeb;
+    border-left:1px #fff solid;
+    min-width: 119px;
+}
+
