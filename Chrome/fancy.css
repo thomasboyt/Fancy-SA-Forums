@@ -190,7 +190,7 @@ form#ac_timemachine.active {
 }
 
 .forumbar, .threadbar {
-	height:20px !important;
+	height:28px !important;
 	padding: 3px !important;
 }
 
@@ -352,7 +352,7 @@ textarea {
 }
 
 #forum td.title a.thread_title, #forum td.title a.thread_title:visited {
-	color: #036 !important;
+	/*color: #036 !important;*/
 	font-size:13px !important;
 }
 
