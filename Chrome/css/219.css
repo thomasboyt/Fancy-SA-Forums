@@ -41,6 +41,9 @@ span.bbc-spoiler:hover, .bbc-spoiler-li:hover {
 div.threadbar, #subforums, #subforums td, #forum, #forum th, #forum td, #filter, div.forumbar, #thread table.post, #thread td, #forums, #forums th, #forums td, #pm, #pm th, #pm td, #info, #info th, #info td {
 	background-color: black;
 }
+.forumbar, .threadbar {
+	height:28px !important;
+}
 
 td.title div.lastseen {
 	background:none !important;
