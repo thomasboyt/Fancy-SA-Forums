@@ -45,11 +45,15 @@ $("table#forum.threadlist tbody tr").each(function(i, el) {
 	$(this).find(".pagenumber:first").after(" - " + replies.html() + " replies");
 
     posticon = $(this).find("td.icon img");
-    posticon.after($(this).find("td.star img"));
+    star = $(this).find("td.star img");
+    star.css("margin-top", "3px");
+    posticon.after(star);
     posticon.after("<br />");
-    //$(this).find("td.star").css("display", "none");
+
+    $(this).find("td.star").remove();
 });
 
+$("table#forum.threadlist thead tr th.star").remove();
 
 /* 
 
