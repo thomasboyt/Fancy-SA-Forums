@@ -53,16 +53,41 @@ $("table#forum.threadlist tbody tr").each(function(i, el) {
 	$(this).find(".title_pages").prepend("by " + author.html());
 	$(this).find(".pagenumber:first").after(" - " + replies.html() + " replies");
 
+    // Merge columns into posticon field
     posticon = $(this).find("td.icon img");
+
+    // bookmark star
     star = $(this).find("td.star img");
     star.css("margin-top", "5px");
     posticon.after(star);
     posticon.after("<br />");
-
     $(this).find("td.star").remove();
+
+    // Ask/tell and SA-Mart icons
+    icon2 = $(this).find("td.icon2 img");
+    if (icon2.size() > 0) {
+        
+        icon2_src = $(icon2).attr('src');
+        width="125px";
+        if (icon2_src == 'http://fi.somethingawful.com/ama.gif') {
+            $(icon2).attr('src', chrome.extension.getURL("/images/asktell-ask.gif"));
+            width="100px";
+        } else if (icon2_src == 'http://fi.somethingawful.com/tma.gif') {
+            $(icon2).attr('src', chrome.extension.getURL("/images/asktell-tell.gif"));
+            width="100px";
+        }
+
+        posticon.after(icon2);
+        $(this).find("td.icon2").remove();
+        $(this).find("td.icon").css("width", width);
+        $(icon2).css("margin-left", "1px");
+    }
 });
 
+// Remove headers from merged columns
 $("table#forum.threadlist thead tr th.star").remove();
+$("table#forum.threadlist thead tr th.icon2").remove();
+$("table#forum.threadlist thead tr th.icon").css("width", width);
 
 /* 
 
