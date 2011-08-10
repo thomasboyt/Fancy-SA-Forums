@@ -24,6 +24,18 @@ div.mqnav {
 div#mp_bar {
     background: #069 !important;
     color: white !important;
+    height: 22px;
+}
+
+div#mods {
+    background: #069 !important;
+    color: white !important;
+    float: left !important;
+    padding: 0.5em 0 0.5em 0;
+}
+div#mods a {
+    background: #069 !important;
+    color: white !important;
 }
 
 #forum td.title a.thread_title, #forum td.title a.thread_title:visited {
