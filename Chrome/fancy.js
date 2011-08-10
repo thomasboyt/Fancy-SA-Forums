@@ -195,3 +195,12 @@ $("ul#usercpnav  li a[href$='userlist=ignore']").empty().html("Ignore List");
 
 // hide the bookmark explanation text
 $("form[name=bookmarks] div:first").css("display", "none");
+
+
+// --- Reply Page ---
+$("form[action=newreply.php] div#thread").css({'overflow':'scroll','height':'500px'});
+$("form[action=newreply.php] div#thread table.post").each(function(i, el) {
+    $(this).find("tr:eq(1)").css("display", "none");
+    $(this).find("dd.title").css("display", "none");
+    $(this).find("dd.registered").css("display", "none");
+});
