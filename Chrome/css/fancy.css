@@ -339,7 +339,6 @@ textarea {
 }
 
 #forum td.title a.thread_title, #forum td.title a.thread_title:visited {
-	/*color: #036 !important;*/
 	font-size:13px !important;
 }
 
