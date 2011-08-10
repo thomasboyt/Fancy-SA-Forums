@@ -39,10 +39,10 @@ $("#globalmenu").insertBefore($("#container :first"));
 $("table#forum.threadlist tbody tr").each(function(i, el) {
 	
 	author = $(this).find("td.author");
-	$(author).find("a").attr("class", "pagenumber");
+	$(author).find("a").attr("class", "author");
 	
 	replies = $(this).find("td.replies");
-	$(replies).find("a").attr("class", "pagenumber");
+	$(replies).find("a").attr("class", "replies");
 	
 	if ($(this).find(".title_pages")[0] == null) {
 		$(this).find("td.title").append("<div class='title_pages'>");
@@ -51,7 +51,7 @@ $("table#forum.threadlist tbody tr").each(function(i, el) {
 		$(this).find(".title_pages").prepend("<br />");
 	}
 	$(this).find(".title_pages").prepend("by " + author.html());
-	$(this).find(".pagenumber:first").after(" - " + replies.html() + " replies");
+	$(this).find(".author:first").after(" - " + replies.html() + " replies");
 
     // Merge columns into posticon field
     posticon = $(this).find("td.icon img");
@@ -139,3 +139,33 @@ $(".threadbar_pages:last").append($(".pages.bottom"));
 /*$(".threadbar .threadrate").before($(".threadbar.bottom .postbuttons"))
 
 $(".threadrate b").html("Rate: ");*/
+
+
+/* Webkit timg fixes */
+function toggleTimg(e) {
+    var old_width = $(this).attr('old_width');
+
+    if ( old_width !== undefined ) {
+        $(this).attr('width', old_width);
+        $(this).removeAttr('old_width');
+    } else {
+        $(this).attr('old_width', $(this).attr('width'));
+        $(this).removeAttr('width');
+    }
+}
+
+$(".timg").css("border", "2px solid #2D9F09");
+
+$(".timg").each(function(i) {
+    if ($(this).parent('a').length > 0) {
+        if ($(this).parent('a').attr('href') == $(this).attr('src')) {
+            $(this).unwrap();
+            $(this).click(toggleTimg);
+        }
+    }
+    else {
+        console.log("timg'd");
+        $(this).click(toggleTimg);
+    }
+
+});

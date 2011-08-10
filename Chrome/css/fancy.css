@@ -334,7 +334,7 @@ textarea {
 
 /* experiments on threadlist - move when done */
 
-#forum td.title a.pagenumber, #forum td.title {
+#forum td.title a.pagenumber, a.author, a.replies, #forum td.title {
 	font-size: 11px !important;
 }
 
@@ -357,3 +357,13 @@ textarea {
 #forum td.star, #forum td.icon2 {
     display: none;
 }
+
+/* Webkit Fixes */
+.postbody {
+    vertical-align: text-bottom !important;
+}
+
+#main_full tbody tr td.smalltext {
+    vertical-align: text-bottom !important;
+}
+
