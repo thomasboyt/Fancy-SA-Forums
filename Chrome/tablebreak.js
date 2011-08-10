@@ -16,6 +16,7 @@ $(".postbody img.img, .attachment img").one('load', function() {
 		$(img).attr('original-width', $(img).width());
 		$(img).attr('original-height', $(img).height());
 		
+		//$(img).css('max-width', '100% !important');
 	}, 0);
 }).each(function() {
 	if(this.complete) $(this).load();
