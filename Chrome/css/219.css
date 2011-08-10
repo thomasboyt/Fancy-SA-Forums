@@ -101,10 +101,19 @@ div.breadcrumbs, #subforums td.title dt, #forum td.lastpost a.author, div.thread
 	font-size: 11px !important;
 }
 
-/* #WONTFIX. I guess a case could be made for the archives box but ugh */
-#filter, #ac_timemachine {
-	display:none !important;
+form#ac_timemachine {
+	position:absolute;
+	float:left;
+	border: 0 !important;
+	background: #000 url('http://i.somethingawful.com/core/icon/fsilk/clock.png') no-repeat !important;
+	background-position: 3px 2px !important;
+    width: 425px !important;
 }
+
+form#ac_timemachine.active {
+	background: #8F0035 url('http://i.somethingawful.com/core/icon/fsilk/clock_red.png') no-repeat !important;
+}
+
 #forum th, div.threadbar, div.forumbar, #forums th, #pm th, #info th {
 	background:black !important;
 }
