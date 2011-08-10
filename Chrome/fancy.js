@@ -27,6 +27,8 @@ if (window.location.href.indexOf("search") != -1) {
 $("#container").prepend("<div id='header'><img id='logo_img_bluegren' src='http://i.somethingawful.com/core/head-logo-bluegren.png' /></div>")
 
 // Moves the archives box
+if ($(".forumbar").size() == 0)
+    $("table#subforums").after("<div class='forumbar'></div>");
 $(".forumbar").append($("#ac_timemachine"));
 
 // Properly styles the bottom breadcrumbs tag
