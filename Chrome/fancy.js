@@ -41,8 +41,8 @@ $("table#forum.threadlist tbody tr").each(function(i, el) {
 	else {
 		$(this).find(".title_pages").prepend("<br />");
 	}
-	$(this).find(".title_pages").prepend("by" + author.html());
-	$(this).find(".pagenumber:first").after(" - " + replies.html() + "replies");
+	$(this).find(".title_pages").prepend("by " + author.html());
+	$(this).find(".pagenumber:first").after(" - " + replies.html() + " replies");
 
     posticon = $(this).find("td.icon img");
     posticon.after($(this).find("td.star img"));
