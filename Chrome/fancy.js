@@ -184,3 +184,4 @@ $(".timg").each(function(i) {
 
 $("div.forumbar.top div.forumbar_pages").before($("span#bookmark_edit_attach"));
 $("div.pages:first").appendTo($("div.forumbar.top div.forumbar_pages"));
+$("div.pages:last").appendTo($("div.forumbar div.forumbar_pages div.pages.bottom"));
