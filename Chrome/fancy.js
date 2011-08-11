@@ -146,7 +146,8 @@ $(".threadbar.bottom .clear").before("<div class = 'threadbar_pages' />");
 $(".threadbar_pages:last").append($(".pages.bottom"));
 
 // Hide the new thread button from instead a thread
-$("ul.postbuttons li a[href^='newthread.php']").parent().css("display","none");
+if (window.location.pathname == "/showthread.php")
+    $("ul.postbuttons li a[href^='newthread.php']").parent().css("display","none");
 
 
 /*$(".threadbar .threadrate").before($(".threadbar.bottom .postbuttons"))
