@@ -16,7 +16,7 @@ if (css.size() == 0) {
 }
 
 // Wraps the search in a container for proper styling
-if (window.location.href.indexOf("search") != -1) {
+if (window.location.pathname.indexOf("search") != -1) {
 	$("#globalmenu, #nav_purchase, #navigation, .breadcrumbs, #content, #copyright").wrapAll("<div id='container'></div>");
 }
 
