@@ -12,10 +12,7 @@ if (css.size() > 0) {
 }
 
 if (css.size() == 0) {
-css = $("link[rel=stylesheet][href^='/css/main.css']");
-if (css.size() > 0) {
-    $(css).append("<link rel='stylesheet' type='text/css' href='"+chrome.extension.getURL("/css/default.css")+"' />");
-}
+    $("head").append("<link rel='stylesheet' type='text/css' href='"+chrome.extension.getURL("/css/default.css")+"' />");
 }
 
 // Wraps the search in a container for proper styling
