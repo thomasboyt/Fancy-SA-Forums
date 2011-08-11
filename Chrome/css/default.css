@@ -1,3 +1,8 @@
+#container {
+	background: white;
+	background: white url('http://i.somethingawful.com/core/redesign/gutter-bg.gif') repeat-y;
+}
+
 .forumbar, .threadbar {
 	height:20px !important;
 }
@@ -58,6 +63,17 @@ ul#navigation li {
     border-left:1px #fff solid;
     min-width: 119px;
 }
+ul#navigation li a {
+    color:#465963;
+}
+#navigation a, #navigation a:visited {
+    color: #465963;
+}
+#navigation a:hover {
+    background-color:#01385f;
+    color:#fff;
+}
+
 
 #usercpnav li {
     padding: 4px 16px 4px 16px !important;

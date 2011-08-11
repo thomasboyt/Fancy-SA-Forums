@@ -7,7 +7,7 @@ if (css.size() > 0) {
 if (css.size() == 0) {
 css = $("link[rel=stylesheet][href^='/css/fyad.css']");
 if (css.size() > 0) {
-    //$(css).attr("href", chrome.extension.getURL("/css/fyad.css"));
+    $(css).append("<link rel='stylesheet' type='text/css' href='"+chrome.extension.getURL("/css/fyad.css")+"' />");
 }
 }
 

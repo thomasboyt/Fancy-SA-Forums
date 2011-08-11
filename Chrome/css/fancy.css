@@ -58,8 +58,6 @@ body {
 }
 
 #container {
-	background: white;
-	
 	width: 950px;
 	
 	margin: 0 auto !important;
@@ -69,7 +67,6 @@ body {
 	border: 1px solid #000;
 	border-top: 0 !important;
 	
-	background: white url('http://i.somethingawful.com/core/redesign/gutter-bg.gif') repeat-y;
 	z-index: 10;
 	
 	min-height:100% !important;
@@ -92,15 +89,11 @@ Navigation Bar
 }
 
 #navigation a, #navigation a:visited {
-    color: #465963;
 	text-decoration:none;
 	font-weight:bold;
     /*font-family: Arial, Verdana, sans-serif;*/
 }
-
 #navigation a:hover {
-    background-color:#01385f;
-    color:#fff;
     background-image:none;
 }
 
@@ -134,7 +127,6 @@ ul#navigation li a {
     font-size: 12px;
     height:17px;
     padding-top:3px;
-    color:#465963;
     text-decoration:none;
     padding: 3px 5px 0px 5px;
 }
