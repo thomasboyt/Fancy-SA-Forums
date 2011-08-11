@@ -58,8 +58,6 @@ body {
 }
 
 #container {
-	background: white;
-	
 	width: 950px;
 	
 	margin: 0 auto !important;
@@ -69,7 +67,6 @@ body {
 	border: 1px solid #000;
 	border-top: 0 !important;
 	
-	background: white url('http://i.somethingawful.com/core/redesign/gutter-bg.gif') repeat-y;
 	z-index: 10;
 	
 	min-height:100% !important;
@@ -77,21 +74,61 @@ body {
 
 
 
+/*
+
+Navigation Bar
+
+*/
+
 #navigation {
 	font-size: 12px !important;
-
 	border-top: 0px;
 	height: 20px;
+    margin: 0 0 1em 0 !important;
+    width: 100%;
 }
 
-#navigation a, #navigation a:visited, #navigation a:hover {
-	color: #069;
-	text-decoration:underline;
+#navigation a, #navigation a:visited {
+	text-decoration:none;
 	font-weight:bold;
+    /*font-family: Arial, Verdana, sans-serif;*/
+}
+#navigation a:hover {
+    background-image:none;
+}
+
+#navbar_wrap {
+    display:block!important;
+    width:1000px;
+    height:31px;
+    position: relative;
+    left: -25px;
+    border-top:1px #142c46 solid;
 }
 
 #nav_purchase {
 	display:none;
+}
+
+ul#navigation li {
+    font-weight:bold;
+    text-align:center;
+    height:20px;
+    float:left;
+    white-space:nowrap;
+}
+
+ul#navigation li.first {
+    border-left:0px;
+}
+
+ul#navigation li a {
+    display:block;
+    font-size: 12px;
+    height:17px;
+    padding-top:3px;
+    text-decoration:none;
+    padding: 3px 5px 0px 5px;
 }
 
 /*
@@ -195,6 +232,7 @@ a[href="#top"] {
 
 div.pages {
 	font-size:12px !important;
+    margin: 0px 0px 0px 0px !important;
 }
 
 .curpage {
@@ -271,8 +309,9 @@ form[action="forumdisplay.php"] {
 
 /* New page nav */
 
-.forumbar.top {
+.forumbar.top, .threadbar.top {
 	border-bottom: none !important;
+    height: 20px;
 }
 
 .forumbar_pages, .threadbar_pages {
@@ -356,6 +395,12 @@ textarea {
 
 #forum td.star, #forum td.icon2 {
     display: none;
+}
+
+span#bookmark_edit_attach {
+    float: left !important;
+    margin: 0px 0px 0px 0px !important;
+    display: inline !important;
 }
 
 /* Webkit Fixes */

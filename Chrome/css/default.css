@@ -1,3 +1,8 @@
+#container {
+	background: white;
+	background: white url('http://i.somethingawful.com/core/redesign/gutter-bg.gif') repeat-y;
+}
+
 .forumbar, .threadbar {
 	height:20px !important;
 }
@@ -14,10 +19,63 @@ form#ac_timemachine.active {
 	background: #8F0035 url('http://i.somethingawful.com/core/icon/fsilk/clock_red.png') no-repeat !important;
 }
 
-div.pages {
+/* Leper's colony page numbers */
+div.mqnav {
     background: #069 !important;
+    color: white !important;
+}
+
+/* Search results */
+div#mp_bar {
+    background: #069 !important;
+    color: white !important;
+    height: 22px;
+}
+
+div#mods {
+    background: #069 !important;
+    color: white !important;
+    float: left !important;
+    padding: 0.5em 0 0.5em 0;
+}
+div#mods a {
+    background: #069 !important;
+    color: white !important;
 }
 
 #forum td.title a.thread_title, #forum td.title a.thread_title:visited {
 	color: #036 !important;
+}
+
+#navbar_wrap {
+    background-color:#fff;
+    background-image: url('http://i.somethingawful.com/core/navbar-gradient-bg.png');
+    background-repeat: repeat-x;
+    background-position: bottom;
+}
+
+#navigation {
+    border-bottom:1px #8eaac9 solid;
+    background:#e7eef5;
+}
+ul#navigation li {
+    background-color:#ebebeb;
+    border-left:1px #fff solid;
+    min-width: 119px;
+}
+ul#navigation li a {
+    color:#465963;
+}
+#navigation a, #navigation a:visited {
+    color: #465963;
+}
+#navigation a:hover {
+    background-color:#01385f;
+    color:#fff;
+}
+
+
+#usercpnav li {
+    padding: 4px 16px 4px 16px !important;
+    margin-bottom: 2em;
 }
