@@ -5,7 +5,7 @@
 body {
 	color:#57FF57 !important;
 	font: 11px 'Inconsolata', 'Monaco', 'Menlo', monospace !important;
-	background-color:black;
+	background-color:black !important;
 }
 
 a {
@@ -17,7 +17,7 @@ div.pages a, div.pages .curpage {
 }
 
 #container {
-	background-color:black;
+	background:black !important;
 }
 
 span.bbc-spoiler, .bbc-spoiler-li {
@@ -186,6 +186,10 @@ div.pages a {
 }
 div.breadcrumbs h1, input, #forum td.title a {
 	font-size:12px !important;
+}
+
+dl.userinfo {
+	min-width: 14em !important;
 }
 
 /* New thread/reply & edit post */
