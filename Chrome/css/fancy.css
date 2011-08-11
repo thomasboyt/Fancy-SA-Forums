@@ -317,8 +317,9 @@ form[action="forumdisplay.php"] {
 
 /* New page nav */
 
-.forumbar.top {
+.forumbar.top, .threadbar.top {
 	border-bottom: none !important;
+    height: 20px;
 }
 
 .forumbar_pages, .threadbar_pages {
