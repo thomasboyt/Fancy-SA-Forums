@@ -7,19 +7,16 @@ if (css.size() > 0) {
 if (css.size() == 0) {
 css = $("link[rel=stylesheet][href^='/css/fyad.css']");
 if (css.size() > 0) {
-    //$(css).attr("href", chrome.extension.getURL("/css/fyad.css"));
+    $(css).append("<link rel='stylesheet' type='text/css' href='"+chrome.extension.getURL("/css/fyad.css")+"' />");
 }
 }
 
 if (css.size() == 0) {
-css = $("link[rel=stylesheet][href^='/css/main.css']");
-if (css.size() > 0) {
-    $(css).append("<link rel='stylesheet' type='text/css' href='"+chrome.extension.getURL("/css/default.css")+"' />");
-}
+    $("head").append("<link rel='stylesheet' type='text/css' href='"+chrome.extension.getURL("/css/default.css")+"' />");
 }
 
 // Wraps the search in a container for proper styling
-if (window.location.href.indexOf("search") != -1) {
+if (window.location.pathname.indexOf("search") != -1) {
 	$("#globalmenu, #nav_purchase, #navigation, .breadcrumbs, #content, #copyright").wrapAll("<div id='container'></div>");
 }
 
@@ -27,6 +24,8 @@ if (window.location.href.indexOf("search") != -1) {
 $("#container").prepend("<div id='header'><img id='logo_img_bluegren' src='http://i.somethingawful.com/core/head-logo-bluegren.png' /></div>")
 
 // Moves the archives box
+if ($(".forumbar").size() == 0)
+    $("table#subforums").after("<div class='forumbar'></div>");
 $(".forumbar").append($("#ac_timemachine"));
 
 // Properly styles the bottom breadcrumbs tag
@@ -34,6 +33,14 @@ $(".mainbodytextlarge:last, .online_users:last").wrapAll($("<div class ='breadcr
 
 // Add banner
 $("#globalmenu").insertBefore($("#container :first"));
+
+// Fix forum navbar
+$("ul#navigation").after("<div id='navbar_wrap'></div>");
+$("div#navbar_wrap").append($("ul#navigation"));
+$("ul#navigation li").each(function(i, el) {
+    link = $(this).find("a");
+    $(this).empty().append(link);
+});
 
 // Move the post author content
 $("table#forum.threadlist tbody tr").each(function(i, el) {
@@ -135,6 +142,10 @@ $(".threadbar_pages").append($(".pages.top"));
 $(".threadbar.bottom .clear").before("<div class = 'threadbar_pages' />");
 $(".threadbar_pages:last").append($(".pages.bottom"));
 
+// Hide the new thread button from instead a thread
+if (window.location.pathname == "/showthread.php")
+    $("ul.postbuttons li a[href^='newthread.php']").parent().css("display","none");
+
 
 /*$(".threadbar .threadrate").before($(".threadbar.bottom .postbuttons"))
 
@@ -168,4 +179,29 @@ $(".timg").each(function(i) {
         $(this).click(toggleTimg);
     }
 
+});
+
+// --- bookmarkthreads.php and usercp.php ---
+
+$("div.forumbar.top div.forumbar_pages").before($("span#bookmark_edit_attach"));
+$("div.pages:first").appendTo($("div.forumbar.top div.forumbar_pages"));
+if ($("div.pages").size() > 1)
+    $("div.pages:last").appendTo($("div.forumbar div.forumbar_pages div.pages.bottom"));
+
+$("ul#usercpnav  li a[href$='bookmarkthreads.php']").empty().html("Bookmarks");
+$("ul#usercpnav  li a[href$='action=editprofile']").empty().html("Profile");
+$("ul#usercpnav  li a[href$='action=editoptions']").empty().html("Options");
+$("ul#usercpnav  li a[href$='userlist=buddy']").empty().html("Buddy List");
+$("ul#usercpnav  li a[href$='userlist=ignore']").empty().html("Ignore List");
+
+// hide the bookmark explanation text
+$("form[name=bookmarks] div:first").css("display", "none");
+
+
+// --- Reply Page ---
+$("form[action=newreply.php] div#thread").css({'overflow':'scroll','height':'500px'});
+$("form[action=newreply.php] div#thread table.post").each(function(i, el) {
+    $(this).find("tr:eq(1)").css("display", "none");
+    $(this).find("dd.title").css("display", "none");
+    $(this).find("dd.registered").css("display", "none");
 });
