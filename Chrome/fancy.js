@@ -119,32 +119,35 @@ New page nav
 
 // --- forumdisplay.php ---
 
-// top
-$("#forum").before("<div class = 'forumbar top' />");
-$(".forumbar.top").append("<div class = 'forumbar_pages' />");
-$(".forumbar_pages").append($("#mp_bar .pages"));
+if (window.location.pathname == "/forumdisplay.php") {
+    // top
+    $("#forum").before("<div class = 'forumbar top' />");
+    $(".forumbar.top").append("<div class = 'forumbar_pages' />");
+    $(".forumbar_pages").append($("#mp_bar .pages"));
 
-// bottom
-$(".forumbar:last").append("<div class = 'forumbar_pages' />");
-$(".forumbar_pages:last").append($('.pages.bottom'));
+    // bottom
+    $(".forumbar:last").append("<div class = 'forumbar_pages' />");
+    $(".forumbar_pages:last").append($('.pages.bottom'));
 
-// post button
-$(".forumbar.top").append($(".postbuttons"))
+    // post button
+    $(".forumbar.top").append($(".postbuttons"))
+}
 
 
 // --- showthread.php ---
 
-// top
-$(".threadbar.top").append("<div class = 'threadbar_pages' />");
-$(".threadbar_pages").append($(".pages.top"));
+if (window.location.pathname == "/showthread.php") {
+    // top
+    $(".threadbar.top").append("<div class = 'threadbar_pages' />");
+    $(".threadbar_pages").append($(".pages.top"));
 
-// bottom
-$(".threadbar.bottom .clear").before("<div class = 'threadbar_pages' />");
-$(".threadbar_pages:last").append($(".pages.bottom"));
+    // bottom
+    $(".threadbar.bottom .clear").before("<div class = 'threadbar_pages' />");
+    $(".threadbar_pages:last").append($(".pages.bottom"));
 
-// Hide the new thread button from instead a thread
-if (window.location.pathname == "/showthread.php")
+    // Hide the new thread button from instead a thread
     $("ul.postbuttons li a[href^='newthread.php']").parent().css("display","none");
+}
 
 
 /*$(".threadbar .threadrate").before($(".threadbar.bottom .postbuttons"))
@@ -183,19 +186,34 @@ $(".timg").each(function(i) {
 
 // --- bookmarkthreads.php and usercp.php ---
 
-$("div.forumbar.top div.forumbar_pages").before($("span#bookmark_edit_attach"));
-$("div.pages:first").appendTo($("div.forumbar.top div.forumbar_pages"));
-if ($("div.pages").size() > 1)
-    $("div.pages:last").appendTo($("div.forumbar div.forumbar_pages div.pages.bottom"));
 
-$("ul#usercpnav  li a[href$='bookmarkthreads.php']").empty().html("Bookmarks");
-$("ul#usercpnav  li a[href$='action=editprofile']").empty().html("Profile");
-$("ul#usercpnav  li a[href$='action=editoptions']").empty().html("Options");
-$("ul#usercpnav  li a[href$='userlist=buddy']").empty().html("Buddy List");
-$("ul#usercpnav  li a[href$='userlist=ignore']").empty().html("Ignore List");
+if (window.location.pathname == "/usercp.php" || window.location.pathname == "/bookmarkthreads.php") {
+    // top
+    $("#forum").before("<div class = 'forumbar top' />");
+    $(".forumbar.top").append("<div class = 'forumbar_pages' />");
+    $(".forumbar_pages").append($("#mp_bar .pages"));
 
-// hide the bookmark explanation text
-$("form[name=bookmarks] div:first").css("display", "none");
+    // bottom
+    $(".forumbar:last").append("<div class = 'forumbar_pages' />");
+    $(".forumbar_pages:last").append($('.pages.bottom'));
+
+    // post button
+    $(".forumbar.top").append($(".postbuttons"))
+
+    $("div.forumbar.top div.forumbar_pages").before($("span#bookmark_edit_attach"));
+    $("div.pages:first").appendTo($("div.forumbar.top div.forumbar_pages"));
+    if ($("div.pages").size() > 1)
+        $("div.pages:last").appendTo($("div.forumbar div.forumbar_pages div.pages.bottom"));
+
+    $("ul#usercpnav  li a[href$='bookmarkthreads.php']").empty().html("Bookmarks");
+    $("ul#usercpnav  li a[href$='action=editprofile']").empty().html("Profile");
+    $("ul#usercpnav  li a[href$='action=editoptions']").empty().html("Options");
+    $("ul#usercpnav  li a[href$='userlist=buddy']").empty().html("Buddy List");
+    $("ul#usercpnav  li a[href$='userlist=ignore']").empty().html("Ignore List");
+
+    // hide the bookmark explanation text
+    $("form[name=bookmarks] div:first").css("display", "none");
+}
 
 
 // --- Reply Page ---
