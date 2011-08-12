@@ -52,6 +52,10 @@ td.title div.lastseen {
 #forum td.title div.lastseen a.x {
 	background:none !important;
 }
+#forum td.title a.thread_title, #forum td.title a.thread_title:visited {
+	font-size:13px !important;
+}
+
 div.breadcrumbs a.bclast {
 	border-bottom:none !important;
 	text-decoration:underline !important;

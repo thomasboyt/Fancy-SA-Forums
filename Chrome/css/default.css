@@ -73,6 +73,9 @@ ul#navigation li a {
     background-color:#01385f;
     color:#fff;
 }
+#navigation #logout, #navigation #login {
+    background-color:#E6DCBE;
+}
 
 
 #usercpnav li {

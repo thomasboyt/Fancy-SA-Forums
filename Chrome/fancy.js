@@ -39,6 +39,12 @@ $("ul#navigation").after("<div id='navbar_wrap'></div>");
 $("div#navbar_wrap").append($("ul#navigation"));
 $("ul#navigation li").each(function(i, el) {
     link = $(this).find("a");
+    if ($(link).attr('href').substr(1, 25) == 'account.php?action=logout')
+        $(link).attr('id', 'logout');
+    else if ($(link).attr('href').substr(1, 24) == 'account.php?action=login') {
+        $(link).attr('id', 'logout');
+        $(link).html('Log In');
+    }
     $(this).empty().append(link);
 });
 
@@ -205,11 +211,11 @@ if (window.location.pathname == "/usercp.php" || window.location.pathname == "/b
     if ($("div.pages").size() > 1)
         $("div.pages:last").appendTo($("div.forumbar div.forumbar_pages div.pages.bottom"));
 
-    $("ul#usercpnav  li a[href$='bookmarkthreads.php']").empty().html("Bookmarks");
-    $("ul#usercpnav  li a[href$='action=editprofile']").empty().html("Profile");
-    $("ul#usercpnav  li a[href$='action=editoptions']").empty().html("Options");
-    $("ul#usercpnav  li a[href$='userlist=buddy']").empty().html("Buddy List");
-    $("ul#usercpnav  li a[href$='userlist=ignore']").empty().html("Ignore List");
+    $("ul#usercpnav  li a[href$='bookmarkthreads.php']").html("Bookmarks");
+    $("ul#usercpnav  li a[href$='action=editprofile']").html("Profile");
+    $("ul#usercpnav  li a[href$='action=editoptions']").html("Options");
+    $("ul#usercpnav  li a[href$='userlist=buddy']").html("Buddy List");
+    $("ul#usercpnav  li a[href$='userlist=ignore']").html("Ignore List");
 
     // hide the bookmark explanation text
     $("form[name=bookmarks] div:first").css("display", "none");
