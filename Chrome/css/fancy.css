@@ -92,6 +92,7 @@ Navigation Bar
 	text-decoration:none;
 	font-weight:bold;
     /*font-family: Arial, Verdana, sans-serif;*/
+    padding: 3px 19px 0px 19px;
 }
 #navigation a:hover {
     background-image:none;
@@ -126,9 +127,7 @@ ul#navigation li a {
     display:block;
     font-size: 12px;
     height:17px;
-    padding-top:3px;
     text-decoration:none;
-    padding: 3px 5px 0px 5px;
 }
 
 /*

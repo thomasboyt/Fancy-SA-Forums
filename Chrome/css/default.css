@@ -61,7 +61,6 @@ div#mods a {
 ul#navigation li {
     background-color:#ebebeb;
     border-left:1px #fff solid;
-    min-width: 119px;
 }
 ul#navigation li a {
     color:#465963;

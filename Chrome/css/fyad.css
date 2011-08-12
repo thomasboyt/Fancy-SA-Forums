@@ -9,16 +9,11 @@
 ul#navigation li {
     background-color:#F39;
     border-left:1px #C1C1C1 solid;
-    min-width: 114px;
-}
-ul#navigation li a {
-    color:white;
 }
 #navigation a, #navigation a:visited {
     color: white;
 	text-decoration:none;
 	font-weight:bold;
-    /*font-family: Arial, Verdana, sans-serif;*/
 }
 
 #navigation a:hover {

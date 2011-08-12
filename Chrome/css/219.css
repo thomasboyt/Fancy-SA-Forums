@@ -471,5 +471,7 @@ dd.title img[src="http://fi.somethingawful.com/customtitles/tek9s-2.png"] {
 ul#navigation li {
     background-color:#000000;
     border-left:1px #57FF57 solid;
-    min-width: 114px;
+}
+#navigation a {
+    padding: 3px 15px 0px 15px;
 }
