@@ -211,15 +211,15 @@ if (window.location.pathname == "/usercp.php" || window.location.pathname == "/b
     if ($("div.pages").size() > 1)
         $("div.pages:last").appendTo($("div.forumbar div.forumbar_pages div.pages.bottom"));
 
-    $("ul#usercpnav  li a[href$='bookmarkthreads.php']").html("Bookmarks");
-    $("ul#usercpnav  li a[href$='action=editprofile']").html("Profile");
-    $("ul#usercpnav  li a[href$='action=editoptions']").html("Options");
-    $("ul#usercpnav  li a[href$='userlist=buddy']").html("Buddy List");
-    $("ul#usercpnav  li a[href$='userlist=ignore']").html("Ignore List");
-
     // hide the bookmark explanation text
     $("form[name=bookmarks] div:first").css("display", "none");
 }
+
+$("ul#usercpnav  li a[href$='bookmarkthreads.php']").html("Bookmarks");
+$("ul#usercpnav  li a[href$='action=editprofile']").html("Profile");
+$("ul#usercpnav  li a[href$='action=editoptions']").html("Options");
+$("ul#usercpnav  li a[href$='userlist=buddy']").html("Buddy List");
+$("ul#usercpnav  li a[href$='userlist=ignore']").html("Ignore List");
 
 
 // --- Reply Page ---
