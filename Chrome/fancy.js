@@ -37,15 +37,18 @@ $("#globalmenu").insertBefore($("#container :first"));
 // Fix forum navbar
 $("ul#navigation").after("<div id='navbar_wrap'></div>");
 $("div#navbar_wrap").append($("ul#navigation"));
+nl=1;
 $("ul#navigation li").each(function(i, el) {
     link = $(this).find("a");
+    $(this).attr("class", "nl"+nl);
     if ($(link).attr('href').substr(1, 25) == 'account.php?action=logout')
-        $(link).attr('id', 'logout');
+        $(this).attr("id", "logout");
     else if ($(link).attr('href').substr(1, 24) == 'account.php?action=login') {
-        $(link).attr('id', 'logout');
+        $(this).attr("id", "login");
         $(link).html('Log In');
     }
     $(this).empty().append(link);
+    nl++;
 });
 
 // Move the post author content

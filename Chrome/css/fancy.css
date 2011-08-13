@@ -92,7 +92,8 @@ Navigation Bar
 	text-decoration:none;
 	font-weight:bold;
     /*font-family: Arial, Verdana, sans-serif;*/
-    padding: 3px 19px 0px 19px;
+    padding-top: 3px;
+    padding-bottom: 0px;
 }
 #navigation a:hover {
     background-image:none;
@@ -119,8 +120,46 @@ ul#navigation li {
     white-space:nowrap;
 }
 
-ul#navigation li.first {
+/* SA Forums */
+ul#navigation li.nl1 {
     border-left:0px;
+    width: 114px;
+}
+/* Search the Forums */
+ul#navigation li.nl2 a {
+    width: 169px;
+}
+/* User Control Panel */
+ul#navigation li.nl3 {
+    width: 167px;
+}
+/* Private Messages */
+ul#navigation li.nl4 {
+    display: none;
+}
+/* Forum Rules */
+ul#navigation li.nl5 {
+    width: 126px;
+}
+/* SAclopedia */
+ul#navigation li.nl6 {
+    width: 114px;
+}
+/* Posting Gloryhole */
+ul#navigation li.nl7 {
+    display: none;
+}
+/* Leper's Colon */
+ul#navigation li.nl8 {
+    width: 116px;
+}
+/* Support */
+ul#navigation li.nl9 {
+    width: 94px;
+}
+/* Log In/Log Out */
+ul#navigation li.nl10 {
+    width: 93px;
 }
 
 ul#navigation li a {
@@ -279,18 +318,6 @@ Header
 /* stupid jumplist  */
 
 form[action="forumdisplay.php"] {
-	display:none;
-}
-
-/* two nav options dropped for 219.css's nav bar, which is kinda large */
-
-/* private messages unneeded - box on index.php takes care of that */
-#navigation li:nth-child(4) {
-	display:none;
-}
-
-/* posting gloryhole is pretty damn useless now */
-#navigation li:nth-child(7) {
 	display:none;
 }
 
