@@ -251,7 +251,7 @@ padding: 4px 0px 20px 0px;
 }
 
 td.postlinks .postbuttons li a {
-	padding:5px !important;
+	padding-right:5px !important;
 	margin-right:-6px !important;
 } 
 
