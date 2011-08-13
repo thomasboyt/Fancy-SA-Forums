@@ -1,3 +1,13 @@
+body {
+	background-color: #262D35 !important;
+}
+#globalmenu {
+	background-color: #DDE1E4 !important;
+}
+#content .subforum .title a, #content .subforum .title a:hover, #content .subforum .title a:visited {
+	color: #036 !important;
+}
+
 #container {
 	background: white;
 	background: white url('http://i.somethingawful.com/core/redesign/gutter-bg.gif') repeat-y;

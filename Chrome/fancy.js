@@ -11,6 +11,20 @@ if (css.size() > 0) {
 }
 }
 
+// Prevent the default forums stylesheet from loading
+if (css.size() == 0)
+    css = $("link[rel=stylesheet][href^='/css/gaschamber.css']");
+if (css.size() == 0)
+    css = $("link[rel=stylesheet][href^='/css/byob.css']");
+if (css.size() == 0) {
+    css = $("link[rel=stylesheet][href^='/css/rfa.css']");
+    //RFA Fix
+    if (css.size() > 0) {
+        $("ul#navigation").css("background-image", "none");
+        $("#content").before("<div style='width:100%;text-align:center;'><img src='http://fi.somethingawful.com/rfa/rfa-header.jpg'></div>");
+    }
+}
+
 if (css.size() == 0) {
     $("head").append("<link rel='stylesheet' type='text/css' href='"+chrome.extension.getURL("/css/default.css")+"' />");
 }
