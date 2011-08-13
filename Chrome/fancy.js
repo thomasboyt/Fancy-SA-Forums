@@ -133,6 +133,11 @@ $("table#forum.threadlist thead tr th.star").remove();
 $("table#forum.threadlist thead tr th.icon2").remove();
 $("table#forum.threadlist thead tr th.icon").css("width", "100px");
 
+replies = $("th.replies a");
+$("th.title").append('<span class="replies" style="float:right;margin-right: 20px;"></span>');
+$("th.title span.replies").append(replies);
+$("th.title span.replies a:first").empty().html("Replies");
+
 /* 
 
 New page nav
