@@ -75,9 +75,3 @@ ul#navigation li a {
 #navigation #logout, #navigation #login {
     background-color:#E6DCBE;
 }
-
-
-#usercpnav li {
-    padding: 4px 16px 4px 16px !important;
-    margin-bottom: 2em;
-}

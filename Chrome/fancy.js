@@ -218,11 +218,18 @@ if (window.location.pathname == "/usercp.php" || window.location.pathname == "/b
     $("form[name=bookmarks] div:first").css("display", "none");
 }
 
-$("ul#usercpnav  li a[href$='bookmarkthreads.php']").html("Bookmarks");
-$("ul#usercpnav  li a[href$='action=editprofile']").html("Profile");
-$("ul#usercpnav  li a[href$='action=editoptions']").html("Options");
-$("ul#usercpnav  li a[href$='userlist=buddy']").html("Buddy List");
-$("ul#usercpnav  li a[href$='userlist=ignore']").html("Ignore List");
+// Fix forum navbar
+nl=1
+$("ul#usercpnav li").each(function(i, el) {
+    $(this).attr("class", "nl"+nl);
+    nl++;
+});
+
+$("ul#usercpnav li a[href$='bookmarkthreads.php']").html("Bookmarks");
+$("ul#usercpnav li a[href$='action=editprofile']").html("Profile");
+$("ul#usercpnav li a[href$='action=editoptions']").html("Options");
+$("ul#usercpnav li a[href$='userlist=buddy']").html("Buddy List");
+$("ul#usercpnav li a[href$='userlist=ignore']").html("Ignore List");
 
 
 // --- Reply Page ---

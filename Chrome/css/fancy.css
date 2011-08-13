@@ -438,3 +438,46 @@ span#bookmark_edit_attach {
     vertical-align: text-bottom !important;
 }
 
+/* User Control Panel */
+
+#usercpnav li {
+    margin-bottom: 2em;
+    padding: 4px 0px 4px 0px !important;
+    text-align: center;
+}
+/* User CP Home */
+#usercpnav li.nl1 {
+    width: 100px;
+}
+/* Account Features */
+#usercpnav li.nl2 {
+    width: 130px;
+}
+/* Private Messages */
+#usercpnav li.nl3 {
+    width: 132px;
+}
+/* Bookmarks */
+#usercpnav li.nl4 {
+    width: 99px;
+}
+/* Profile */
+#usercpnav li.nl5 {
+    width: 70px;
+}
+/* Options */
+#usercpnav li.nl6 {
+    width: 78px;
+}
+/* Change Password */
+#usercpnav li.nl7 {
+    width: 134px;
+}
+/* Buddy List */
+#usercpnav li.nl8 {
+    width: 93px;
+}
+/* Ignore List */
+#usercpnav li.nl9 {
+    width: 95px;
+}
