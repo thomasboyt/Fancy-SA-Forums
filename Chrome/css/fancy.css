@@ -399,8 +399,12 @@ textarea {
 
 /* experiments on threadlist - move when done */
 
-#forum td.title a.pagenumber, a.author, a.replies, #forum td.title {
+#forum td.title a.pagenumber, #forum td.title a.author, #forum td.title span.replies, #forum td.title, #forum .title_pages {
 	font-size: 11px !important;
+}
+
+#forum a.author {
+    font-weight: bold;
 }
 
 #forum td.title a.thread_title, #forum td.title a.thread_title:visited {

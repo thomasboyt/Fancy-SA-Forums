@@ -43,6 +43,9 @@ div#mods a {
     color: white !important;
 }
 
+#forum td.title a.pagenumber, #forum td.title a.author, #forum td.title span.replies, #forum td.title, #forum .title_pages {
+    color: #666;
+}
 #forum td.title a.thread_title, #forum td.title a.thread_title:visited {
 	color: #036 !important;
 }
