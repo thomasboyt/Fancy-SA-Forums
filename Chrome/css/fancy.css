@@ -264,7 +264,7 @@ a[href="#top"] {
 	margin: 0 !important;
 }
 
-#forum .views, td.author, th.author, td.replies, th.replies {
+#forum .views, #forum td.author, #forum th.author, #forum td.replies, #forum th.replies {
 	display:none;
 }
 
