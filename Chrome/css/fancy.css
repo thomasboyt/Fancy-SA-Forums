@@ -11,7 +11,6 @@ html {
 }
 
 body {
-	background-color: #262D35 !important;
 	height:100% !important;
 }
 
@@ -24,8 +23,6 @@ body {
 	padding: 0 !important;
 	margin: 0 !important;
 	margin-left:-25px !important;
-	
-	background-color: #DDE1E4 !important;
 }
 
 #globalmenu ul {
@@ -92,6 +89,8 @@ Navigation Bar
 	text-decoration:none;
 	font-weight:bold;
     /*font-family: Arial, Verdana, sans-serif;*/
+    padding-top: 3px;
+    padding-bottom: 0px;
 }
 #navigation a:hover {
     background-image:none;
@@ -118,17 +117,53 @@ ul#navigation li {
     white-space:nowrap;
 }
 
-ul#navigation li.first {
+/* SA Forums */
+ul#navigation li.nl1 {
     border-left:0px;
+    width: 114px;
+}
+/* Search the Forums */
+ul#navigation li.nl2 a {
+    width: 169px;
+}
+/* User Control Panel */
+ul#navigation li.nl3 {
+    width: 167px;
+}
+/* Private Messages */
+ul#navigation li.nl4 {
+    display: none;
+}
+/* Forum Rules */
+ul#navigation li.nl5 {
+    width: 126px;
+}
+/* SAclopedia */
+ul#navigation li.nl6 {
+    width: 114px;
+}
+/* Posting Gloryhole */
+ul#navigation li.nl7 {
+    display: none;
+}
+/* Leper's Colon */
+ul#navigation li.nl8 {
+    width: 116px;
+}
+/* Support */
+ul#navigation li.nl9 {
+    width: 94px;
+}
+/* Log In/Log Out */
+ul#navigation li.nl10 {
+    width: 93px;
 }
 
 ul#navigation li a {
     display:block;
     font-size: 12px;
     height:17px;
-    padding-top:3px;
     text-decoration:none;
-    padding: 3px 5px 0px 5px;
 }
 
 /*
@@ -226,7 +261,7 @@ a[href="#top"] {
 	margin: 0 !important;
 }
 
-#forum .views, td.author, th.author, td.replies, th.replies {
+#forum .views, #forum td.author, #forum th.author, #forum td.replies, #forum th.replies {
 	display:none;
 }
 
@@ -240,7 +275,6 @@ div.pages {
 }
 
 #content .subforum .title a, #content .subforum .title a:hover, #content .subforum .title a:visited {
-	color: #036 !important;
 	text-decoration:underline !important;
 }
 
@@ -280,18 +314,6 @@ Header
 /* stupid jumplist  */
 
 form[action="forumdisplay.php"] {
-	display:none;
-}
-
-/* two nav options dropped for 219.css's nav bar, which is kinda large */
-
-/* private messages unneeded - box on index.php takes care of that */
-#navigation li:nth-child(4) {
-	display:none;
-}
-
-/* posting gloryhole is pretty damn useless now */
-#navigation li:nth-child(7) {
 	display:none;
 }
 
@@ -373,8 +395,12 @@ textarea {
 
 /* experiments on threadlist - move when done */
 
-#forum td.title a.pagenumber, a.author, a.replies, #forum td.title {
+#forum td.title a.pagenumber, #forum td.title a.author, #forum td.title span.replies, #forum td.title, #forum .title_pages {
 	font-size: 11px !important;
+}
+
+#forum a.author {
+    font-weight: bold;
 }
 
 #forum td.title a.thread_title, #forum td.title a.thread_title:visited {
@@ -412,3 +438,46 @@ span#bookmark_edit_attach {
     vertical-align: text-bottom !important;
 }
 
+/* User Control Panel */
+
+#usercpnav li {
+    margin-bottom: 2em;
+    padding: 4px 0px 4px 0px !important;
+    text-align: center;
+}
+/* User CP Home */
+#usercpnav li.nl1 {
+    width: 100px;
+}
+/* Account Features */
+#usercpnav li.nl2 {
+    width: 130px;
+}
+/* Private Messages */
+#usercpnav li.nl3 {
+    width: 132px;
+}
+/* Bookmarks */
+#usercpnav li.nl4 {
+    width: 99px;
+}
+/* Profile */
+#usercpnav li.nl5 {
+    width: 70px;
+}
+/* Options */
+#usercpnav li.nl6 {
+    width: 78px;
+}
+/* Change Password */
+#usercpnav li.nl7 {
+    width: 134px;
+}
+/* Buddy List */
+#usercpnav li.nl8 {
+    width: 93px;
+}
+/* Ignore List */
+#usercpnav li.nl9 {
+    width: 95px;
+}
