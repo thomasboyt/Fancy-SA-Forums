@@ -1,3 +1,13 @@
+body {
+	background-color: #262D35 !important;
+}
+#globalmenu {
+	background-color: #DDE1E4 !important;
+}
+#content .subforum .title a, #content .subforum .title a:hover, #content .subforum .title a:visited {
+	color: #036 !important;
+}
+
 #container {
 	background: white;
 	background: white url('http://i.somethingawful.com/core/redesign/gutter-bg.gif') repeat-y;
@@ -43,6 +53,9 @@ div#mods a {
     color: white !important;
 }
 
+#forum td.title a.pagenumber, #forum td.title a.author, #forum td.title span.replies, #forum td.title, #forum .title_pages {
+    color: #666;
+}
 #forum td.title a.thread_title, #forum td.title a.thread_title:visited {
 	color: #036 !important;
 }
@@ -61,7 +74,6 @@ div#mods a {
 ul#navigation li {
     background-color:#ebebeb;
     border-left:1px #fff solid;
-    min-width: 119px;
 }
 ul#navigation li a {
     color:#465963;
@@ -73,9 +85,6 @@ ul#navigation li a {
     background-color:#01385f;
     color:#fff;
 }
-
-
-#usercpnav li {
-    padding: 4px 16px 4px 16px !important;
-    margin-bottom: 2em;
+#navigation #logout, #navigation #login {
+    background-color:#E6DCBE;
 }

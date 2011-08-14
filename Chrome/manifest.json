@@ -8,6 +8,8 @@
 		"128": "Something_Awful_logo.png"
 	},
 
+    "background_page": "background.html",
+
 	"content_scripts": [
 		{
 			"matches": ["http://forums.somethingawful.com/", "http://forums.somethingawful.com/*"],
