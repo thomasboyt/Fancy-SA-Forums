@@ -418,6 +418,17 @@ img.unbookmark {
     margin-left: 0.3em;
 }
 
+.postbuttons input[src$="sa-close.gif"] {
+    height: 0px;
+    width: 60px;
+    overflow: hidden;
+    padding-bottom: 20px;
+    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAUCAYAAADRA14pAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9sIDw8gMRM4fn4AAACuSURBVFjD7VhBDoAgDGPEP/aNvLIejAkxiBsEAkK54Rh2bHUoIOhWwkqEQdC7xbAJ/x1HTa0HCZJ6ds9bfGhtcprztq9ZtMBr5NalbDQ+4jmNjXZdsWjdjp7RU0WzEyzvMlQNp0okyDWsBzKNaMWkv9K0pIcYUqXjU60WqZk+Sy1INyVsTTmt2tbs5Uuj3KK+egRWQFCTFpbGw9I09Gw8QHDflvblYROeG7LaL54TUySu8jhATVAAAAAASUVORK5CYII=');
+    background-repeat: no-repeat;
+    margin-left: 0.3em;
+}
+
+
 td.rating { /* lets put this here why not */
     padding: 0px 4px 0px 4px !important;
 }
