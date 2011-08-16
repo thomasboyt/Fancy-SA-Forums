@@ -4,7 +4,7 @@
 
 body {
 	color:#57FF57 !important;
-	font: 13px 'Monaco', 'Consolas', 'Lucida Console', 'Inconsolata', 'Menlo', monospace !important;
+	font: 13px 'Monaco', 'Lucida Sans Typewriter', 'Inconsolata', 'Consolas', 'Menlo', monospace !important;
 	background-color:black;
 }
 
@@ -62,11 +62,11 @@ div.breadcrumbs a.bclast {
 }
 #thread dl.userinfo, #forum td.replies, #forum td.views, #forum td.author, #subforums {
 	color:#57FF57 !important;
-	font: 12px 'Monaco', 'Consolas', 'Lucida Console', 'Inconsolata', 'Menlo', monospace !important;
+	font: 12px 'Monaco', 'Lucida Sans Typewriter', 'Inconsolata', 'Consolas', 'Menlo', monospace !important;
 }
 
 #thread td.postbody {
-	font: 13px 'Monaco', 'Consolas', 'Lucida Console', 'Inconsolata', 'Menlo', monospace !important;
+	font: 13px 'Monaco', 'Lucida Sans Typewriter', 'Inconsolata', 'Consolas', 'Menlo', monospace !important;
     color:#57FF57 !important;
 }
 
@@ -77,11 +77,11 @@ sup {
 
 #mods, div.pages, #forum th, #forum td.lastpost, #forum span.pages, #thread div.postbar, td.postdate, td.postlinks, #thread dl.userinfo dd, #thread tr.postbar td, div.threadrate, div.subscribe {
 	color:#57FF57 !important;
-	font: 12px 'Monaco', 'Consolas', 'Lucida Console', 'Inconsolata', 'Menlo', monospace !important;
+	font: 12px 'Monaco', 'Lucida Sans Typewriter', 'Inconsolata', 'Consolas', 'Menlo', monospace !important;
 }
 
 #copyright {
-	font: 12px 'Monaco', 'Consolas', 'Lucida Console', 'Inconsolata', 'Menlo', monospace !important;
+	font: 12px 'Monaco', 'Lucida Sans Typewriter', 'Inconsolata', 'Consolas', 'Menlo', monospace !important;
 }
 
 div.threadbar, #subforums, #subforums td, #forum, #forum th, #forum td, #filter, div.forumbar, #thread table.post, #thread td, #forums, #forums th, #forums td, #pm, #pm th, #pm td, #info, #info th, #info td {
@@ -95,12 +95,16 @@ div.threadbar, #subforums, #subforums td, #forum, #forum th, #forum td, #filter,
 select {
 	background-color:black;
 	color:#57FF57;
-	font: 13px 'Monaco', 'Consolas', 'Lucida Console', 'Inconsolata', 'Menlo', monospace !important;
+	font: 13px 'Monaco', 'Lucida Sans Typewriter', 'Inconsolata', 'Consolas', 'Menlo', monospace !important;
 }
 #forum td.title div.lastseen a {
 	font-size: 12px !important;
 }
-div.breadcrumbs, #subforums td.title dt, #forum td.lastpost a.author, div.threadbar form.threadsearch label, #thread dl.userinfo dt, #forums td.title a.forum {
+div.breadcrumbs {
+	font-weight: bold !important;
+	font-size: 13px !important;
+}
+#subforums td.title dt, #forum td.lastpost a.author, div.threadbar form.threadsearch label, #thread dl.userinfo dt, #forums td.title a.forum {
 	font-weight: bold !important;
 	font-size: 12px !important;
 }
@@ -164,7 +168,7 @@ div.pages a {
 #globalmenu, #globalthing {
 	background-color:black !important;
 	border-bottom: 1px #57FF57 solid !important;
-	font: 13px 'Monaco', 'Consolas', 'Lucida Console', 'Inconsolata', 'Menlo', monospace !important;
+	font: 13px 'Monaco', 'Lucida Sans Typewriter', 'Inconsolata', 'Consolas', 'Menlo', monospace !important;
 }
 
 /* Personal preference + looks less cluttered like this. Use "Buy forum stuff" link if you need to do so. */
@@ -210,7 +214,7 @@ div.mainbodytextsmall, .smalltext, .smalltext a {
 	background-color:black;
 	color: #57FF57 !important;
 	border:1px #57FF57 solid;
-	font: 13px 'Monaco', 'Consolas', 'Lucida Console', 'Inconsolata', 'Menlo', monospace !important;
+	font: 13px 'Monaco', 'Lucida Sans Typewriter', 'Inconsolata', 'Consolas', 'Menlo', monospace !important;
 }
 textarea {
 	background-color:black;
@@ -232,7 +236,7 @@ div.standard {
 }
 
 #forum td.replies, #forum td.views, #forum th.rating, #forum td.rating {
-	font: 12px 'Monaco', 'Consolas', 'Lucida Console', 'Inconsolata', 'Menlo', monospace !important;
+	font: 12px 'Monaco', 'Lucida Sans Typewriter', 'Inconsolata', 'Consolas', 'Menlo', monospace !important;
 }
 
 #thread ul.postbuttons {
