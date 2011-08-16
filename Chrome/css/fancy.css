@@ -120,15 +120,15 @@ ul#navigation li {
 /* SA Forums */
 ul#navigation li:nth-child(1) {
     border-left:0px;
-    width: 114px;
+    width: 109px;
 }
 /* Search the Forums */
 ul#navigation li:nth-child(2) a {
-    width: 169px;
+    width: 155px;
 }
 /* User Control Panel */
 ul#navigation li:nth-child(3) {
-    width: 167px;
+    width: 162px;
 }
 /* Private Messages */
 ul#navigation li:nth-child(4) {
@@ -148,7 +148,7 @@ ul#navigation li:nth-child(7) {
 }
 /* Leper's Colon */
 ul#navigation li:nth-child(8) {
-    width: 116px;
+    width: 140px;
 }
 /* Support */
 ul#navigation li:nth-child(9) {
