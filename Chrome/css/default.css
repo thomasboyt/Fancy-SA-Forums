@@ -30,9 +30,19 @@ form#ac_timemachine.active {
 }
 
 /* Leper's colony page numbers */
-div.mqnav {
-    background: #069 !important;
-    color: white !important;
+div.mqnav, div.mqnav .pages {
+    color: black !important;
+}
+ div.mqnav .pages .curpage {
+	color:#666 !important;
+}
+div.mqnav a, div.mqnav a:visited {
+	color:#036 !important;
+}
+div.mqnav a:hover {
+	color:#fff !important;
+	background: #036 !important;
+	text-decoration:none;
 }
 
 /* Search results */
