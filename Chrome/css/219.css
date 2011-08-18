@@ -510,3 +510,10 @@ ul#navigation li {
     background-color:#000000;
     border-left:1px #57FF57 solid;
 }
+ul#navigation li:nth-child(1) {
+    width: 108px;
+}
+ul#navigation li:nth-child(10) {
+    width: 92px;
+    border-right: 1px solid #57ff57;
+}
