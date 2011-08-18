@@ -167,7 +167,6 @@ div.pages a {
 }
 #globalmenu, #globalthing {
 	background-color:black !important;
-	border-bottom: 1px #57FF57 solid !important;
 	font: 13px 'Monaco', 'Lucida Sans Typewriter', 'Inconsolata', 'Consolas', 'Menlo', monospace !important;
 }
 
@@ -515,6 +514,7 @@ dd.title img[src="http://fi.somethingawful.com/customtitles/tek9s-2.png"] {
 }
 
 #navigation {
+    border-top:1px #57FF57 solid;
     border-bottom:1px #57FF57 solid;
     background:#000000;
 }
