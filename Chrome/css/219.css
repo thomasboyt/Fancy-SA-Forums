@@ -42,7 +42,7 @@ div.threadbar, #subforums, #subforums td, #forum, #forum th, #forum td, #filter,
 	background-color: black;
 }
 .forumbar, .threadbar {
-	height:28px !important;
+	height:20px !important;
 }
 
 td.title div.lastseen {
@@ -248,17 +248,25 @@ div.standard {
 }
 
 ul.postbuttons {
-    padding-top: 4px !important;
     margin-right: 4px;
     margin-bottom: -4px;
 }
 
 ul.postbuttons img {
-padding: 4px 0px 20px 0px;
+	padding: 4px 0px 20px 0px;
 }
 
 .threadbar {
-	padding:0px !important;
+	padding:3px 3px !important;
+}
+
+#ac_timemachine {
+	height:15px !important;
+	padding-top:0px !important;
+}
+
+#ac_timemachine select, #ac_timemachine input {
+	margin-top:-1px !important;
 }
 
 td.postlinks .postbuttons li a {
