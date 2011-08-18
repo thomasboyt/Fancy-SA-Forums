@@ -74,6 +74,7 @@ div#mods a {
 ul#navigation li {
     background-color:#ebebeb;
     border-left:1px #fff solid;
+    height: 19px !important;
 }
 ul#navigation li a {
     color:#465963;
@@ -87,4 +88,7 @@ ul#navigation li a {
 }
 #navigation #logout, #navigation #login {
     background-color:#E6DCBE;
+}
+ul#navigation li:nth-child(1) {
+    border-left:0px;
 }
