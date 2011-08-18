@@ -4,8 +4,8 @@
 
 body {
 	color:#57FF57 !important;
-	font: 11px 'Inconsolata', 'Monaco', 'Menlo', monospace !important;
-	background-color:black !important;
+	font: 13px 'Monaco', 'Lucida Sans Typewriter', 'Inconsolata', 'Consolas', 'Menlo', monospace !important;
+	background-color:black;
 }
 
 a {
@@ -13,7 +13,7 @@ a {
 }
 
 div.pages a, div.pages .curpage {
-    font-size: 11px !important;
+    font-size: 12px !important;
 }
 
 #container {
@@ -36,7 +36,7 @@ span.bbc-spoiler:hover, .bbc-spoiler-li:hover {
 	color:#57FF57 !important;
 }
 #navigation, #nav_purchase, #thread p.editedby, #forum td.title a.pagenumber, #forum td.title, #forums th, #forums div.subforums, #forums td.moderators, #pm, #info {
-	font-size: 11px !important;
+	font-size: 12px !important;
 }
 div.threadbar, #subforums, #subforums td, #forum, #forum th, #forum td, #filter, div.forumbar, #thread table.post, #thread td, #forums, #forums th, #forums td, #pm, #pm th, #pm td, #info, #info th, #info td {
 	background-color: black;
@@ -62,11 +62,11 @@ div.breadcrumbs a.bclast {
 }
 #thread dl.userinfo, #forum td.replies, #forum td.views, #forum td.author, #subforums {
 	color:#57FF57 !important;
-	font: 11px 'Inconsolata', 'Monaco', 'Menlo', monospace !important;
+	font: 12px 'Monaco', 'Lucida Sans Typewriter', 'Inconsolata', 'Consolas', 'Menlo', monospace !important;
 }
 
 #thread td.postbody {
-    font: 13px 'Inconsolata', 'Monaco', 'Menlo', monospace !important;
+	font: 13px 'Monaco', 'Lucida Sans Typewriter', 'Inconsolata', 'Consolas', 'Menlo', monospace !important;
     color:#57FF57 !important;
 }
 
@@ -77,11 +77,11 @@ sup {
 
 #mods, div.pages, #forum th, #forum td.lastpost, #forum span.pages, #thread div.postbar, td.postdate, td.postlinks, #thread dl.userinfo dd, #thread tr.postbar td, div.threadrate, div.subscribe {
 	color:#57FF57 !important;
-	font: 11px 'Inconsolata', 'Monaco', 'Menlo', monospace !important;
+	font: 12px 'Monaco', 'Lucida Sans Typewriter', 'Inconsolata', 'Consolas', 'Menlo', monospace !important;
 }
 
 #copyright {
-font: 11px 'Inconsolata', 'Monaco', 'Menlo', monospace !important;
+	font: 12px 'Monaco', 'Lucida Sans Typewriter', 'Inconsolata', 'Consolas', 'Menlo', monospace !important;
 }
 
 div.threadbar, #subforums, #subforums td, #forum, #forum th, #forum td, #filter, div.forumbar, #thread table.post, #thread td, #forums, #forums th, #forums td, #pm, #pm th, #pm td, #info, #info th, #info td {
@@ -95,14 +95,18 @@ div.threadbar, #subforums, #subforums td, #forum, #forum th, #forum td, #filter,
 select {
 	background-color:black;
 	color:#57FF57;
-	font: 11px 'Inconsolata', 'Monaco', 'Menlo', monospace !important;
+	font: 13px 'Monaco', 'Lucida Sans Typewriter', 'Inconsolata', 'Consolas', 'Menlo', monospace !important;
 }
 #forum td.title div.lastseen a {
-	font-size: 11px !important;
+	font-size: 12px !important;
 }
-div.breadcrumbs, #subforums td.title dt, #forum td.lastpost a.author, div.threadbar form.threadsearch label, #thread dl.userinfo dt, #forums td.title a.forum {
+div.breadcrumbs {
 	font-weight: bold !important;
-	font-size: 11px !important;
+	font-size: 12px !important;
+}
+#subforums td.title dt, #forum td.lastpost a.author, div.threadbar form.threadsearch label, #thread dl.userinfo dt, #forums td.title a.forum {
+	font-weight: bold !important;
+	font-size: 12px !important;
 }
 
 form#ac_timemachine {
@@ -133,7 +137,7 @@ form#ac_timemachine.active {
 }
 
 .bbc-block h4, .bbc-block h5 {
-	font-size: 11px !important;
+	font-size: 13px !important;
     color: #57FF57 !important;
 }
 .bbc-block h4 {
@@ -164,7 +168,7 @@ div.pages a {
 #globalmenu, #globalthing {
 	background-color:black !important;
 	border-bottom: 1px #57FF57 solid !important;
-	font: 11px 'Inconsolata', 'Monaco', 'Menlo', monospace !important;
+	font: 13px 'Monaco', 'Lucida Sans Typewriter', 'Inconsolata', 'Consolas', 'Menlo', monospace !important;
 }
 
 /* Personal preference + looks less cluttered like this. Use "Buy forum stuff" link if you need to do so. */
@@ -182,6 +186,9 @@ div.pages a {
 	background-color:black !important;
 }
 
+#forum td.title a.pagenumber, #forum td.title a.author, #forum td.title span.replies, #forum td.title, #forum .title_pages {
+	font-size: 12px !important;
+}
 #forum td.title div.lastseen a.count {
 	border-left:1px #57FF57 solid !important;
 }
@@ -205,13 +212,13 @@ table.standard td {
 	background-color:black !important;
 }
 div.mainbodytextsmall, .smalltext, .smalltext a {
-	font-size: 11px !important;
+	font-size: 12px !important;
 }
 .bginput {
 	background-color:black;
 	color: #57FF57 !important;
 	border:1px #57FF57 solid;
-	font: 11px 'Inconsolata', 'Monaco', 'Menlo', monospace !important;
+	font: 13px 'Monaco', 'Lucida Sans Typewriter', 'Inconsolata', 'Consolas', 'Menlo', monospace !important;
 }
 textarea {
 	background-color:black;
@@ -233,7 +240,7 @@ div.standard {
 }
 
 #forum td.replies, #forum td.views, #forum th.rating, #forum td.rating {
-	font: 11px 'Inconsolata', 'Monaco', 'Menlo', monospace !important;
+	font: 12px 'Monaco', 'Lucida Sans Typewriter', 'Inconsolata', 'Consolas', 'Menlo', monospace !important;
 }
 
 #thread ul.postbuttons {
@@ -269,7 +276,7 @@ td.postlinks .postbuttons li a {
 
 #thread table.post p.editedby span, #thread table.post p.attachment span {
 	color: #57FF57 !important;
-	font-size: 11px !important;
+	font-size: 12px !important;
 	opacity: 1.0 !important;
 	font-style:normal !important;
 }
@@ -347,7 +354,7 @@ ul.postbuttons a {
     padding-right: 0.45em; /* fix for MobileSafari*/
 }
 
-.postbuttons img[alt="Reply"] {
+.postbuttons img[src$="forum-reply.gif"] {
     height: 0px;
     width: 60px;
     overflow: hidden;
@@ -355,8 +362,18 @@ ul.postbuttons a {
     background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAUCAYAAADRA14pAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAK1JREFUeNrsV0EKwCAMs+If9Yn+MmO3MaxWi0NXe5DBaiQsiStFRDhDFe4lu0wWyCaX4J2xOoRNeLile+bV0/e14KNGTw2HyxaUsCVZJPnC9HouEeB6tDhbSZoseRirkg6DRCT+0uK01IMRHD9BptIeUipgyO9ecRB28+8X9zAWw5lKeDmyUsK9IQRmDwSYEpwevP6UZv5eaGKYTb3nz/BwCP9xWqpMRL+rS4ABAHcaKOX0wUbwAAAAAElFTkSuQmCC');
     background-repeat: no-repeat;
     margin-left: 0.3em;
-
 }
+
+.postbuttons img[src$="forum-closed.gif"] {
+    height: 0px;
+    width: 60px;
+    overflow: hidden;
+    padding-bottom: 20px;
+    background: url('data:image/png;base64,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');
+    background-repeat: no-repeat;
+    margin-left: 0.3em;
+}
+
 .postbuttons img[alt="Alert Moderators"]{
     height: 0px;
     width: 60px;
@@ -422,6 +439,17 @@ img.unbookmark {
     margin-left: 0.3em;
 }
 
+.postbuttons input[src$="sa-close.gif"] {
+    height: 0px;
+    width: 60px;
+    overflow: hidden;
+    padding-bottom: 20px;
+    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAUCAYAAADRA14pAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9sIDw8gMRM4fn4AAACuSURBVFjD7VhBDoAgDGPEP/aNvLIejAkxiBsEAkK54Rh2bHUoIOhWwkqEQdC7xbAJ/x1HTa0HCZJ6ds9bfGhtcprztq9ZtMBr5NalbDQ+4jmNjXZdsWjdjp7RU0WzEyzvMlQNp0okyDWsBzKNaMWkv9K0pIcYUqXjU60WqZk+Sy1INyVsTTmt2tbs5Uuj3KK+egRWQFCTFpbGw9I09Gw8QHDflvblYROeG7LaL54TUySu8jhATVAAAAAASUVORK5CYII=');
+    background-repeat: no-repeat;
+    margin-left: 0.3em;
+}
+
+
 td.rating { /* lets put this here why not */
     padding: 0px 4px 0px 4px !important;
 }
@@ -485,4 +513,11 @@ dd.title img[src="http://fi.somethingawful.com/customtitles/tek9s-2.png"] {
 ul#navigation li {
     background-color:#000000;
     border-left:1px #57FF57 solid;
+}
+ul#navigation li:nth-child(1) {
+    width: 108px;
+}
+ul#navigation li:nth-child(10) {
+    width: 92px;
+    border-right: 1px solid #57ff57;
 }

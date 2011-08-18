@@ -118,44 +118,43 @@ ul#navigation li {
 }
 
 /* SA Forums */
-ul#navigation li.nl1 {
-    border-left:0px;
-    width: 114px;
+ul#navigation li:nth-child(1) {
+    width: 109px;
 }
 /* Search the Forums */
-ul#navigation li.nl2 a {
-    width: 169px;
+ul#navigation li:nth-child(2) a {
+    width: 155px;
 }
 /* User Control Panel */
-ul#navigation li.nl3 {
-    width: 167px;
+ul#navigation li:nth-child(3) {
+    width: 162px;
 }
 /* Private Messages */
-ul#navigation li.nl4 {
+ul#navigation li:nth-child(4) {
     display: none;
 }
 /* Forum Rules */
-ul#navigation li.nl5 {
+ul#navigation li:nth-child(5) {
     width: 126px;
 }
 /* SAclopedia */
-ul#navigation li.nl6 {
+ul#navigation li:nth-child(6) {
     width: 114px;
 }
 /* Posting Gloryhole */
-ul#navigation li.nl7 {
+ul#navigation li:nth-child(7) {
     display: none;
 }
 /* Leper's Colon */
-ul#navigation li.nl8 {
-    width: 116px;
+ul#navigation li:nth-child(8) {
+    width: 140px;
 }
 /* Support */
-ul#navigation li.nl9 {
+ul#navigation li:nth-child(9) {
     width: 94px;
 }
 /* Log In/Log Out */
-ul#navigation li.nl10 {
+ul#navigation li:nth-child(10) {
     width: 93px;
 }
 
@@ -455,38 +454,38 @@ span#bookmark_edit_attach {
     text-align: center;
 }
 /* User CP Home */
-#usercpnav li.nl1 {
+#usercpnav li:nth-child(1) {
     width: 100px;
 }
 /* Account Features */
-#usercpnav li.nl2 {
+#usercpnav li:nth-child(2) {
     width: 130px;
 }
 /* Private Messages */
-#usercpnav li.nl3 {
+#usercpnav li:nth-child(3) {
     width: 132px;
 }
 /* Bookmarks */
-#usercpnav li.nl4 {
+#usercpnav li:nth-child(4) {
     width: 99px;
 }
 /* Profile */
-#usercpnav li.nl5 {
+#usercpnav li:nth-child(5) {
     width: 70px;
 }
 /* Options */
-#usercpnav li.nl6 {
+#usercpnav li:nth-child(6) {
     width: 78px;
 }
 /* Change Password */
-#usercpnav li.nl7 {
+#usercpnav li:nth-child(7) {
     width: 134px;
 }
 /* Buddy List */
-#usercpnav li.nl8 {
+#usercpnav li:nth-child(8) {
     width: 93px;
 }
 /* Ignore List */
-#usercpnav li.nl9 {
+#usercpnav li:nth-child(9) {
     width: 95px;
 }

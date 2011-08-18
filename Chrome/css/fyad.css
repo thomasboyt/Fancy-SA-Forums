@@ -21,4 +21,7 @@ ul#navigation li {
     color:#066;
     background-image:none;
 }
+ul#navigation li:nth-child(1) {
+    border-left:0px;
+}
 

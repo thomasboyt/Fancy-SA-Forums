@@ -51,10 +51,8 @@ $("#globalmenu").insertBefore($("#container :first"));
 // Fix forum navbar
 $("ul#navigation").after("<div id='navbar_wrap'></div>");
 $("div#navbar_wrap").append($("ul#navigation"));
-nl=1;
 $("ul#navigation li").each(function(i, el) {
     link = $(this).find("a");
-    $(this).attr("class", "nl"+nl);
     if ($(link).attr('href').substr(1, 25) == 'account.php?action=logout')
         $(this).attr("id", "logout");
     else if ($(link).attr('href').substr(1, 24) == 'account.php?action=login') {
@@ -62,7 +60,6 @@ $("ul#navigation li").each(function(i, el) {
         $(link).html('Log In');
     }
     $(this).empty().append(link);
-    nl++;
 });
 
 // Move the post author content
@@ -235,13 +232,6 @@ if (window.location.pathname == "/usercp.php" || window.location.pathname == "/b
     // hide the bookmark explanation text
     $("form[name=bookmarks] div:first").css("display", "none");
 }
-
-// Fix forum navbar
-nl=1
-$("ul#usercpnav li").each(function(i, el) {
-    $(this).attr("class", "nl"+nl);
-    nl++;
-});
 
 $("ul#usercpnav li a[href$='bookmarkthreads.php']").html("Bookmarks");
 $("ul#usercpnav li a[href$='action=editprofile']").html("Profile");
