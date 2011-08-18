@@ -17,7 +17,7 @@ div.pages a, div.pages .curpage {
 }
 
 #container {
-	background-color:black;
+	background:black !important;
 }
 
 span.bbc-spoiler, .bbc-spoiler-li {
@@ -42,7 +42,7 @@ div.threadbar, #subforums, #subforums td, #forum, #forum th, #forum td, #filter,
 	background-color: black;
 }
 .forumbar, .threadbar {
-	height:28px !important;
+	height:20px !important;
 }
 
 td.title div.lastseen {
@@ -175,7 +175,7 @@ div.pages a {
 #nav_purchase {
 	display:none;
 }
-.title_pages {
+.title_pages, .title_pages a {
 	color: #57FF57 !important;
 }
 
@@ -197,6 +197,10 @@ div.pages a {
 }
 div.breadcrumbs h1, input, #forum td.title a {
 	font-size:12px !important;
+}
+
+dl.userinfo {
+	min-width: 14em !important;
 }
 
 /* New thread/reply & edit post */
@@ -244,17 +248,25 @@ div.standard {
 }
 
 ul.postbuttons {
-    padding-top: 4px !important;
     margin-right: 4px;
     margin-bottom: -4px;
 }
 
 ul.postbuttons img {
-padding: 4px 0px 20px 0px;
+	padding: 4px 0px 20px 0px;
 }
 
 .threadbar {
-	padding:0px !important;
+	padding:3px 3px !important;
+}
+
+#ac_timemachine {
+	height:15px !important;
+	padding-top:0px !important;
+}
+
+#ac_timemachine select, #ac_timemachine input {
+	margin-top:-1px !important;
 }
 
 td.postlinks .postbuttons li a {

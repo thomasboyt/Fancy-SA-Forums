@@ -30,9 +30,19 @@ form#ac_timemachine.active {
 }
 
 /* Leper's colony page numbers */
-div.mqnav {
-    background: #069 !important;
-    color: white !important;
+div.mqnav, div.mqnav .pages {
+    color: black !important;
+}
+ div.mqnav .pages .curpage {
+	color:#666 !important;
+}
+div.mqnav a, div.mqnav a:visited {
+	color:#036 !important;
+}
+div.mqnav a:hover {
+	color:#fff !important;
+	background: #036 !important;
+	text-decoration:none;
 }
 
 /* Search results */
@@ -53,11 +63,19 @@ div#mods a {
     color: white !important;
 }
 
-#forum td.title a.pagenumber, #forum td.title a.author, #forum td.title span.replies, #forum td.title, #forum .title_pages {
-    color: #666;
+#forum td.title a.pagenumber, #forum td.title a.pagenumber:visited {
+	color:#036 !important;
 }
+#forum td.title .title_pages a:hover {
+	color:#fff !important;
+}
+
 #forum td.title a.thread_title, #forum td.title a.thread_title:visited {
-	color: #036 !important;
+	font-size:13px !important;
+}
+
+#forum td.title a.thread_title:hover {
+	color: #c60 !important;
 }
 
 #navbar_wrap {
