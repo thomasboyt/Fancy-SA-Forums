@@ -395,12 +395,21 @@ textarea {
 
 /* experiments on threadlist - move when done */
 
-#forum td.title a.pagenumber, #forum td.title a.author, #forum td.title span.replies, #forum td.title, #forum .title_pages {
+#forum td.title a.pagenumber, #forum td.title a.author, #forum td.title span.replies, #forum td.title span.replies a, #forum td.title, #forum .title_pages {
 	font-size: 11px !important;
 }
 
-#forum a.author {
-    font-weight: bold;
+#forum .title_pages {
+	line-height:14px !important;
+}
+
+#forum td.title a.pagenumber, #forum td.title a.pagenumber:visited {
+	color:#036 !important;
+	/*font-weight:bold;*/
+	/*font-size:12px !important;*/
+}
+#forum td.title a.pagenumber:hover {
+	color:#fff !important;
 }
 
 #forum td.title a.thread_title, #forum td.title a.thread_title:visited {
