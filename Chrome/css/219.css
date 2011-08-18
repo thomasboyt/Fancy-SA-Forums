@@ -175,7 +175,7 @@ div.pages a {
 #nav_purchase {
 	display:none;
 }
-.title_pages {
+.title_pages, .title_pages a {
 	color: #57FF57 !important;
 }
 

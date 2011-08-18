@@ -402,23 +402,6 @@ textarea {
 	line-height:14px !important;
 }
 
-#forum td.title a.pagenumber, #forum td.title a.pagenumber:visited {
-	color:#036 !important;
-	/*font-weight:bold;*/
-	/*font-size:12px !important;*/
-}
-#forum td.title a.pagenumber:hover {
-	color:#fff !important;
-}
-
-#forum td.title a.thread_title, #forum td.title a.thread_title:visited {
-	font-size:13px !important;
-}
-
-#forum td.title a.thread_title:hover {
-	color: #c60 !important;
-}
-
 #thread dl.userinfo dt.author.role-mod {
     background-image: url(data:image/gif;base64,R0lGODlhDQANAKUxACaMtSaNtyeOuCeQuieRvCiSvSiTvyiVwSqaxyqbyTKl0zSl0zWm1Den1Dmo1Dqo1T2q1j+q1kKs10St10at10eu2Emv2Euw2Eyw2VCy2VW02lq221u33F233Gi932q932y+32+/4HHA4HLB4XTC4XbC4XzF437G43/H5IHH5ITJ5YnL5ovM5pDO55LP55PP6JfR6P///////////////////////////////////////////////////////////yH5BAEKAD8ALAAAAAANAA0AAAZkwJ9wCDAMj0MD64A8AiwwDAApqApaLJdV8CM4LJTNSrXaTCyPgaCESqVMJ5MbVeISOKHRiEQahToEQwIgHh+GHiBcRxcdjY0YTRoZGZKUSAQPFQkCCBUPgUOYBgU/Bgafl6lCQQA7) !important;
 }

@@ -63,14 +63,19 @@ div#mods a {
     color: white !important;
 }
 
-#forum td.title a.author, #forum td.title span.replies, #forum td.title, #forum .title_pages {
-    color: #666 !important;
+#forum td.title a.pagenumber, #forum td.title a.pagenumber:visited {
+	color:#036 !important;
 }
-#forum td.title a:hover {
-	color: #fff !important;
+#forum td.title .title_pages a:hover {
+	color:#fff !important;
 }
+
 #forum td.title a.thread_title, #forum td.title a.thread_title:visited {
-	color: #036 !important;
+	font-size:13px !important;
+}
+
+#forum td.title a.thread_title:hover {
+	color: #c60 !important;
 }
 
 #navbar_wrap {
