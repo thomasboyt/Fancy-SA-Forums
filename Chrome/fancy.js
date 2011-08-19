@@ -84,21 +84,23 @@ $("table#forum.threadlist tbody tr").each(function(i, el) {
 
     // bookmark star
     star = $(this).find("td.star img");
-    star_src = $(star).attr('src');
-    if (star_src == "http://fi.somethingawful.com/style/bookmarks/star-off.gif")
-        $(star).attr('src', chrome.extension.getURL("/images/star-off.gif"));
-    else if (star_src == "http://fi.somethingawful.com/style/bookmarks/star0.gif")
-        $(star).attr('src', chrome.extension.getURL("/images/star0.gif"));
-    else if (star_src == "http://fi.somethingawful.com/style/bookmarks/star1.gif")
-        $(star).attr('src', chrome.extension.getURL("/images/star1.gif"));
-    else if (star_src == "http://fi.somethingawful.com/style/bookmarks/star2.gif")
-        $(star).attr('src', chrome.extension.getURL("/images/star2.gif"));
+    if (star.parent().css("display") != "none") {
+        star_src = $(star).attr('src');
+        if (star_src == "http://fi.somethingawful.com/style/bookmarks/star-off.gif")
+            $(star).attr('src', chrome.extension.getURL("/images/star-off.gif"));
+        else if (star_src == "http://fi.somethingawful.com/style/bookmarks/star0.gif")
+            $(star).attr('src', chrome.extension.getURL("/images/star0.gif"));
+        else if (star_src == "http://fi.somethingawful.com/style/bookmarks/star1.gif")
+            $(star).attr('src', chrome.extension.getURL("/images/star1.gif"));
+        else if (star_src == "http://fi.somethingawful.com/style/bookmarks/star2.gif")
+            $(star).attr('src', chrome.extension.getURL("/images/star2.gif"));
 
-    star.css("margin-top", "5px");
-    star.css("margin-left", "45px");
-    posticon.after(star);
-    posticon.after("<br />");
-    $(this).find("td.star").remove();
+        star.css("margin-top", "5px");
+        star.css("margin-left", "45px");
+        posticon.after(star);
+        posticon.after("<br />");
+        $(this).find("td.star").remove();
+    }
 
     // Ask/tell and SA-Mart icons
     icon2 = $(this).find("td.icon2 img");
