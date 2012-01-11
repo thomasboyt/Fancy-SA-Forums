@@ -291,15 +291,15 @@ td.postlinks .postbuttons li a {
 /* holy moly thanks roboshit */
 @-webkit-keyframes animes {
 	0% {
-		background:#57ff57;
+		background:#57FF57;
     color:#000;
 	}
 	50% {
 		background:#000;
-    color:#57ff57;
+    color:#57FF57;
 	}
 	100% {
-		background:#57ff57;
+		background:#57FF57;
     color:#000;
 	}
 }
@@ -527,5 +527,5 @@ ul#navigation li:nth-child(1) {
 }
 ul#navigation li:nth-child(10) {
     width: 92px;
-    border-right: 1px solid #57ff57;
+    border-right: 1px solid #57FF57;
 }
