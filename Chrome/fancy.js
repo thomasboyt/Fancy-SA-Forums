@@ -180,13 +180,15 @@ $(".threadrate b").html("Rate: ");*/
 
 
 /* Webkit timg fixes */
-function toggleTimg(e) {
+var toggleNotATimg = function (e) {
+	console.log("clicked");
     var old_width = $(this).attr('old_width');
 
     if ( old_width !== undefined ) {
         $(this).attr('width', old_width);
         $(this).removeAttr('old_width');
-    } else {
+    } 
+	else {
         $(this).attr('old_width', $(this).attr('width'));
         $(this).removeAttr('width');
     }
@@ -198,15 +200,12 @@ $(".timg").each(function(i) {
     if ($(this).parent('a').length > 0) {
         if ($(this).parent('a').attr('href') == $(this).attr('src')) {
             $(this).unwrap();
-            $(this).click(toggleTimg);
         }
     }
-    else {
-        console.log("timg'd");
-        $(this).click(toggleTimg);
-    }
+    $(this).click(toggleNotATimg);
 
 });
+
 
 // --- bookmarkthreads.php and usercp.php ---
 
