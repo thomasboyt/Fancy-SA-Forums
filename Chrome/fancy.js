@@ -1,8 +1,8 @@
 css = $("link[rel=stylesheet][href^='/css/219.css']");
 if (css.size() > 0) {
     // Replace broken 219.css with updated version
-    $(css).attr("href", chrome.extension.getURL("/css/219-green.css"));
-    //$(css).attr("href", chrome.extension.getURL("/css/219-amber.css"));
+    //$(css).attr("href", chrome.extension.getURL("/css/219-green.css"));
+    $(css).attr("href", chrome.extension.getURL("/css/219-amber.css"));
 }
 
 if (css.size() == 0) {

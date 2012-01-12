@@ -278,8 +278,10 @@ td.postlinks .postbuttons li a {
 }
 
 .seen1 td, .seen2 td {
-	background-color:#114211 !important;
+	background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAYAAABytg0kAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAABlJREFUeNpi9HWR+M/AwMDIBCKA+D9AgAEAGfsCrVbpGIsAAAAASUVORK5CYII=') top left repeat !important;
 }
+
+.timg { border: 2px solid #eacf4c !important; }
 
 #thread table.post p.editedby span, #thread table.post p.attachment span {
 	color: #EACF4C !important;
@@ -511,6 +513,10 @@ dd.title img[src="http://fi.somethingawful.com/customtitles/tek9s-2.png"] {
     overflow: hidden;
     padding-bottom: 42px;
     background: url('data:image/gif;base64,R0lGODlhlAAqAMZRAAAAAAIAAAcCAAsGAAwHABQOABgRAB0VAB8YACAcCiEdCiUeACQgCykgACgjDS4lADIoADErEDctADswADgyEkA1AEE2AEY7AEY+Fks/Ak5AAlJFA1VHBVhKBlxNB15QCWFSCWJTCV5THmRVCmBVH2lZC2xcDG9eDm1gI3JhD3VjD3ZkEHlnEHVnJnxrEX5sE4BtE4NwFIVxFIZyFYh1FYl2Fot3Fo97GJJ8GZN+GZSAGpeBGpiDGpmEG5uFG5yGG56IHaCJHaGKHqKLHqKNHqONHqWOH6aPH6eQH6iSIKqSIKuTIKyUIq+XIrGZI7KbI+rPTP///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////yH/C05FVFNDQVBFMi4wAwEAAAAh+QQFFAB/ACwAAAAAlAAqAAAH/oAAgoOEhYaHiImKi09PKYuQkZKTlJWWl4pNTxwBmJACnqGio6MmHKSGFgWorK2uggSwr7O0tZYePAAyMKw7HwFBCLbDxIcxPAE8MaQ7MgZDp8XS0ioSugMenh4QLAAh0dPh4uPk5ZAjEIQHJ5UuhR8V5vKiKUGdhMqTPDKFDUTx8wJS4gBE0IFCPEpEsrFsUIBVzw6Sg0KxosWLFAVh3IhR40ZDFxHdAzDBEChIAwoJaBCJo0VRLjl6jPkRgMxCIQ0pHLQg3SgNAE4GCIGIJhSYRl/aTJrzJqGchAYoDCBkARJrGQjN8HkohAlCWVX46JALwNdDRpEyPfpUaduK/jjdDoJa6AA0A0gMEuqQ95ABJasGSVwC4BhaujPhXlqb8W1jx2znyk0cuVCGDQACJFkAwMMACxYE2MCMiEWKCRbSdQAwooggExIhV6Y8e5LipbdvUy76eHdc3Yg6PBDE4ciRD5GGHPExyAPLRB1/A7f9GCpwxJJnY8duDMAAd5ZmAHigYlF02bRdZs9evTdu9+shg5x8qEeMA0TAUXrxI8AO8dBt1xRTAU4nXWQGsocgfYjM8AIAPFzgyQo1AKADUbzRF91aBcJ3YHwZtpegPOcpWOKH843oG26KWMfgIZwBIEwoMRrQIXw03XiYiu/VFKKPkcCgA4SPFLJBEfwI/sJDEbENgsMyQqz2Y205/rijh7JxZ6KWidgwZBArFLIECEwM58IRNwxRSA43ACDECC0KqNSJLb24pZ090nmOIHASUgMSagLQABJjFgInAqTdSOWAeFoZZ25YpteoOXRuyKWOj4qYKZCT3DASIUTEVsIOh1TQUJ1JHTjppT2CeOWCPBrywRCBTcDDDgMcVAMP7BRgwa0nXUDEcJJwmGWkCpo3qXwrTtIBDoIsEEMM95wQg5QNxMCLkk1CYuydtaWIbKvUQRqrQLQVyyWrWl6n4bKDACSDEkEE9kMIQwJQgRFBZEOSWufmienAv6HIbCQ5iBfEDU0oUR4AmhChpBJs5A7ZQ5ie6PlquM2+mqHBySJsg5seSOBEE4Mo4URZEADBBAcxDPkDxpScqDG5IHucs5zjDnLKACWpUMQOJQGARBFBCGLB0QeRlmi57trJHbvvRo3jpCmZBYAB/kZy1k6feovYzXRVCW5MkorLMSFGsETYCa5JskQBCBDGAqlic3o2z5wypphTISuCRDpKmBVoJEnkmhcMP6Cq8bd7q5pqnlfHasMqb8cdyRIDIFA4BzRv+iLk6GJy0pAZABjJkALkUPrroUA7QeiL0BBUm7DnXskyKRgxydwAbKv78JJ8UFZyWaMbCAAh+QQBFAB/ACxCAAAAKQAEAAAHKIAAgoOEhYaHiIItTU2Jjo+GEQ4ijIMYFJCZhigkhQqCDJqioQAJgoEAOw==') top left no-repeat;
+}
+
+#thread dl.userinfo dt.author.role-mod { 
+	background-image:url('data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAANCAYAAACZ3F9/AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAGBJREFUeNpi/P//PwM5gAXGeH3BF10OZiIjsqCowWYwzcRAJmDCYQs28B+Xxv94NGPIsSBJMuIw/T+6PynyIwsOWxjRQhVdDquNjHjEGAn5kYGQgWT7kZHcJEe2jQABBgA4lxUa7hb9eAAAAABJRU5ErkJggg==') !important; 
 }
 
 #navigation {
