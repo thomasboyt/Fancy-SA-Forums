@@ -2,13 +2,15 @@
 	"name": "Fancy SA Forums",
 	"version": "0.12",
 	
+	"permissions": ["experimental", "http://forums.somethingawful.com/css/*"],
+	
 	"description": "An SA forums redesign.",
 
 	"icons": {
 		"128": "Something_Awful_logo.png"
 	},
 
-    "background_page": "background.html",
+  "background_page": "background.html",
 
 	"content_scripts": [
 		{
