@@ -174,15 +174,8 @@ if (window.location.pathname == "/showthread.php") {
   $("ul.postbuttons li a[href^='newthread.php']").parent().css("display", "none");
 }
 
-
-/*$(".threadbar .threadrate").before($(".threadbar.bottom .postbuttons"))
-
-$(".threadrate b").html("Rate: ");*/
-
-
 /* Webkit timg fixes */
 var toggleNotATimg = function(e) {
-    console.log("clicked");
   var old_width = $(this).attr('old_width');
 
   if (old_width !== undefined) {

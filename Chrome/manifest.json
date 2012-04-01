@@ -2,7 +2,7 @@
 	"name": "Fancy SA Forums",
 	"version": "0.12",
 	
-	"permissions": ["experimental", "http://forums.somethingawful.com/css/*"],
+	"permissions": ["webRequest", "webRequestBlocking", "http://forums.somethingawful.com/css/*"],
 	
 	"description": "An SA forums redesign.",
 

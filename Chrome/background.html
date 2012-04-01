@@ -4,14 +4,19 @@
     <script type="text/javascript" src="message-handler.js"></script>
     <script type="text/javascript">
   
-    chrome.experimental.webRequest.onBeforeRequest.addListener(
+    chrome.webRequest.onBeforeRequest.addListener(
       function(details) {
-        console.log("Blocked 219.css, injecting 219a.css");
         return {redirectUrl: chrome.extension.getURL("css/219-amber.css")}
       },
       {urls: ["http://forums.somethingawful.com/css/219.css*"]},
       ["blocking"]
     );
+
+    /*chrome.webRequest.onBeforeRequest.addListener(
+      function(details) {
+        return {redirectUrl: chrome.extension.getURL()}
+      }
+    )*/
 
     </script>
   </head>
