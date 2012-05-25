@@ -27,7 +27,7 @@ $(window).load( function () {
     if ($(this).width() < $(this).data('original-width')) {
       $(this).filter(":parents(a)")
         .after("<div style='font-size:10px; font-style:italic'>" + $(this).data('original-width') + "x" + $(this).data('original-height') + " image automatically resized - click for big</div>")
-        .wrap("<a href='" + $(this).data("src") + "' target='_blank' />")
+        .wrap("<a href='" + $(this).attr("src") + "' target='_blank' />")
         .css("border", "2px yellow solid");
     }
   });

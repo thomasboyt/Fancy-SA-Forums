@@ -5,7 +5,7 @@ if (css.size() > 0) {
   $(css).attr("href", chrome.extension.getURL("/css/219-amber.css"));
 }
 
-if (css.size() == 0) {
+if (css.size() === 0) {
   css = $("link[rel=stylesheet][href^='/css/fyad.css']");
   if (css.size() > 0) {
     $(css).append("<link rel='stylesheet' type='text/css' href='" + chrome.extension.getURL("/css/fyad.css") + "' />");
@@ -13,11 +13,11 @@ if (css.size() == 0) {
 }
 
 // Prevent the default forums stylesheet from loading
-if (css.size() == 0)
+if (css.size() === 0)
  css = $("link[rel=stylesheet][href^='/css/gaschamber.css']");
-if (css.size() == 0)
+if (css.size() === 0)
  css = $("link[rel=stylesheet][href^='/css/byob.css']");
-if (css.size() == 0) {
+if (css.size() === 0) {
   css = $("link[rel=stylesheet][href^='/css/rfa.css']");
   //RFA Fix
   if (css.size() > 0) {
@@ -26,7 +26,7 @@ if (css.size() == 0) {
    }
 }
 
-if (css.size() == 0) {
+if (css.size() === 0) {
   $("head").append("<link rel='stylesheet' type='text/css' href='" + chrome.extension.getURL("/css/default.css") + "' />");
 }
 
@@ -36,23 +36,29 @@ if (window.location.pathname.indexOf("search") != -1) {
 }
 
 // Add frontpage style banner
-$("#container").prepend("<div id='header'><img id='logo_img_bluegren' src='http://i.somethingawful.com/core/head-logo-bluegren.png' /></div>")
+$("#container").prepend("<div id='header' class='hidden'><img id='logo_img_bluegren' src='http://i.somethingawful.com/core/head-logo-bluegren.png' /></div>");
+
+if (localStorage.getItem("hideHeader") != "true") {
+  $("#header").toggleClass("hidden"); //classes are used rather than just display: toggles so that they can be overriden by subforum-specific stylesheets
+}
 
 // Moves the archives box
- if ($(".forumbar").size() == 0)
- $("table#subforums").after("<div class='forumbar'></div>");
+ if ($(".forumbar").size() === 0)
+  $("table#subforums").after("<div class='forumbar'></div>");
 $(".forumbar").append($("#ac_timemachine"));
 
 // Properly styles the bottom breadcrumbs tag
 $(".mainbodytextlarge:last, .online_users:last").wrapAll($("<div class ='breadcrumbs' />"));
 
 // Add banner
+$("#globalmenu").append("<ul class='right'>");
+$("#globalmenu ul.right").append("<li class='first'><a class='toggle' href='#'>toggle header</a></li>");
 $("#globalmenu").insertBefore($("#container :first"));
 
 // Fix forum navbar
-$("ul#navigation").after("<div id='navbar_wrap'></div>");
-$("div#navbar_wrap").append($("ul#navigation"));
-$("ul#navigation li").each(function(i, el) {
+$("ul#navigation:first").addClass("top");
+$("ul#navigation:first").wrap("<div id='navbar_wrap'>");
+$("ul#navigation:first li").each(function(i, el) {
   link = $(this).find("a");
   if ($(link).attr('href').substr(1, 25) == 'account.php?action=logout')
   $(this).attr("id", "logout");
@@ -71,7 +77,7 @@ $("table#forum.threadlist tbody tr").each(function(i, el) {
 
   replies = $(this).find("td.replies");
 
-  if ($(this).find(".title_pages")[0] == null) {
+  if ($(this).find(".title_pages")[0] === undefined) {
     $(this).find("td.title").append("<div class='title_pages'>");
   }
   else {
@@ -138,7 +144,7 @@ $("th.title").append('<span class="replies" style="float:right;margin-right: 20p
 $("th.title span.replies").append(replies);
 $("th.title span.replies a:first").empty().html("Replies");
 
-/* 
+/*
 
 New page nav
 
@@ -149,14 +155,14 @@ if (window.location.pathname == "/forumdisplay.php") {
     // top
   $("#forum").before("<div class = 'forumbar top' />");
   $(".forumbar.top").append("<div class = 'forumbar_pages' />");
-  $(".forumbar_pages").append($("#mp_bar .pages"));
+  $(".forumbar_pages").append($(".pages:first"));
 
   // bottom
   $(".forumbar:last").append("<div class = 'forumbar_pages' />");
   $(".forumbar_pages:last").append($('.pages.bottom'));
 
   // post button
-  $(".forumbar.top").append($(".postbuttons"))
+  $(".forumbar.top").append($(".postbuttons"));
 }
 
 
@@ -174,47 +180,20 @@ if (window.location.pathname == "/showthread.php") {
   $("ul.postbuttons li a[href^='newthread.php']").parent().css("display", "none");
 }
 
-/* Webkit timg fixes */
-var toggleNotATimg = function(e) {
-  var old_width = $(this).attr('old_width');
-
-  if (old_width !== undefined) {
-    $(this).attr('width', old_width);
-    $(this).removeAttr('old_width');
-  }
-  else {
-    $(this).attr('old_width', $(this).attr('width'));
-    $(this).removeAttr('width');
-  }
-}
-
-$(".timg").css("border", "2px solid #2D9F09");
-
-$(".timg").each(function(i) {
-  if ($(this).parent('a').length > 0) {
-      if ($(this).parent('a').attr('href') == $(this).attr('src')) {
-          $(this).unwrap();
-      }
-  }
-  $(this).click(toggleNotATimg);
-
-});
-
-
 // --- bookmarkthreads.php and usercp.php ---
 
 if (window.location.pathname == "/usercp.php" || window.location.pathname == "/bookmarkthreads.php") {
     // top
   $("#forum").before("<div class = 'forumbar top' />");
   $(".forumbar.top").append("<div class = 'forumbar_pages' />");
-  $(".forumbar_pages").append($("#mp_bar .pages"));
+  $(".forumbar_pages").append($(".pages:first"));
 
   // bottom
   $(".forumbar:last").append("<div class = 'forumbar_pages' />");
   $(".forumbar_pages:last").append($('.pages.bottom'));
 
   // post button
-  $(".forumbar.top").append($(".postbuttons"))
+  $(".forumbar.top").append($(".postbuttons"));
 
   $("div.forumbar.top div.forumbar_pages").before($("span#bookmark_edit_attach"));
   $("div.pages:first").appendTo($("div.forumbar.top div.forumbar_pages"));
@@ -232,10 +211,14 @@ $("ul#usercpnav li a[href$='userlist=buddy']").html("Buddy List");
 $("ul#usercpnav li a[href$='userlist=ignore']").html("Ignore List");
 
 
-// --- Reply Page ---
-/*$("form[action=newreply.php] div#thread").css({'overflow':'scroll','height':'500px'});
-$("form[action=newreply.php] div#thread table.post").each(function(i, el) {
-    $(this).find("tr:eq(1)").css("display", "none");
-    $(this).find("dd.title").css("display", "none");
-    $(this).find("dd.registered").css("display", "none");
-});*/
+
+// header toggle
+
+$("#globalmenu a.toggle").click(function(e) {
+  e.preventDefault();
+  $("#header").toggleClass("hidden");
+  if (localStorage.getItem("hideHeader") == "false")
+    localStorage.setItem("hideHeader", "true");
+  else
+    localStorage.setItem("hideHeader", "false");
+});

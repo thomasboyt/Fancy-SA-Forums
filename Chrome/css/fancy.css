@@ -43,15 +43,18 @@ body {
 }
 
 #globalmenu a {
-	color: #ACAFB1 !important;
+	color: #069 !important;
 }
 
 #globalmenu a:hover {
 	text-decoration:none !important;
 }
 
-#globalmenu .first a {
-	color: #069 !important;
+#globalmenu ul {
+    float:left;
+}
+#globalmenu ul.right {
+    float:right;
 }
 
 #container {
@@ -77,22 +80,21 @@ Navigation Bar
 
 */
 
-#navigation {
+ul#navigation.top {
 	font-size: 12px !important;
 	border-top: 0px;
 	height: 20px;
-    margin: 0 0 1em 0 !important;
-    width: 100%;
+  margin: 0 0 1em 0 !important;
+  width: 100%;
 }
 
-#navigation a, #navigation a:visited {
+ul#navigation.top a, ul#navigation.top a:visited {
 	text-decoration:none;
 	font-weight:bold;
-    /*font-family: Arial, Verdana, sans-serif;*/
-    padding-top: 3px;
-    padding-bottom: 0px;
+  padding-top: 3px;
+  padding-bottom: 0px;
 }
-#navigation a:hover {
+ul#navigation.top a:hover {
     background-image:none;
 }
 
@@ -102,14 +104,13 @@ Navigation Bar
     height:31px;
     position: relative;
     left: -25px;
-    border-top:1px #142c46 solid;
 }
 
 #nav_purchase {
 	display:none;
 }
 
-ul#navigation li {
+ul#navigation.top li {
     font-weight:bold;
     text-align:center;
     height:20px;
@@ -118,47 +119,47 @@ ul#navigation li {
 }
 
 /* SA Forums */
-ul#navigation li:nth-child(1) {
+ul#navigation.top li:nth-child(1) {
     width: 109px;
 }
 /* Search the Forums */
-ul#navigation li:nth-child(2) a {
+ul#navigation.top li:nth-child(2) a {
     width: 155px;
 }
 /* User Control Panel */
-ul#navigation li:nth-child(3) {
+ul#navigation.top li:nth-child(3) {
     width: 162px;
 }
 /* Private Messages */
-ul#navigation li:nth-child(4) {
+ul#navigation.top li:nth-child(4) {
     display: none;
 }
 /* Forum Rules */
-ul#navigation li:nth-child(5) {
+ul#navigation.top li:nth-child(5) {
     width: 126px;
 }
 /* SAclopedia */
-ul#navigation li:nth-child(6) {
+ul#navigation.top li:nth-child(6) {
     width: 114px;
 }
 /* Posting Gloryhole */
-ul#navigation li:nth-child(7) {
+ul#navigation.top li:nth-child(7) {
     display: none;
 }
 /* Leper's Colon */
-ul#navigation li:nth-child(8) {
+ul#navigation.top li:nth-child(8) {
     width: 140px;
 }
 /* Support */
-ul#navigation li:nth-child(9) {
+ul#navigation.top li:nth-child(9) {
     width: 94px;
 }
 /* Log In/Log Out */
-ul#navigation li:nth-child(10) {
+ul#navigation.top li:nth-child(10) {
     width: 93px;
 }
 
-ul#navigation li a {
+ul#navigation.top li a {
     display:block;
     font-size: 12px;
     height:17px;
@@ -225,6 +226,7 @@ Thread List
 #mods {
 	float:none !important;
 	text-align:left !important;
+  padding-top:5px;
 }
 
 a[href="#top"] {
@@ -298,7 +300,7 @@ Header
 	padding: 0 !important;
 	
 	border-top: 2px #142C46 solid;
-	border-bottom: 2px #142C46 solid;
+	border-bottom: 1px #142C46 solid;
 }
 
 #header img {
@@ -308,6 +310,10 @@ Header
 	
 	margin: 0;
 	border: 0;
+}
+
+#header.hidden {
+  display:none;
 }
 
 /* stupid jumplist  */

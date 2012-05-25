@@ -4,6 +4,7 @@ body {
 #globalmenu {
 	background-color: #DDE1E4 !important;
 }
+
 #content .subforum .title a, #content .subforum .title a:hover, #content .subforum .title a:visited {
 	color: #036 !important;
 }
@@ -45,24 +46,6 @@ div.mqnav a:hover {
 	text-decoration:none;
 }
 
-/* Search results */
-div#mp_bar {
-    background: #069 !important;
-    color: white !important;
-    height: 22px;
-}
-
-div#mods {
-    background: #069 !important;
-    color: white !important;
-    float: left !important;
-    padding: 0.5em 0 0.5em 0;
-}
-div#mods a {
-    background: #069 !important;
-    color: white !important;
-}
-
 #forum td.title a.pagenumber, #forum td.title a.pagenumber:visited {
 	color:#036 !important;
 }
@@ -83,30 +66,31 @@ div#mods a {
     background-image: url('http://i.somethingawful.com/core/navbar-gradient-bg.png');
     background-repeat: repeat-x;
     background-position: bottom;
+    border-top:1px #142c46 solid;
 }
 
-#navigation {
+#navigation.top {
     border-bottom:1px #8eaac9 solid;
     background:#e7eef5;
 }
-ul#navigation li {
+ul#navigation.top li {
     background-color:#ebebeb;
     border-left:1px #fff solid;
     height: 19px !important;
 }
-ul#navigation li a {
+ul#navigation.top li a {
     color:#465963;
 }
-#navigation a, #navigation a:visited {
+#navigation.top a, #navigation.top a:visited {
     color: #465963;
 }
-#navigation a:hover {
+#navigation.top a:hover {
     background-color:#01385f;
     color:#fff;
 }
-#navigation #logout, #navigation #login {
+#navigation.top #logout, #navigation.top #login {
     background-color:#E6DCBE;
 }
-ul#navigation li:nth-child(1) {
+ul#navigation.top li:nth-child(1) {
     border-left:0px;
 }

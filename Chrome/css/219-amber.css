@@ -519,7 +519,8 @@ dd.title img[src="http://fi.somethingawful.com/customtitles/tek9s-2.png"] {
 	background-image:url('data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAANCAYAAACZ3F9/AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAGBJREFUeNpi/P//PwM5gAXGeH3BF10OZiIjsqCowWYwzcRAJmDCYQs28B+Xxv94NGPIsSBJMuIw/T+6PynyIwsOWxjRQhVdDquNjHjEGAn5kYGQgWT7kZHcJEe2jQABBgA4lxUa7hb9eAAAAABJRU5ErkJggg==') !important; 
 }
 
-#navigation {
+ul#navigation.top {
+    margin-top:4px;
     border-top:1px #EACF4C solid;
     border-bottom:1px #EACF4C solid;
     background:#000000;
@@ -529,9 +530,9 @@ ul#navigation li {
     border-left:1px #EACF4C solid;
 }
 ul#navigation li:nth-child(1) {
-    width: 108px;
+    width: 108px !important;
 }
 ul#navigation li:nth-child(10) {
-    width: 92px;
+    width: 92px !important;
     border-right: 1px solid #EACF4C;
 }
