@@ -61,7 +61,7 @@ div.mqnav a:hover {
 	color: #c60 !important;
 }
 
-#navbar_wrap {
+.navbar_wrap.top {
     background-color:#fff;
     background-image: url('http://i.somethingawful.com/core/navbar-gradient-bg.png');
     background-repeat: repeat-x;
@@ -69,28 +69,34 @@ div.mqnav a:hover {
     border-top:1px #142c46 solid;
 }
 
-#navigation.top {
+.navigation {
     border-bottom:1px #8eaac9 solid;
     background:#e7eef5;
 }
-ul#navigation.top li {
+ul.navigation li {
     background-color:#ebebeb;
     border-left:1px #fff solid;
     height: 19px !important;
 }
-ul#navigation.top li a {
-    color:#465963;
+.navigation {
+    border-bottom:1px #bbb solid;
+    background:#e7eef5;
 }
-#navigation.top a, #navigation.top a:visited {
+
+.navbar_wrap.bottom .navigation {
+  border-top:1px #bbb solid;
+}
+
+.navigation a, .navigation a:visited {
     color: #465963;
 }
-#navigation.top a:hover {
+.navigation a:hover {
     background-color:#01385f;
     color:#fff;
 }
-#navigation.top #logout, #navigation.top #login {
+.navigation .logout, .navigation .login {
     background-color:#E6DCBE;
 }
-ul#navigation.top li:nth-child(1) {
+ul.navigation li:nth-child(1) {
     border-left:0px;
 }

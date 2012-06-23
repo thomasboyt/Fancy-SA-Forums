@@ -22,7 +22,7 @@ body {
 	
 	padding: 0 !important;
 	margin: 0 !important;
-	margin-left:-25px !important;
+  margin-left:-25px !important;
 }
 
 #globalmenu ul {
@@ -62,14 +62,10 @@ body {
 	
 	margin: 0 auto !important;
 	
-	padding: 0 27px 15px 27px !important;
+	padding: 0 27px 3px 27px !important;
 	
 	border: 1px solid #000;
 	border-top: 0 !important;
-	
-	z-index: 10;
-	
-	min-height:100% !important;
 }
 
 
@@ -80,90 +76,113 @@ Navigation Bar
 
 */
 
-ul#navigation.top {
-	font-size: 12px !important;
-	border-top: 0px;
-	height: 20px;
+
+.navigation {
+  font-size: 12px !important;
+  border-top: 0px;
+  height: 20px;
   margin: 0 0 1em 0 !important;
+  padding-bottom: 0 !important;
+  margin-bottom: 0 !important;
   width: 100%;
 }
 
-ul#navigation.top a, ul#navigation.top a:visited {
-	text-decoration:none;
-	font-weight:bold;
+.navigation a, .navigation a:visited {
+  text-decoration:none;
+  font-weight:bold;
   padding-top: 3px;
   padding-bottom: 0px;
 }
-ul#navigation.top a:hover {
-    background-image:none;
+.navigation a:hover {
+  background-image:none;
 }
 
-#navbar_wrap {
-    display:block!important;
-    width:1000px;
-    height:31px;
-    position: relative;
-    left: -25px;
+.navbar_wrap {
+  display:block!important;
+  width:1000px;
+  position: relative;
+  left: -25px;
+  height: 20px;
+}
+
+.navbar_wrap.top {
+  height:31px;
+  border:0;
+  margin-bottom: 8px;
+}
+
+.navbar_wrap.bottom {
+  margin-top: 30px;
 }
 
 #nav_purchase {
-	display:none;
+  display:none;
 }
 
-ul#navigation.top li {
+div#container > ul.navigation {
+  margin-left: -25px !important;
+  width: 1000px !important;
+}
+
+div#container > ul > li > a {
+  display: inline !important;
+}
+
+ul.navigation li {
     font-weight:bold;
     text-align:center;
     height:20px;
     float:left;
     white-space:nowrap;
+  text-overflow:clip;
 }
 
 /* SA Forums */
-ul#navigation.top li:nth-child(1) {
-    width: 109px;
+ul.navigation li:nth-child(1) {
+  width: 109px;
 }
 /* Search the Forums */
-ul#navigation.top li:nth-child(2) a {
-    width: 155px;
+ul.navigation li:nth-child(2) {
+  width: 155px;
 }
 /* User Control Panel */
-ul#navigation.top li:nth-child(3) {
-    width: 162px;
+ul.navigation li:nth-child(3) {
+  width: 162px;
 }
 /* Private Messages */
-ul#navigation.top li:nth-child(4) {
-    display: none;
+ul.navigation li:nth-child(4) {
+  display: none;
 }
 /* Forum Rules */
-ul#navigation.top li:nth-child(5) {
-    width: 126px;
+ul.navigation li:nth-child(5) {
+  width: 126px;
 }
 /* SAclopedia */
-ul#navigation.top li:nth-child(6) {
-    width: 114px;
+ul.navigation li:nth-child(6) {
+  width: 114px;
 }
 /* Posting Gloryhole */
-ul#navigation.top li:nth-child(7) {
-    display: none;
+ul.navigation li:nth-child(7) {
+  display: none;
 }
 /* Leper's Colon */
-ul#navigation.top li:nth-child(8) {
-    width: 140px;
+ul.navigation li:nth-child(8) {
+  width: 140px;
 }
 /* Support */
-ul#navigation.top li:nth-child(9) {
-    width: 94px;
+ul.navigation li:nth-child(9) {
+  width: 94px;
 }
 /* Log In/Log Out */
-ul#navigation.top li:nth-child(10) {
-    width: 93px;
+ul#navigation li:nth-child(10), li.logout {
+  width: 93px;
 }
 
-ul#navigation.top li a {
-    display:block;
-    font-size: 12px;
-    height:17px;
-    text-decoration:none;
+ul.navigation li a {
+  display:block;
+  font-size: 12px;
+  height:17px;
+  text-decoration:none;
 }
 
 /*
@@ -185,7 +204,7 @@ table#info {
 	display:none;
 }
 
-#forums th, #index table#pm th {
+#forums th, #index table#pm th, #forum th {
 	padding-top:5px;
 	padding-bottom:5px;
 	padding-left:10px;
@@ -195,12 +214,36 @@ table#info {
 	font-size:13px !important;
 }
 
-#forums td, #index table#pm td {
+#forums td, #index table#pm td, #forum td {
 	padding-top:3px !important;
 	padding-bottom:3px !important;
 	padding-left:10px !important;
 	padding-right:10px !important;	
 }
+
+#forum div.author, #forum div.replies {
+  display: inline;
+  font-size: 11px;
+}
+
+#forum div.author::before {
+  content: "by ";
+}
+
+#forum div.replies::before {
+  content: " - ";
+}
+
+#forum td.title div.author a,
+#forum td.title div.replies a,
+#forum td.title div.thread_pages a {
+  font-size: 11px;
+}
+
+#forum td.title div.thread_pages {
+  font-size: 11px;
+}
+
 
 #forums .moderators {
 	display:none !important;
@@ -217,11 +260,67 @@ table#info {
 	font-size:12px !important;
 }
 
+
+
+
+
 /*
 
 Thread List
 
 */
+
+
+/* Compact thread listing */
+#forum.compact td.icon {
+  width: 78px;
+  padding-left: 7px !important;
+}
+
+#forum.compact td.icon.wide {
+  width: 114px !important;
+}
+
+#forum.compact td.icon img.star {
+  display: block;
+  float: left;
+  margin-right: 3px;
+}
+
+#forum.compact td.icon img.posticon {
+  margin: 0;
+}
+
+#forum.compact td.title div.thread_pages {
+  display: inline-block !important;
+  padding-left: 5px;
+}
+
+#forum.compact td.title div.thread_pages::before {
+  content: " - ";
+}
+
+
+/* Expanded thread listing */
+#forum.expanded td.icon {
+  width: 60px;
+}
+
+#forum.expanded td.icon.wide {
+  width: 96px;
+}
+
+#forum.expanded td.icon img.star {
+  display: block;
+  margin-left: 45px;
+  margin-top: 2px;
+}
+
+#forum.expanded td.title div.thread_pages {
+  display: block !important;
+  margin-top: 2px;
+}
+
 
 #mods {
 	float:none !important;
@@ -278,6 +377,11 @@ div.pages {
 #content .subforum .title a, #content .subforum .title a:hover, #content .subforum .title a:visited {
 	text-decoration:underline !important;
 }
+
+#content .breadcrumbs:nth-child(1) span.online_users {
+  display:none;
+}
+
 
 /* 
 
@@ -476,4 +580,15 @@ span#bookmark_edit_attach {
 /* Ignore List */
 #usercpnav li:nth-child(9) {
     width: 95px;
+}
+
+/* Copyright */
+#copyright {
+  padding: 2em 0;
+  margin: 0 !important;
+  color: #ACAFB1;
+}
+
+#copyright a {
+  color: #069;
 }

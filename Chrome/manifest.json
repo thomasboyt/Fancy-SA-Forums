@@ -1,6 +1,6 @@
 {
 	"name": "Fancy SA Forums",
-	"version": "0.13",
+	"version": "0.2",
 	
 	"permissions": ["webRequest", "webRequestBlocking", "http://forums.somethingawful.com/css/*"],
 	

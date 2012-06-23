@@ -1,10 +1,19 @@
+#globalmenu, #globalmenu a,
+#globalmenu li.first a, #globalmenu ul.right a {
+  color: #EACF4C !important;
+}
+
+#globalmenu li {
+  border-left: 1px solid #EACF4C !important;
+}
+
 #header {
     display: none;
 }
 
 body {
 	color:#EACF4C !important;
-	font: 13px 'Monaco', 'Lucida Sans Typewriter', 'Inconsolata', 'Consolas', 'Menlo', monospace !important;
+	font: 13px 'Monaco', 'Consolas', monospace !important;
 	background-color:black;
 }
 
@@ -62,12 +71,12 @@ div.breadcrumbs a.bclast {
 }
 #thread dl.userinfo, #forum td.replies, #forum td.views, #forum td.author, #subforums {
 	color:#EACF4C !important;
-	font: 12px 'Monaco', 'Lucida Sans Typewriter', 'Inconsolata', 'Consolas', 'Menlo', monospace !important;
+	font: 12px 'Monaco', 'Consolas', monospace !important;
 }
 
 #thread td.postbody {
-	font: 13px 'Monaco', 'Lucida Sans Typewriter', 'Inconsolata', 'Consolas', 'Menlo', monospace !important;
-    color:#EACF4C !important;
+	font: 13px 'Monaco', 'Consolas', monospace !important;
+  color:#EACF4C !important;
 }
 
 sup {
@@ -519,20 +528,20 @@ dd.title img[src="http://fi.somethingawful.com/customtitles/tek9s-2.png"] {
 	background-image:url('data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAANCAYAAACZ3F9/AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAGBJREFUeNpi/P//PwM5gAXGeH3BF10OZiIjsqCowWYwzcRAJmDCYQs28B+Xxv94NGPIsSBJMuIw/T+6PynyIwsOWxjRQhVdDquNjHjEGAn5kYGQgWT7kZHcJEe2jQABBgA4lxUa7hb9eAAAAABJRU5ErkJggg==') !important; 
 }
 
-ul#navigation.top {
+ul.navigation {
     margin-top:4px;
     border-top:1px #EACF4C solid;
     border-bottom:1px #EACF4C solid;
     background:#000000;
 }
-ul#navigation li {
+ul.navigation li {
     background-color:#000000;
     border-left:1px #EACF4C solid;
 }
-ul#navigation li:nth-child(1) {
+ul.navigation li:nth-child(1) {
     width: 108px !important;
 }
-ul#navigation li:nth-child(10) {
+ul.navigation li:nth-child(10) {
     width: 92px !important;
     border-right: 1px solid #EACF4C;
 }
