@@ -1,0 +1,27 @@
+#header {
+    display: none;
+}
+
+#navigation {
+    border-bottom:1px #C1C1C1 solid;
+    background:#F39;
+}
+ul#navigation li {
+    background-color:#F39;
+    border-left:1px #C1C1C1 solid;
+}
+#navigation a, #navigation a:visited {
+    color: white;
+	text-decoration:none;
+	font-weight:bold;
+}
+
+#navigation a:hover {
+    background-color:#FCF;
+    color:#066;
+    background-image:none;
+}
+ul#navigation li:nth-child(1) {
+    border-left:0px;
+}
+

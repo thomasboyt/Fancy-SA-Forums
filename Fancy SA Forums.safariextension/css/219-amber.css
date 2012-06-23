@@ -1,0 +1,547 @@
+#globalmenu, #globalmenu a,
+#globalmenu li.first a, #globalmenu ul.right a {
+  color: #EACF4C !important;
+}
+
+#globalmenu li {
+  border-left: 1px solid #EACF4C !important;
+}
+
+#header {
+    display: none;
+}
+
+body {
+	color:#EACF4C !important;
+	font: 13px 'Monaco', 'Consolas', monospace !important;
+	background-color:black;
+}
+
+a {
+	color:#EACF4C !important;
+}
+
+div.pages a, div.pages .curpage {
+    font-size: 12px !important;
+}
+
+#container {
+	background:black !important;
+}
+
+span.bbc-spoiler, .bbc-spoiler-li {
+    background: #EACF4C !important;
+    background-color: #EACF4C !important;
+    color: #EACF4C !important;
+}
+
+span.bbc-spoiler:hover, .bbc-spoiler-li:hover {
+    background: #EACF4C !important;
+    background-color: #EACF4C !important;
+    color: black !important;
+}
+
+#mods, div.pages, #copyright, #forum th, #forum td.lastpost, #forum span.pages, #thread div.postbar, td.postdate, td.postlinks, #thread dl.userinfo dd, #thread tr.postbar td, div.threadrate, div.subscribe {
+	color:#EACF4C !important;
+}
+#navigation, #nav_purchase, #thread p.editedby, #forum td.title a.pagenumber, #forum td.title, #forums th, #forums div.subforums, #forums td.moderators, #pm, #info {
+	font-size: 12px !important;
+}
+div.threadbar, #subforums, #subforums td, #forum, #forum th, #forum td, #filter, div.forumbar, #thread table.post, #thread td, #forums, #forums th, #forums td, #pm, #pm th, #pm td, #info, #info th, #info td {
+	background-color: black;
+}
+.forumbar, .threadbar {
+	height:20px !important;
+}
+
+td.title div.lastseen {
+	background:none !important;
+}
+
+#forum td.title div.lastseen a.x {
+	background:none !important;
+}
+#forum td.title a.thread_title, #forum td.title a.thread_title:visited {
+	font-size:13px !important;
+}
+
+div.breadcrumbs a.bclast {
+	border-bottom:none !important;
+	text-decoration:underline !important;
+}
+#thread dl.userinfo, #forum td.replies, #forum td.views, #forum td.author, #subforums {
+	color:#EACF4C !important;
+	font: 12px 'Monaco', 'Consolas', monospace !important;
+}
+
+#thread td.postbody {
+	font: 13px 'Monaco', 'Consolas', monospace !important;
+  color:#EACF4C !important;
+}
+
+sup {
+    font-size: 11px;
+    -webkit-font-smoothing: antialiased; /* workaround for nested sub/super weirdness with less than 100% zoom levels*/
+}
+
+#mods, div.pages, #forum th, #forum td.lastpost, #forum span.pages, #thread div.postbar, td.postdate, td.postlinks, #thread dl.userinfo dd, #thread tr.postbar td, div.threadrate, div.subscribe {
+	color:#EACF4C !important;
+	font: 12px 'Monaco', 'Lucida Sans Typewriter', 'Inconsolata', 'Consolas', 'Menlo', monospace !important;
+}
+
+#copyright {
+	font: 12px 'Monaco', 'Lucida Sans Typewriter', 'Inconsolata', 'Consolas', 'Menlo', monospace !important;
+}
+
+div.threadbar, #subforums, #subforums td, #forum, #forum th, #forum td, #filter, div.forumbar, #thread table.post, #thread td, #forums, #forums th, #forums td, #pm, #pm th, #pm td, #info, #info th, #info td {
+	border:1px solid #EACF4C !important;
+}
+.author.op {
+	color:#EACF4C !important;
+
+}
+/* jumplist @ bottom */
+select {
+	background-color:black;
+	color:#EACF4C;
+	font: 13px 'Monaco', 'Lucida Sans Typewriter', 'Inconsolata', 'Consolas', 'Menlo', monospace !important;
+}
+#forum td.title div.lastseen a {
+	font-size: 12px !important;
+}
+div.breadcrumbs {
+	font-weight: bold !important;
+	font-size: 12px !important;
+}
+#subforums td.title dt, #forum td.lastpost a.author, div.threadbar form.threadsearch label, #thread dl.userinfo dt, #forums td.title a.forum {
+	font-weight: bold !important;
+	font-size: 12px !important;
+}
+
+form#ac_timemachine {
+	position:absolute;
+	float:left;
+	border: 0 !important;
+	background: #000 url('http://i.somethingawful.com/core/icon/fsilk/clock.png') no-repeat !important;
+	background-position: 3px 2px !important;
+    width: 425px !important;
+}
+
+form#ac_timemachine.active {
+	background: #8F0035 url('http://i.somethingawful.com/core/icon/fsilk/clock_red.png') no-repeat !important;
+}
+
+#forum th, div.threadbar, div.forumbar, #forums th, #pm th, #info th {
+	background:black !important;
+}
+
+.profilelinks li {
+	border-right: 1px solid #EACF4C !important;
+	padding-top:6px;
+	padding-bottom:6px;
+	padding-left:10px;
+	padding-right:10px;
+	margin-left:-5px;
+	margin-right:0px;
+}
+
+.bbc-block h4, .bbc-block h5 {
+	font-size: 13px !important;
+    color: #EACF4C !important;
+}
+.bbc-block h4 {
+	border-top: 1px #EACF4C solid !important;
+}
+.bbc-block, .bbc-block h5 {
+	border-bottom: 1px #EACF4C solid !important;
+}
+
+/* Page links */
+.pages a, .pages .curpage {
+	margin-right:0px !important;
+	color: #EACF4C !important;
+}
+
+/* .curpage {
+	padding-right:5px !important; */
+}
+div.pages a:hover {
+	background:none !important;
+	padding-right:0px !important;
+	margin-right: 0px;
+}
+div.pages a {
+	border-bottom:none !important;
+	text-decoration:underline !important;
+}
+#globalmenu, #globalthing {
+	background-color:black !important;
+	font: 13px 'Monaco', 'Lucida Sans Typewriter', 'Inconsolata', 'Consolas', 'Menlo', monospace !important;
+}
+
+/* Personal preference + looks less cluttered like this. Use "Buy forum stuff" link if you need to do so. */
+#nav_purchase {
+	display:none;
+}
+.title_pages, .title_pages a {
+	color: #EACF4C !important;
+}
+
+.title_pages a {
+	text-decoration:underline !important;
+}
+.title_pages a:hover {
+	background-color:black !important;
+}
+
+#forum td.title a.pagenumber, #forum td.title a.author, #forum td.title span.replies, #forum td.title, #forum .title_pages {
+	font-size: 12px !important;
+}
+#forum td.title div.lastseen a.count {
+	border-left:1px #EACF4C solid !important;
+}
+.lastseen {
+	border:1px #EACF4C solid !important;
+}
+div.breadcrumbs h1, input, #forum td.title a {
+	font-size:12px !important;
+}
+
+dl.userinfo {
+	min-width: 14em !important;
+}
+
+/* New thread/reply & edit post */
+table.standard th {
+	background-color:black !important;
+	color: #EACF4C !important;
+}
+table.standard td {
+	background-color:black !important;
+}
+div.mainbodytextsmall, .smalltext, .smalltext a {
+	font-size: 12px !important;
+}
+.bginput {
+	background-color:black;
+	color: #EACF4C !important;
+	border:1px #EACF4C solid;
+	font: 13px 'Monaco', 'Lucida Sans Typewriter', 'Inconsolata', 'Consolas', 'Menlo', monospace !important;
+}
+textarea {
+	background-color:black;
+	color: #EACF4C !important;
+	border:1px #EACF4C solid;
+}
+table.standard th, table.standard td {
+	border:1px #EACF4C solid !important;
+}
+.standard h2 {
+	background-color:black !important;
+	color: #EACF4C !important;
+	border-bottom:1px #EACF4C solid !important;
+}
+div.standard {
+	background-color:black !important;
+	color: #EACF4C !important;
+	border:1px #EACF4C solid !important;
+}
+
+#forum td.replies, #forum td.views, #forum th.rating, #forum td.rating {
+	font: 12px 'Monaco', 'Lucida Sans Typewriter', 'Inconsolata', 'Consolas', 'Menlo', monospace !important;
+}
+
+#thread ul.postbuttons {
+	padding: 4px 0px 0px 4px !important;
+}
+
+ul.postbuttons {
+    margin-right: 4px;
+    margin-bottom: -4px;
+}
+
+ul.postbuttons img {
+	padding: 4px 0px 20px 0px;
+}
+
+.threadbar {
+	padding:3px 3px !important;
+}
+
+#ac_timemachine {
+	height:15px !important;
+	padding-top:0px !important;
+}
+
+#ac_timemachine select, #ac_timemachine input {
+	margin-top:-1px !important;
+}
+
+td.postlinks .postbuttons li a {
+	padding-right:5px !important;
+	margin-right:-6px !important;
+} 
+
+.signature {
+	border-top:1px #EACF4C solid !important;
+}
+
+.seen1 td, .seen2 td {
+	background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAYAAABytg0kAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAABlJREFUeNpi9HWR+M/AwMDIBCKA+D9AgAEAGfsCrVbpGIsAAAAASUVORK5CYII=') top left repeat !important;
+}
+
+.timg { border: 2px solid #eacf4c !important; }
+
+#thread table.post p.editedby span, #thread table.post p.attachment span {
+	color: #EACF4C !important;
+	font-size: 12px !important;
+	opacity: 1.0 !important;
+	font-style:normal !important;
+}
+
+/* holy moly thanks roboshit */
+@-webkit-keyframes animes {
+	0% {
+		background:#EACF4C;
+    color:#000;
+	}
+	50% {
+		background:#000;
+    color:#EACF4C;
+	}
+	100% {
+		background:#EACF4C;
+    color:#000;
+	}
+}
+
+a:hover {
+  -webkit-animation-name: animes;
+	-webkit-animation-duration: 1s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-direction: alternate;
+	-webkit-animation-timing-function: ease-in-out;
+}
+.bginput:hover {
+	-webkit-animation-name: animes;
+	-webkit-animation-duration: 1s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-direction: alternate;
+	-webkit-animation-timing-function: ease-in-out;
+}
+
+/* fix to make posts with only "quote" button have same bottom bar height as ones with "edit" or i suppose "report" */
+ul.postbuttons li {
+	padding: 0px !important;
+}
+ul.postbuttons a {
+	-webkit-animation-name:none;
+}
+
+/******/
+
+.threadbar #rateform_js_attach b { /* "rate thread" text */
+    padding-top: 8px !important;
+    padding-left: 4px !important;
+}
+
+#rateform_js_attach {
+    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAAAUCAYAAAB7wJiVAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAUdJREFUeNpi/HA66D/DKBg0gAVMqs5jpJqJt5P+j5pHvlmM4BxCTQeOAooihGk0FAYXGI2QQVmHEAEcLBTAlf+BEw8oKt4KEg0wGhET5l8g28wFXY4Y5iWU7adKEXxhUyDYbAO/9WSZ9+t+DFg/2x82TEkc1QQLKZFBKYBFBnIEgMRAmJxIgUUGcgSAxECY0kiBRQZVAAl1NAu9IoPSnIANUCsn0DQyqF2HgIooSospUnLMQANKiym61SGDOTLQ6xFycw7NIgPUVyGyCCO6H0KtSp3WOQNbvUKNoopqkQSLHGxhDpRjGco5g9oAPdAHovhiGo2M0Y4hRiRh65sQWzxh64cMpqEQjPqDACBYh+Bq9pJTl+ALeHJzDa06huj1CdnFFrYIwRXeo4OLgy9HjY5ljdYho4C+EUJiJTZqHrZKfRQMGgAQYAByQMlJ7tE5AAAAAABJRU5ErkJggg==') no-repeat top left;
+    padding-top: 11px;
+}
+
+#rateform_js_attach img {
+    height: 0px;
+    width: 20px;
+    overflow: hidden;
+    padding-bottom: 20px;
+    margin-top: 4px;
+}
+#rateform_js_attach img:last-child {
+    width: 0px;
+}
+
+.postbuttons img[alt~="Post"] {
+    height: 0px;
+    width: 60px;
+    overflow: hidden;
+    padding-bottom: 20px;
+    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAUCAYAAADRA14pAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wBCxUUN8+3y4QAAAC/SURBVFjDY3x13uc/wwgCLAwMDAyiBpsZR4JnX1/w/c/EMMLAqIdHRB4mJy9gE8814EYpCyZf+PqfVmrILXvIimFkB+UacDPC+MgOg7Fh8uSqGbFJGj2Qh6SHscUockzj8yC5nqbYw5MvfP2PnDQp8TQtkzJFhRY1Qhqfp6lh5pDIw8O+0KJXMh7RDQ/GV+d9/pNagaM3PHDlOWo1PLCpyzXgZlzBsILkBhNZHh7tLY12HkY9PLh6S7h6P8MRAABZ0HngAymgagAAAABJRU5ErkJggg==');
+    background-repeat: no-repeat;
+    margin-right: -0.65em; /* blah blah firefox sucks dicks */
+    padding-right: 0.45em; /* fix for MobileSafari*/
+}
+
+.postbuttons img[src$="forum-reply.gif"] {
+    height: 0px;
+    width: 60px;
+    overflow: hidden;
+    padding-bottom: 20px;
+    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAUCAYAAADRA14pAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wBCxUVDRCgI3cAAADJSURBVFjD7VfLDYAgDC3Gm2f3YBAdxWlcwruDyBx69ownDSFUCn4ilh7x5dEXXp+pmKdGA6MqAQBqOQoOYhfV6gKYVRbMYoZ9vnedd7I65r5XKxp8Ow7DnPGY38zacTY3JYu8L2xe2slKuARgmKs8SVn6qYY/Kdi2XFIz7BJCma+rPD739GrVNs9w9wtTmqNisFmP6SWEp4i9iJLM7P7DFHu/yfOo4C+KJQkODSE7TDBMLE8In6vEPDU6b0t5eciC096WsI3oj7UB9WSLOCVTNNkAAAAASUVORK5CYII=');
+    background-repeat: no-repeat;
+    margin-left: 0.3em;
+}
+
+.postbuttons img[src$="forum-closed.gif"] {
+    height: 0px;
+    width: 60px;
+    overflow: hidden;
+    padding-bottom: 20px;
+    background: url('data:image/png;base64,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');
+    background-repeat: no-repeat;
+    margin-left: 0.3em;
+}
+
+.postbuttons img[alt="Alert Moderators"]{
+    height: 0px;
+    width: 60px;
+    overflow: hidden;
+    padding-bottom: 20px;
+    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAUCAYAAADRA14pAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wBCxUWI+dbfXsAAADWSURBVFjD7VfBEYQgDAyMP9/XB4VoKVZjKVeI1KFv39wLh3GSTJAR5SAvR9eNi5tA1LoMDiqKDgDgY76qBrGbHZ2GyqIJrqKGzz7HgJPpjzqf7U42Oo+jMCEPhZPkkvBg/UlzRJPpFSaAwsTy+Gv/PCYXt+hZLI2Jzh3nxblNcPin3iCWu9dJhHBiJNaS8MQsbAqPTrWpFEPVeu6y0dIkks6c07qPN62Ujyjy4FGCWFRwbBOa7e6wd7D9lrNnyCM95FzJqdZlcG1aasNDE1z2tERNSP8YP3t6ly+WQ6p8AAAAAElFTkSuQmCC');
+    background-repeat: no-repeat;
+    margin-right: -0.6em; /* try to compensate for rendering differences in webkit/gecko */
+    padding-right: 0.45em; /* fix for MobileSafari*/
+}
+
+.postbuttons img[alt="Edit"] {
+    height: 0px;
+    width: 60px;
+    overflow: hidden;
+    padding-bottom: 20px;
+    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAUCAYAAADRA14pAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wBCxUVGH19x5wAAAC+SURBVFjD7ZfNDYQgEIXfmL15tg8K0VKoxlIsROpwz57H0yZkAsKSRWXhXXkh8zE/OrStI6MivQBgUAvVAPs2E3eoTA24ih5O6QXfmVY9AcBsdvadSUmv9LnuSp09SRm2A9KqJxeI9JwF7vI+vqRDgYagv33kW4E/ELmyE6qgS4FTM1bslM7dc4/s4ZKgf/odLqG8u6tgcw+2rMA23Gx2dsFKT+yPh+/hYjwxom0duW1LbXlowGVvS2fbz7/pAAzWYo4/iZrtAAAAAElFTkSuQmCC');
+    background-repeat: no-repeat;
+    margin-right: -0.25em;
+    margin-left: -0.6em;
+    padding-left: 0.45em; /* fix for MobileSafari*/
+}
+
+.postbuttons img[alt="Quote"] {
+    height: 0px;
+    width: 60px;
+    overflow: hidden;
+    padding-bottom: 20px;
+    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAUCAYAAADRA14pAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wBCxUWB9tYmaoAAADcSURBVFjDY3x13uc/wwgCLAwMDAyiBpsZR4JnX1/w/c/EMMLAqIdHRB7GByIYIhgmX/iKUbDlGnDD8z1MnlgxXObgUoOsDpc8sWURwRhGdjgME7KYluYgBxCyOUM6SaN7ihT1Q87D2ByPz0PYss6wLbRIzQ5D3sOk5t9hUS3RtNAiJwkNtuTNRI98M5jyMuOr8z7/8VXYxDQ8KGlUYEuS6OoINV6IbXi8vuD7n4XUfEKoJUSN/IZPHT65FbQstAZzfqaoLb0CPdwMGBhJCdHR3tJgiOHXF3xHzDAPAHn2eKs2LaphAAAAAElFTkSuQmCC');
+    background-repeat: no-repeat;
+    margin-left: -0.5em;
+}
+
+img.bookmark {
+    height: 0px;
+    width: 60px;
+    overflow: hidden;
+    padding-bottom: 20px;
+    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAUCAYAAADRA14pAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wBCxUUIqJqL28AAADDSURBVFjD7ZfBEYQgDEU/jjfP2weFaClWYylbiNahZ894wmEQFgTUcZMcoxN95v9gxDy2CoSiBoCP/AoKsMvUqQrEgoFJeDjFCwDQy2b3/jCth5x5zZd31XfVNfM6lzJ7sjqsH+x78dA9JlgvG2ED+T7go5KOgXWB/J2HbdhS0L+sczmwDZMLEoLJhU0eWj4fnpW8XecOyV9+LOlhFNOVkOxL2OJ153AuNP9p3RkxXSrtazGPreJtiSXNwO/elvT2QyE2Avt8lXjqna0AAAAASUVORK5CYII=');
+    background-repeat: no-repeat;
+    margin-left: 0.2em;
+    padding-left: 0.2em; /* fix for MobileSafari*/
+}
+
+img.unbookmark {
+    height: 0px;
+    width: 60px;
+    overflow: hidden;
+    padding-bottom: 20px;
+    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAUCAYAAADRA14pAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wBCxUTDUb6hPEAAADnSURBVFjD7ZfNDYMwDIVfKOLCuXtkEDpKpmGUDkLmoGfUXir3REWt/BASRNvENxIL/Nl+DhHj0BEyshoAzvIqcoC96QtVyMwKcBYa5n0OAEq2b133evpY489bfZbW64ls66bATe81fZ/Pp6gK24Ix+bh8XT5LMCVbwYFsCdytpUOgXXsmkK/V8NYgOWwqaJd0ooDXtBKHiQVxwfhgk1Q4BNoH4qtsiqQlaenYQOZhFJI83/S27f/lOeyCLj8eSrbCpKcU+jni2OMmxqGjclsql4cC/NtDa74h7W1EhPvjiaapUJ+OyfULggOp7AMjpv0AAAAASUVORK5CYII=');
+    background-repeat: no-repeat;
+    margin-left: 0.2em;
+    padding-left: 0.2em;
+}
+
+.postbuttons input[src$="sa-open.gif"] {
+    height: 0px;
+    width: 60px;
+    overflow: hidden;
+    padding-bottom: 20px;
+    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAUCAYAAADRA14pAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wBCxUULqvcY0QAAACjSURBVFjD7ZhRCsAgCIZLdobu0T06bvfoHl2iPQUSga3l1qZCL/FHfaSm2ZxCMZJMEnBOoYARZgr8dztWxr7z0VK5YUSDdVXTW4fnWG8Yb1hHC4APc1XDmVy3c2lu6K2AR1z1LjQ8BULBUCAz8foacBvrs0AroOEr8bsKest3mLPcBUmw04WH89HiREQVFTmF0nPFVqPdknZL2jwoMGVW2hfPCVhecyts/8eoAAAAAElFTkSuQmCC');
+    background-repeat: no-repeat;
+    margin-left: 0.3em;
+}
+
+.postbuttons input[src$="sa-close.gif"] {
+    height: 0px;
+    width: 60px;
+    overflow: hidden;
+    padding-bottom: 20px;
+    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAUCAYAAADRA14pAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wBCxUVBGl8m9MAAAC6SURBVFjD7VjREYAgCI2uGdrDPRi3PdiDJeirO69TAz09Td9fhthDeKHAhLLNhJkIM6Hs22RYhP+Oo6TWT3dB6N0zbvGhtUlpTmxds2gxobztQs8pXzEf/pjGRjsvW7QeR+/oqaLZCJZv6aqGQyVyugtShGIbMoxo+aS/0jSnh+hSpf1dLRapkX5LNUhXJWxNOa3alqy150a5Rn21CCwwoWjSwtJ4WJqGlo0HE8o6La3DwyI8NmC2K54bWku4kryOGIEAAAAASUVORK5CYII=');
+    background-repeat: no-repeat;
+    margin-left: 0.3em;
+}
+
+
+td.rating { /* lets put this here why not */
+    padding: 0px 4px 0px 4px !important;
+}
+
+td.rating img[src="http://fi.somethingawful.com/rate/default/5stars.gif"] {
+    height: 0px;
+    width: 44px;
+    overflow: hidden;
+    padding-bottom: 16px;
+    /* aaaaaaa */
+    background: url('data:image/gif;base64,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') top left no-repeat;
+}
+
+td.rating img[src="http://fi.somethingawful.com/rate/default/4stars.gif"] {
+    height: 0px;
+    width: 44px;
+    overflow: hidden;
+    padding-bottom: 16px;
+    /* Squares */
+    background: url('data:image/gif;base64,R0lGODlhLAAQAKEDAAAAAOLISerPTP///ywAAAAALAAQAAACTISMl7unzoCcDdVXL90SQg16FhdmIiaS09mZbkqyZSqrMyPXXP7imc2j9T6xoSUYUSE/y9HOiPLBlNCWcLppRpk/6lUKJj6/gWPVVgAAOw==') top left no-repeat;
+}
+
+td.rating img[src="http://fi.somethingawful.com/rate/default/3stars.gif"] {
+    height: 0px;
+    width: 44px;
+    overflow: hidden;
+    padding-bottom: 16px;
+    background: url('data:image/gif;base64,R0lGODlhLAAQAIACAAAAAOrPTCwAAAAALAAQAAACR0SMl7unAKOcDVXlGN0z5wt5FseJWAWSqhmirLq9MgrH7i3WHc68+p6b5X6tIO9DjAh7NOLy40umniPn0RJNUk9Dq/GrSRYAADs=') top left no-repeat;
+}
+
+td.rating img[src="http://fi.somethingawful.com/rate/default/2stars.gif"] {
+    height: 0px;
+    width: 44px;
+    overflow: hidden;
+    padding-bottom: 16px;
+    /* Squares */
+    background: url('data:image/gif;base64,R0lGODlhLAAQAIACAAAAAOrPTCwAAAAALAAQAAACQESMlwvtDyM8FK0qs34Vd7uF3NV8ioiWJHmmm6l+Lgqzc1jX97vqe5Rb/TJB2XDSEx6RMt/SBn2OmspnkSFtFAAAOw==') top left no-repeat;
+}
+
+td.rating img[src="http://fi.somethingawful.com/rate/default/1stars.gif"] {
+    height: 0px;
+    width: 44px;
+    overflow: hidden;
+    padding-bottom: 16px;
+    /* Squares */
+    background: url('data:image/gif;base64,R0lGODlhLAAQAKEDAAAAAOnOS+rPTP///yH/C05FVFNDQVBFMi4wAwEAAAAh+QQFBQADACwAAAAALAAQAAACVhSMp8nrDcGbsdJn89VmSpl8nyaCS2OanaKOTvqGL0vLLcygF+7eNSuLlH6rlSg3E7qMy2Yo6Pn5ihSdksqjoqw9adJ5isJ4ZHCHs0lX0Gw10B0JwB8FACH5BAEFAAMALAAAAAAsABAAAAJVhIynyesNxZux0mfz1YaCj4AgxogfRh7nyKotuyoptNZheS+4l7+265iRYjAcUaWr/EwiYES4KzqnpaRV6utNZsTlkqobRr/FY4ezSSvVbHSiDXcXAAA7') top left no-repeat;
+}
+
+dd.title img[src="http://fi.somethingawful.com/customtitles/tek9s-2.png"] {
+    height: 0px;
+    width: 148px;
+    overflow: hidden;
+    padding-bottom: 42px;
+    background: url('data:image/gif;base64,R0lGODlhlAAqAMZRAAAAAAIAAAcCAAsGAAwHABQOABgRAB0VAB8YACAcCiEdCiUeACQgCykgACgjDS4lADIoADErEDctADswADgyEkA1AEE2AEY7AEY+Fks/Ak5AAlJFA1VHBVhKBlxNB15QCWFSCWJTCV5THmRVCmBVH2lZC2xcDG9eDm1gI3JhD3VjD3ZkEHlnEHVnJnxrEX5sE4BtE4NwFIVxFIZyFYh1FYl2Fot3Fo97GJJ8GZN+GZSAGpeBGpiDGpmEG5uFG5yGG56IHaCJHaGKHqKLHqKNHqONHqWOH6aPH6eQH6iSIKqSIKuTIKyUIq+XIrGZI7KbI+rPTP///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////yH/C05FVFNDQVBFMi4wAwEAAAAh+QQFFAB/ACwAAAAAlAAqAAAH/oAAgoOEhYaHiImKi09PKYuQkZKTlJWWl4pNTxwBmJACnqGio6MmHKSGFgWorK2uggSwr7O0tZYePAAyMKw7HwFBCLbDxIcxPAE8MaQ7MgZDp8XS0ioSugMenh4QLAAh0dPh4uPk5ZAjEIQHJ5UuhR8V5vKiKUGdhMqTPDKFDUTx8wJS4gBE0IFCPEpEsrFsUIBVzw6Sg0KxosWLFAVh3IhR40ZDFxHdAzDBEChIAwoJaBCJo0VRLjl6jPkRgMxCIQ0pHLQg3SgNAE4GCIGIJhSYRl/aTJrzJqGchAYoDCBkARJrGQjN8HkohAlCWVX46JALwNdDRpEyPfpUaduK/jjdDoJa6AA0A0gMEuqQ95ABJasGSVwC4BhaujPhXlqb8W1jx2znyk0cuVCGDQACJFkAwMMACxYE2MCMiEWKCRbSdQAwooggExIhV6Y8e5LipbdvUy76eHdc3Yg6PBDE4ciRD5GGHPExyAPLRB1/A7f9GCpwxJJnY8duDMAAd5ZmAHigYlF02bRdZs9evTdu9+shg5x8qEeMA0TAUXrxI8AO8dBt1xRTAU4nXWQGsocgfYjM8AIAPFzgyQo1AKADUbzRF91aBcJ3YHwZtpegPOcpWOKH843oG26KWMfgIZwBIEwoMRrQIXw03XiYiu/VFKKPkcCgA4SPFLJBEfwI/sJDEbENgsMyQqz2Y205/rijh7JxZ6KWidgwZBArFLIECEwM58IRNwxRSA43ACDECC0KqNSJLb24pZ090nmOIHASUgMSagLQABJjFgInAqTdSOWAeFoZZ25YpteoOXRuyKWOj4qYKZCT3DASIUTEVsIOh1TQUJ1JHTjppT2CeOWCPBrywRCBTcDDDgMcVAMP7BRgwa0nXUDEcJJwmGWkCpo3qXwrTtIBDoIsEEMM95wQg5QNxMCLkk1CYuydtaWIbKvUQRqrQLQVyyWrWl6n4bKDACSDEkEE9kMIQwJQgRFBZEOSWufmienAv6HIbCQ5iBfEDU0oUR4AmhChpBJs5A7ZQ5ie6PlquM2+mqHBySJsg5seSOBEE4Mo4URZEADBBAcxDPkDxpScqDG5IHucs5zjDnLKACWpUMQOJQGARBFBCGLB0QeRlmi57trJHbvvRo3jpCmZBYAB/kZy1k6feovYzXRVCW5MkorLMSFGsETYCa5JskQBCBDGAqlic3o2z5wypphTISuCRDpKmBVoJEnkmhcMP6Cq8bd7q5pqnlfHasMqb8cdyRIDIFA4BzRv+iLk6GJy0pAZABjJkALkUPrroUA7QeiL0BBUm7DnXskyKRgxydwAbKv78JJ8UFZyWaMbCAAh+QQBFAB/ACxCAAAAKQAEAAAHKIAAgoOEhYaHiIItTU2Jjo+GEQ4ijIMYFJCZhigkhQqCDJqioQAJgoEAOw==') top left no-repeat;
+}
+
+#thread dl.userinfo dt.author.role-mod { 
+	background-image:url('data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAANCAYAAACZ3F9/AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAGBJREFUeNpi/P//PwM5gAXGeH3BF10OZiIjsqCowWYwzcRAJmDCYQs28B+Xxv94NGPIsSBJMuIw/T+6PynyIwsOWxjRQhVdDquNjHjEGAn5kYGQgWT7kZHcJEe2jQABBgA4lxUa7hb9eAAAAABJRU5ErkJggg==') !important; 
+}
+
+ul.navigation {
+    margin-top:4px;
+    border-top:1px #EACF4C solid;
+    border-bottom:1px #EACF4C solid;
+    background:#000000;
+}
+ul.navigation li {
+    background-color:#000000;
+    border-left:1px #EACF4C solid;
+}
+ul.navigation li:nth-child(1) {
+    width: 108px !important;
+}
+ul.navigation li:nth-child(10) {
+    width: 92px !important;
+    border-right: 1px solid #EACF4C;
+}

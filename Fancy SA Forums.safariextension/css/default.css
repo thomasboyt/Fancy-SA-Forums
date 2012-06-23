@@ -1,0 +1,102 @@
+body {
+	background-color: #262D35 !important;
+}
+#globalmenu {
+	background-color: #DDE1E4 !important;
+}
+
+#content .subforum .title a, #content .subforum .title a:hover, #content .subforum .title a:visited {
+	color: #036 !important;
+}
+
+#container {
+	background: white;
+	background: white url('http://i.somethingawful.com/core/redesign/gutter-bg.gif') repeat-y;
+}
+
+.forumbar, .threadbar {
+	height:20px !important;
+}
+
+form#ac_timemachine {
+	position:absolute;
+	float:left;
+	border: 0 !important;
+	background: #069 url('http://i.somethingawful.com/core/icon/fsilk/clock.png') no-repeat !important;
+	background-position: 3px 2px !important;
+}
+
+form#ac_timemachine.active {
+	background: #8F0035 url('http://i.somethingawful.com/core/icon/fsilk/clock_red.png') no-repeat !important;
+}
+
+/* Leper's colony page numbers */
+div.mqnav, div.mqnav .pages {
+    color: black !important;
+}
+ div.mqnav .pages .curpage {
+	color:#666 !important;
+}
+div.mqnav a, div.mqnav a:visited {
+	color:#036 !important;
+}
+div.mqnav a:hover {
+	color:#fff !important;
+	background: #036 !important;
+	text-decoration:none;
+}
+
+#forum td.title a.pagenumber, #forum td.title a.pagenumber:visited {
+	color:#036 !important;
+}
+#forum td.title .title_pages a:hover {
+	color:#fff !important;
+}
+
+#forum td.title a.thread_title, #forum td.title a.thread_title:visited {
+	font-size:13px !important;
+}
+
+#forum td.title a.thread_title:hover {
+	color: #c60 !important;
+}
+
+.navbar_wrap.top {
+    background-color:#fff;
+    background-image: url('http://i.somethingawful.com/core/navbar-gradient-bg.png');
+    background-repeat: repeat-x;
+    background-position: bottom;
+    border-top:1px #142c46 solid;
+}
+
+.navigation {
+    border-bottom:1px #8eaac9 solid;
+    background:#e7eef5;
+}
+ul.navigation li {
+    background-color:#ebebeb;
+    border-left:1px #fff solid;
+    height: 19px !important;
+}
+.navigation {
+    border-bottom:1px #bbb solid;
+    background:#e7eef5;
+}
+
+.navbar_wrap.bottom .navigation {
+  border-top:1px #bbb solid;
+}
+
+.navigation a, .navigation a:visited {
+    color: #465963;
+}
+.navigation a:hover {
+    background-color:#01385f;
+    color:#fff;
+}
+.navigation .logout, .navigation .login {
+    background-color:#E6DCBE;
+}
+ul.navigation li:nth-child(1) {
+    border-left:0px;
+}
