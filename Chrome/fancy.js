@@ -60,15 +60,15 @@ var fancySAForums = {
     // Prevent the default forums stylesheet from loading
     if (css.size() === 0)
      css = $("link[rel=stylesheet][href^='/css/gaschamber.css']");
-    if (css.size() === 0)
+   if (css.size() === 0)
      css = $("link[rel=stylesheet][href^='/css/byob.css']");
-    if (css.size() === 0) {
-      css = $("link[rel=stylesheet][href^='/css/rfa.css']");
+   if (css.size() === 0) {
+    css = $("link[rel=stylesheet][href^='/css/rfa.css']");
       //RFA Fix
       if (css.size() > 0) {
         $("ul#navigation").css("background-image", "none");
         $("#content").before("<div style='width:100%;text-align:center;'><img src='http://fi.somethingawful.com/rfa/rfa-header.jpg'></div>");
-       }
+      }
     }
 
     if (css.size() === 0) {
@@ -150,7 +150,7 @@ var fancySAForums = {
     $("ul.navigation li").each(function(i, el) {
       var link = $(el).find("a");
       if ($(link).attr('href').substr(1, 25) == 'account.php?action=logout')
-      $(this).attr("class", "logout");
+        $(this).attr("class", "logout");
       else if ($(link).attr('href').substr(1, 24) == 'account.php?action=login') {
         $(this).attr("class", "login");
         $(link).html('Log In');
@@ -216,17 +216,17 @@ var fancySAForums = {
 
         icon2_src = $(icon2).attr('src');
         if (icon2_src == 'http://fi.somethingawful.com/ama.gif')
-        $(icon2).attr('src', fancy.browser.getURL("/images/asktell-ask.gif"));
+          $(icon2).attr('src', fancy.browser.getURL("/images/asktell-ask.gif"));
         else if (icon2_src == 'http://fi.somethingawful.com/tma.gif')
-        $(icon2).attr('src', fancy.browser.getURL("/images/asktell-tell.gif"));
+          $(icon2).attr('src', fancy.browser.getURL("/images/asktell-tell.gif"));
         else if (icon2_src == 'http://fi.somethingawful.com/forums/posticons/icon-37-selling.gif')
-        $(icon2).attr('src', fancy.browser.getURL("/images/samart-sell.gif"));
+          $(icon2).attr('src', fancy.browser.getURL("/images/samart-sell.gif"));
         else if (icon2_src == 'http://fi.somethingawful.com/forums/posticons/icon-38-buying.gif')
-        $(icon2).attr('src', fancy.browser.getURL("/images/samart-buy.gif"));
+          $(icon2).attr('src', fancy.browser.getURL("/images/samart-buy.gif"));
         else if (icon2_src == 'http://fi.somethingawful.com/forums/posticons/icon-46-trading.gif')
-        $(icon2).attr('src', fancy.browser.getURL("/images/samart-swap.gif"));
+          $(icon2).attr('src', fancy.browser.getURL("/images/samart-swap.gif"));
         else if (icon2_src == 'http://fi.somethingawful.com/forums/posticons/icon-52-trading.gif')
-        $(icon2).attr('src', fancy.browser.getURL("/images/samart-bid.gif"));
+          $(icon2).attr('src', fancy.browser.getURL("/images/samart-bid.gif"));
 
         posticon.after(icon2);
         $(this).find("td.icon2").remove();
@@ -255,10 +255,10 @@ var fancySAForums = {
     // --- forumdisplay.php ---
     if (window.location.pathname == "/forumdisplay.php") {
         // top
-      $("#forum").before("<div class = 'forumbar top' />");
-      $(".forumbar.top").append("<div class = 'forumbar_pages' />");
-      $(".forumbar_pages").append($(".pages"));
-      $("table#forum").nextAll("br").remove();
+        $("#forum").before("<div class = 'forumbar top' />");
+        $(".forumbar.top").append("<div class = 'forumbar_pages' />");
+        $(".forumbar_pages").append($(".pages"));
+        $("table#forum").nextAll("br").remove();
 
       // bottom
       $(".forumbar:last").append("<div class = 'forumbar_pages' />");
@@ -287,8 +287,8 @@ var fancySAForums = {
 
     if (window.location.pathname == "/usercp.php" || window.location.pathname == "/bookmarkthreads.php") {
         // top
-      $("#forum").before("<div class = 'forumbar top' />");
-      $(".forumbar.top").append("<div class = 'forumbar_pages' />");
+        $("#forum").before("<div class = 'forumbar top' />");
+        $(".forumbar.top").append("<div class = 'forumbar_pages' />");
         $(".forumbar_pages").append($("#mp_bar .pages"));
         $("ul#usercpnav").nextAll("br").remove();
 
@@ -327,7 +327,7 @@ var fancySAForums = {
         fancySAForums.options[i] = val;
       }
     }
-     console.log(fancySAForums.options);
+    console.log(fancySAForums.options);
     fancySAForums.fancify();
   }
 };
